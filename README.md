@@ -14,27 +14,35 @@ I am a Masters student in Electrical and Electronic Engineering at Imperial Coll
 
 This project invovled creating a DC microgrid with a PV panel, supercapacitor module, grid import/export moduels, modelled by bench power supplies and a resistor bank; and an LED load — built with a team of 7. My focus was on the circuit interconnections schematics, and LED SMPS current control.
 
-**[Demo video](./Smart%20Grid%20Full%20Demo.mp4)** · **[Project brief](./smart_grid_project_brief.pdf)** · **[Full write-up](https://amethyst-vanilla-e4a.notion.site/Watt-s-Up-Smart-Grid-Project-57cd290cf3a283dcb5bf8151f05f89b2)**
+**[Demo video](./Smart%20Grid%20Full%20Demo.mp4)** · **[Project brief](./smart_grid_project_brief.pdf)** · **[Full write-up](./Watts_Up_Smart_Grid_Project_Report.pdf)**
 
 #### Full Circuit Setup
 
 Circuit schematic and hardware connections across five SMPS modules on a shared 10 V bus.
 
-
-
-
+<p align="center">
+  <img src="./smart-grid/architecture.png" alt="System architecture" width="80%" />
+</p>
+<p align="center">
+  <img src="./smart-grid/hardware-setup.png" alt="Lab hardware setup" width="80%" />
+</p>
 
 #### LED SMPS Control
 
-Implemented a current controller to regulate LED current to the desired value. Power is commanded via I_{reg} = P / V_{led}.
+Implemented a current controller to regulate LED current to the desired value. Power is commanded via \(I_{reg} = P / V_{led}\).
 
-
+<p align="center">
+  <img src="./smart-grid/led-schematic.png" alt="LED driver schematic" width="48%" />
+  <img src="./smart-grid/led-load.png" alt="LED load hardware" width="48%" />
+</p>
 
 #### Power Monitoring UI
 
 Interactive dashboard for real-time power and cost. Smart dispatch optimises operating cost via import/export.
 
-
+<p align="center">
+  <img src="./smart-grid/dashboard.png" alt="Power monitoring dashboard" width="80%" />
+</p>
 
 ---
 
