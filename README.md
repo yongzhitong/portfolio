@@ -46,18 +46,33 @@ Interactive dashboard for real-time power and cost. Smart dispatch optimises ope
 
 ---
 
-### ELECTRO Bootcamp
+### ELECTRO Bootcamp — ESP32 RC Car
 
 **Malaysia STEM Outreach Program · Jun 2026 – Present**
 
-Electronics bootcamp built around a Wi-Fi–controlled ESP32 RC car for high-school delivery, within a £345 budget and 3-month timeline.
+Wi-Fi–controlled ESP32 RC car for a high-school STEM bootcamp (~28 students). Custom PCB integrates motor drive and battery power management; students drive the car from a phone over an ESP32-hosted website.
 
-- PCB design linking ESP32 I/O to a motor driver and battery power management
-- Buck SMPS (MP2322) for reliable 6 V → 5 V conversion
-- ESP32 SoftAP hosting an HTML/JS driving UI for mobile control
-- Tool-less chassis in Fusion 360 for fast kit assembly
+**[Firmware](./ELECTRO%20Bootcamp/electro_bootcamp.ino)** · **[Technical document](./ELECTRO%20Bootcamp/ESP32_RC_Car_Technical_Document.pdf)**
 
-Firmware: `[ELECTRO Bootcamp/electro_bootcamp.ino](./ELECTRO%20Bootcamp/electro_bootcamp.ino)`
+#### Custom PCB
+
+KiCad board (53 × 67 mm) with ESP32 DevKit, TB6612FNG H-bridge motor driver, and MP2322 buck converter — battery-powered, no USB tether.
+
+#### Motor Driver
+
+TB6612FNG drives left/right DC motors from ESP32 GPIO + PWM. Final design uses 2 motors for reliable current draw from AA cells.
+
+#### Power Supply
+
+MP2322 buck SMPS steps 6 V battery down to 5 V for the ESP32, with feedback and ripple sized for stable onboard power.
+
+#### Driving Website
+
+ESP32 SoftAP hosts an HTML/JS UI with directional controls. Hold-to-drive buttons send HTTP requests that set motor direction and speed.
+
+#### Chassis
+
+3D-printed PLA body and lid (Fusion 360) with motor slots, PCB/battery mounts, and a rear ball caster for tool-friendly kit assembly.
 
 ---
 
