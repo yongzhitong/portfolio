@@ -20,9 +20,27 @@ Designed a voice pitch-shifter in SystemVerilog using Gowin EDA. Development pro
 
 Implemented two 8K × 16-bit RAM delay lines with time-varying read addresses. A finite state machine coordinates 13-bit delay and gain counters, then applies complementary crossfades between the delayed signals to suppress discontinuities.
 
+**[KG controller RTL](./Voice_Shifter/voice_corruptor/KG_controller.sv)**
+
+<p align="center">
+  <img src="./Voice_Shifter/diagrams/kg-controller-fsm.png" alt="KG controller gain and delay FSM" width="80%" />
+</p>
+
 #### UART Audio Pipeline
 
 Designed 8N1 UART receiver and transmitter modules running at 115200 baud. Incoming byte pairs are combined into signed 16-bit samples, processed on the FPGA, and returned to the Python interface as little-endian PCM audio.
+
+**[UART RX](./Voice_Shifter/UART_RX/)** · **[UART TX](./Voice_Shifter/UART_TX/)**
+
+<p align="center">
+  <img src="./Voice_Shifter/diagrams/uart-rx-fsm.png" alt="UART receiver timing and FSM" width="80%" />
+</p>
+
+#### Load and Reset
+
+The top-level design latches mix parameter `a` over UART, then streams audio. A hardware reset clears both 8K RAM delay lines before the next run so leftover samples do not leak into a new recording.
+
+**[Top-level RTL](./Voice_Shifter/voice_corruptor/voice_corruptor.sv)** · **[Delay loader](./Voice_Shifter/voice_corruptor/delay_loader.sv)**
 
 #### Verification
 
