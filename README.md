@@ -137,6 +137,34 @@ ESP32 SoftAP hosts an HTML/JS UI with directional controls. Hold-to-drive button
 
 ---
 
+### FPGA Formula 1 Starting-Light Controller
+
+**Intel (Altera) MAX 10 FPGA Project · Nov–Dec 2025**
+
+Designed an FSM-based Formula 1 starting-light controller in SystemVerilog. The design sequences 10 LEDs at 0.5-second intervals, waits for a pseudo-random duration, then records the user's reaction time.
+
+**[Muted demo video](./Formula_1_Light_Sequence/formula-1-demo-muted.mp4)** · **[Top-level RTL](./Formula_1_Light_Sequence/challenge4.sv)** · **[Design notes](https://app.notion.com/p/Challenge-4-2bfd290cf3a28072bc1df0bbae3b9b6e)**
+
+#### Starting-Light Sequence
+
+Implemented a finite state machine to control the complete start procedure, from progressively illuminating the 10 LEDs to extinguishing them after the randomized delay and enabling reaction-time capture.
+
+**[Sequence FSM](./Formula_1_Light_Sequence/fsm.sv)**
+
+#### Random Delay and Timing
+
+Combined a linear-feedback shift register, clock divider, and counters to generate a pseudo-random delay between 0.25 and 16 seconds while maintaining deterministic timing for the LED sequence.
+
+**[LFSR](./Formula_1_Light_Sequence/lfsr.sv)** · **[Random-delay counter](./Formula_1_Light_Sequence/delay.sv)** · **[Clock tick generator](./Formula_1_Light_Sequence/clktick.sv)** · **[Reaction timer](./Formula_1_Light_Sequence/counter.sv)**
+
+#### Reaction-Time Display
+
+Developed binary-to-BCD conversion and seven-segment display logic to present timing results in milliseconds on the FPGA board.
+
+**[Binary-to-BCD converter](./Formula_1_Light_Sequence/bin2bcd_16.sv)** · **[Seven-segment decoder](./Formula_1_Light_Sequence/hexto7seg.sv)**
+
+---
+
 ### Remote-Controlled Signal Detecting Rover
 
 **First Year Electronics Design Project · May–Jun 2025**
