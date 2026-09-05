@@ -8,33 +8,63 @@ I am a Masters student in Electrical and Electronic Engineering at Imperial Coll
 
 ## Projects
 
+### FPGA Voice Pitch-Shifter
+
+**Tang Nano 9K FPGA Project · Aug–Sep 2026**
+
+Designed a voice pitch-shifter in SystemVerilog using Gowin EDA. Development progressed from custom UART modules and a configurable single-RAM echo to a dual-RAM pitch-shifting datapath. The FPGA raises the pitch of 16-bit audio while preserving the recording duration, with Python handling WAV streaming and output capture over serial.
+
+**[RTL, host scripts, and tests](./Voice_Shifter/)** · **Audio results:** [Clap input](./Voice_Shifter/results/clap_mono.wav) → [Pitch-shifted clap](./Voice_Shifter/results/clap_corrupt.wav) · [Voice input](./Voice_Shifter/results/hello_mono.wav) → [Pitch-shifted voice](./Voice_Shifter/results/hello_corrupt.wav)
+
+#### Pitch-Shifting Datapath
+
+Implemented two 8K × 16-bit RAM delay lines with time-varying read addresses. A finite state machine coordinates 13-bit delay and gain counters, then applies complementary crossfades between the delayed signals to suppress discontinuities.
+
+#### UART Audio Pipeline
+
+Designed 8N1 UART receiver and transmitter modules running at 115200 baud. Incoming byte pairs are combined into signed 16-bit samples, processed on the FPGA, and returned to the Python interface as little-endian PCM audio.
+
+#### Verification
+
+Developed SystemVerilog testbenches with Icarus Verilog and a Python golden-reference model. The verification flow checks gain and delay state-machine behaviour and compares each FPGA output sample against the fixed-point model over UART.
+
+---
+
 ### Watt’s Up — Smart Grid System
 
 **Second Year Electronics Design Project · May–Jun 2026**
 
 This project invovled creating a DC microgrid with a PV panel, supercapacitor module, grid import/export moduels, modelled by bench power supplies and a resistor bank; and an LED load — built with a team of 7. My focus was on the circuit interconnections schematics, and LED SMPS current control.
 
-**[Demo video](./Smart%20Grid%20Full%20Demo.mp4)** · **[Project brief](./smart_grid_project_brief.pdf)** · **[Full write-up](./Watts_Up_Smart_Grid_Project_Report.pdf)**
+**[Demo video](./smart-grid/Smart%20Grid%20Full%20Demo.mp4)** · **[Project brief](./smart-grid/smart_grid_project_brief.pdf)** · **[Full write-up](./smart-grid/Watts_Up_Smart_Grid_Project_Report.pdf)**
 
 #### Full Circuit Setup
 
 Circuit schematic and hardware connections across five SMPS modules on a shared 10 V bus.
 
-
-
-
+<p align="center">
+  <img src="./smart-grid/architecture.png" alt="System architecture" width="80%" />
+</p>
+<p align="center">
+  <img src="./smart-grid/hardware-setup.png" alt="Lab hardware setup" width="80%" />
+</p>
 
 #### LED SMPS Control
 
 Implemented a current controller to regulate LED current to the desired value. Power is commanded via I_{reg} = P / V_{led}.
 
-
+<p align="center">
+  <img src="./smart-grid/led-schematic.png" alt="LED driver schematic" width="48%" />
+  <img src="./smart-grid/led-load.png" alt="LED load hardware" width="48%" />
+</p>
 
 #### Power Monitoring UI
 
 Interactive dashboard for real-time power and cost. Smart dispatch optimises operating cost via import/export.
 
-
+<p align="center">
+  <img src="./smart-grid/dashboard.png" alt="Power monitoring dashboard" width="80%" />
+</p>
 
 ---
 
@@ -50,21 +80,42 @@ This is a Wi-Fi–controlled ESP32 RC car for a high-school STEM bootcamp (~28 s
 
 KiCad board (60 × 70 mm) with ESP32 DevKit, TB6612FNG H-bridge motor driver, and MP2322 buck converter — battery-powered, no USB tether.
 
+<p align="center">
+  <img src="./electro-bootcamp/pcb-layout.png" alt="ELECTRO custom PCB layout" width="80%" />
+</p>
+
 #### Motor Driver
 
 TB6612FNG drives left/right DC motors from ESP32 GPIO + PWM. Final design uses 2 motors for reliable current draw from AA cells.
+
+<p align="center">
+  <img src="./electro-bootcamp/motor-driver-schematic.png" alt="TB6612FNG motor driver schematic" width="80%" />
+</p>
 
 #### Voltage Converter
 
 MP2322 buck SMPS steps 6 V battery down to 5 V for the ESP32, with feedback and ripple sized for stable onboard power.
 
+<p align="center">
+  <img src="./electro-bootcamp/power-supply-schematic.png" alt="MP2322 power supply schematic" width="80%" />
+</p>
+
 #### Driving Website
 
 ESP32 SoftAP hosts an HTML/JS UI with directional controls. Hold-to-drive buttons send HTTP requests that set motor direction and speed.
 
+<p align="center">
+  <img src="./electro-bootcamp/driving-ui.png" alt="ESP32 arrow control UI" width="40%" />
+</p>
+
 #### Chassis
 
 3D-printed PLA body and lid (Fusion 360) with motor slots, PCB/battery mounts, and a rear ball caster for tool-friendly kit assembly.
+
+<p align="center">
+  <img src="./electro-bootcamp/chassis-body.png" alt="Chassis body CAD" width="48%" />
+  <img src="./electro-bootcamp/chassis-lid.png" alt="Chassis lid CAD" width="48%" />
+</p>
 
 ---
 
@@ -90,7 +141,5 @@ Full-stack mobile app (team of 3) for A-Level exam practice: Python FastAPI back
 | Area           | Tools                                                                |
 | -------------- | -------------------------------------------------------------------- |
 | Programming    | Python, C++, SystemVerilog, MATLAB                                   |
-| Software & EDA | LTSpice, KiCad, DIALux, LabVIEW, Quartus Prime, FastAPI, FlutterFlow |
+| Software & EDA | LTSpice, KiCad, DIALux, LabVIEW, Quartus Prime, Gowin EDA, Icarus Verilog, FastAPI, FlutterFlow |
 | Languages      | English, Malay, Mandarin                                             |
-
-
