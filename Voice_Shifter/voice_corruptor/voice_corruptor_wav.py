@@ -23,7 +23,7 @@ from pathlib import Path
 import serial
 import serial.tools.list_ports
 
-BAUD = 115200
+BAUD = 112500
 A_MIN = 1
 A_MAX = 8191
 

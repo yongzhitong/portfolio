@@ -11,6 +11,7 @@ module voice_corruptor (
     logic done_rd = 1'b0;
     logic busy = 1'b0;
     logic loaded = 1'b0;
+    logic done_div = 1'b0;
     logic en_loaded;
     logic wren;
     logic [12:0] rdaddA, rdaddB;
@@ -25,7 +26,6 @@ module voice_corruptor (
     logic en_tx = 1'b0;
     logic valid_rx = 1'b0;
     logic en_clear;
-    
 
     decode #(
         .BAUD_RATE(115200),
@@ -50,6 +50,22 @@ module voice_corruptor (
         .num(word_out)
     );
 
+    logic [13:0] divisor;
+    assign divisor = (a << 1) - 14'd1;
+    logic [13:0] inv;
+
+    pipeline_div #(
+        .WIDTH(14)
+    ) init_div (
+        .clk(sys_clk),
+        .rst(~rst_n),
+        .en(loaded),
+        .dividend(14'd1 << 13),
+        .divisor(divisor),
+        .quotient(inv),
+        .done(done_div)
+    );
+
     ram_controller the_ram_controller (
         .clk(sys_clk),
         .rst(~rst_n),
@@ -69,7 +85,7 @@ module voice_corruptor (
         .en_clear(en_clear)
     );
 
-    assign en_loaded = loaded && done_rx;   
+    assign en_loaded = loaded && done_rx && done_div;   
 
     Gowin_SDP ram_channelA(
         .dout(ram_outA), //output [15:0] dout
@@ -97,25 +113,23 @@ module voice_corruptor (
         .adb(rdaddB) //input [12:0] adb
     );
 
-    logic signed [13:0] ga_s, gb_s, denominator;
-    logic signed [29:0] productA, productB;
-    logic signed [30:0] mix_sum;
+    logic signed [13:0] ga_s, gb_s;
+    logic signed [14:0] inv_s;
+    logic signed [44:0] productA, productB;
+    logic signed [45:0] mix_sum;
     logic signed [15:0] word;
 
     assign ga_s = $signed({1'b0, GA});
     assign gb_s = $signed({1'b0, GB});
 
-    assign denominator =
-        ($signed({1'b0, a}) <<< 1) - 14'sd1;
+    assign inv_s = $signed({1'b0, inv});
 
-    assign productA = ga_s * ram_outA;
-    assign productB = gb_s * ram_outB;
+    assign productA = ga_s * ram_outA * inv_s;
+    assign productB = gb_s * ram_outB * inv_s;
 
-    assign mix_sum =
-        $signed({productA[29], productA}) +
-        $signed({productB[29], productB});
+    assign mix_sum = (productA + productB) >>> 13;
 
-    assign word = (denominator == 0) ? 16'sd0 : mix_sum / denominator;
+    assign word = mix_sum[15:0];
 
     always_ff @(posedge sys_clk) begin
         if(en_loaded) begin
