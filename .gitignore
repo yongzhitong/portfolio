@@ -1,0 +1,10 @@
+.env
+.env.*
+*.log
+*.wlf
+*.vcd
+*.vpd
+*.fsdb
+work/
+transcript
+*** End Patch
