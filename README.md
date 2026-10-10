@@ -165,6 +165,36 @@ Developed binary-to-BCD conversion and seven-segment display logic to present ti
 
 ---
 
+### APB Timer — RTL & UVM Verification
+
+**SystemVerilog / UVM Verification Project**
+
+Designed an APB-controlled 8-bit timer in SystemVerilog and verified it with both a layered class-based testbench and a full UVM environment. The DUT combines a free-running counter with wrap flag and an APB slave register map for enable, limit, count, and flag access.
+
+**[Project folder](./apb-uvm-timer/)** · **[RTL](./apb-uvm-timer/apb_timer_design.sv)** · **[SV testbench](./apb-uvm-timer/apb_sv_tb.sv)** · **[UVM testbench](./apb-uvm-timer/apb_uvm_tb.sv)** · **[Detailed write-up](./apb-uvm-timer/README.md)**
+
+#### Timer RTL
+
+Implemented an 8-bit up-counter with programmable limit: when enabled it increments each clock, wraps at the limit, and pulses a one-cycle flag. Disabling the timer freezes the count and clears the flag.
+
+#### APB Register Map
+
+Built an APB3-style slave with word-aligned addresses — CTRL (`0x0`, R/W enable), LIMIT (`0x4`, R/W), COUNT (`0x8`, R), and FLAG (`0xC`, R) — decoding `psel` / `penable` / `pwrite` for register writes and combinational read muxing onto `prdata`.
+
+#### SystemVerilog Testbench
+
+Developed a mailbox-driven class-based environment (transaction, generator, driver, monitor, scoreboard, coverage) exercising constrained-random CTRL/LIMIT write–readback plus directed tests for wrap, count value, and stop-on-disable behaviour.
+
+#### UVM Testbench
+
+Reimplemented the same scenarios with a UVM agent (sequencer, driver, monitor), analysis-port scoreboard, subscriber coverage, and sequences for address traffic and timer checks — mapping each SV-TB role onto standard UVM components.
+
+#### Results
+
+Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**).
+
+---
+
 ### Remote-Controlled Signal Detecting Rover
 
 **First Year Electronics Design Project · May–Jun 2025**

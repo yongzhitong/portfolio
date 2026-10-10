@@ -10,7 +10,7 @@ module pipeline_div #(
     output logic done
 );
 
-    logic [4:0] bit_end = WIDTH;
+    logic [5:0] bit_end = WIDTH;
     logic [WIDTH-1:0] div_reg;
     logic [WIDTH-1:0] q_reg = {WIDTH{1'b0}};
     logic [WIDTH-1:0] r_reg = {WIDTH{1'b0}};
