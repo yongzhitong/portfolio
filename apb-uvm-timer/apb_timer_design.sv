@@ -64,10 +64,8 @@ module apb_slave (
             case (paddr)
                 CTRL_ADDR: begin
                     ctrl_reg <= pwdata;
-                    limit_reg <= limit_reg;
                 end
                 LIMIT_ADDR: begin
-                    ctrl_reg <= ctrl_reg;
                     limit_reg <= pwdata;
                 end
                 default: begin
@@ -75,9 +73,6 @@ module apb_slave (
                     limit_reg <= limit_reg;
                 end
             endcase
-        end else begin
-            ctrl_reg <= ctrl_reg;
-            limit_reg <= limit_reg;
         end
     end
 

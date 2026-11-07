@@ -1,0 +1,6 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+Elapsed process time unvailable on Windows
+engine_0 (smtbmc boolector) returned pass
+cover trace: engine_0\trace0.vcd
+cover trace: engine_0\trace0.yw
+  reached cover statement counter_formal._witness_.check_counter_formal_sv_51_cover_43 at counter_formal.sv:51.13-51.33 step 7

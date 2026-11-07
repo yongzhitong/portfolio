@@ -1,0 +1,21 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$107] false)
+assume (= [$auto$async2sync.cc:116:execute$111] true)
+assume (= [dut.count] #b0000)
+assume (= [past_valid] false)
+
+state 0
+
+state 1
+
+state 2
+
+state 3
+
+state 4
+
+state 5
+
+state 6
+
+state 7

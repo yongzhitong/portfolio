@@ -191,7 +191,14 @@ Reimplemented the same scenarios with a UVM agent (sequencer, driver, monitor), 
 
 #### Results
 
-Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**).
+Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**). UVM simulation completed cleanly (**0** errors / warnings / fatals).
+
+<p align="center">
+  <img src="./apb-uvm-timer/results/functional-coverage.png" alt="UVM functional coverage report — 93.75% overall" width="90%" />
+</p>
+<p align="center">
+  <img src="./apb-uvm-timer/results/uvm-report-summary.png" alt="UVM report summary — zero errors and fatals" width="70%" />
+</p>
 
 ---
 
@@ -199,7 +206,33 @@ Achieved **93.75%** functional coverage with robust constrained-random testing (
 
 **First Year Electronics Design Project · May–Jun 2025**
 
-Remote-controlled rover (team of six) with analogue front-ends for infrared, radio, ultrasound, and magnetic sensing — filters, comparators, and coil characterisation for radio sensitivity — integrated with sensor and software teammates into a working system.
+Wi-Fi–controlled rover that surveys “ducks” in a play area using radio, magnetic, infrared, and ultrasonic sensors. Sensor circuits feed an Adafruit Metro M0 Express; a JavaScript app steers the rover and displays species/name in real time. Built with a team of six (sensors + mechanical/UI).
+
+**[Full project report](./signal-detecting-rover/Project_Report.pdf)**
+
+#### Radio Sensor
+
+Resonant RLC coil antenna for 89 kHz AM, then amplify, rectify, and demodulate for frequency detection. Characterised coil radius/turns vs inductance and range.
+
+#### Magnetic Field Sensor
+
+Hall-effect front-end (A1324) with gain stage to classify up/down field polarity for species ID; optimal sensing ~2 cm, face-parallel to the magnet.
+
+#### Infrared Sensor
+
+BPW82 photodiode with daylight filter and amplification to measure IR pulse frequency; ambient-light robust vs earlier phototransistor.
+
+#### Ultrasonic Sensor
+
+40 kHz receiver with amplify–demodulate–compare chain; UART/ASK decoding recovers the duck’s ASCII name (e.g. “Bip”).
+
+#### Mechanical Design
+
+Custom chassis and sensor mounts within size/weight limits (~600 g); larger wheels and mounts for coil, IR, ultrasound, and Hall sensor placement.
+
+#### Remote Control UI
+
+MQTT over Wi-Fi for drive commands and sensor telemetry; joystick app with live readings, species ID, and history log.
 
 ---
 

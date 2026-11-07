@@ -1,0 +1,14 @@
+[options]
+mode cover
+depth 30
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal apb_timer_formal.sv apb_timer_design2.sv
+prep -top apb_timer_formal
+
+[files]
+apb_timer_design2.sv
+apb_timer_formal.sv

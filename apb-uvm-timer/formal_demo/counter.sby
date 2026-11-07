@@ -1,0 +1,14 @@
+[options]
+mode cover
+depth 10
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal counter.sv counter_formal.sv
+prep -top counter_formal
+
+[files]
+counter.sv
+counter_formal.sv

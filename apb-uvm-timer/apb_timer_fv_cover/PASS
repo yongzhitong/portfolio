@@ -1,0 +1,21 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+Elapsed process time unvailable on Windows
+engine_0 (smtbmc boolector) returned pass
+cover trace: engine_0\trace0.vcd
+cover trace: engine_0\trace0.yw
+  reached cover statement apb_timer_formal._witness_.check_apb_timer_formal_sv_110_cover_115 at apb_timer_formal.sv:110.13-110.63 step 4
+cover trace: engine_0\trace1.vcd
+cover trace: engine_0\trace1.yw
+  reached cover statement apb_timer_formal._witness_.check_apb_timer_formal_sv_107_cover_106 at apb_timer_formal.sv:107.13-107.71 step 4
+cover trace: engine_0\trace2.vcd
+cover trace: engine_0\trace2.yw
+  reached cover statement apb_timer_formal._witness_.check_apb_timer_formal_sv_108_cover_110 at apb_timer_formal.sv:108.13-108.30 step 5
+cover trace: engine_0\trace3.vcd
+cover trace: engine_0\trace3.yw
+  reached cover statement apb_timer_formal._witness_.check_apb_timer_formal_sv_109_cover_111 at apb_timer_formal.sv:109.13-109.52 step 5
+cover trace: engine_0\trace4.vcd
+cover trace: engine_0\trace4.yw
+  reached cover statement apb_timer_formal._witness_.check_apb_timer_formal_sv_117_cover_130 at apb_timer_formal.sv:117.13-117.46 step 7
+cover trace: engine_0\trace5.vcd
+cover trace: engine_0\trace5.yw
+  reached cover statement apb_timer_formal._witness_.check_apb_timer_formal_sv_106_cover_104 at apb_timer_formal.sv:106.13-106.40 step 26

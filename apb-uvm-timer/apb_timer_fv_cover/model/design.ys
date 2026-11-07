@@ -1,0 +1,8 @@
+# running in apb_timer_fv_cover/src/
+read -formal apb_timer_formal.sv apb_timer_design2.sv
+prep -top apb_timer_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

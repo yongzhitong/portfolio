@@ -1,0 +1,8 @@
+# running in counter/src/
+read -formal counter.sv counter_formal.sv
+prep -top counter_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

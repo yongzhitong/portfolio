@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-11-03T18:01:11" hostname="Level51_TYZ" package="counter" id="0" name="default" tests="4" errors="0" failures="0" time="0" skipped="3">
+<properties>
+<property name="os" value="Windows"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in counter_formal at counter_formal.sv:34.13-34.34" time="0" type="ASSERT" location="counter_formal.sv:34.13-34.34" id="_witness_.check_counter_formal_sv_34_assert_15">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in counter_formal at counter_formal.sv:40.13-40.42" time="0" type="ASSERT" location="counter_formal.sv:40.13-40.42" id="_witness_.check_counter_formal_sv_40_assert_25">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in counter_formal at counter_formal.sv:45.13-45.46" time="0" type="ASSERT" location="counter_formal.sv:45.13-45.46" id="_witness_.check_counter_formal_sv_45_assert_37">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in counter_formal at counter_formal.sv:51.13-51.33" time="0" type="COVER" location="counter_formal.sv:51.13-51.33" id="_witness_.check_counter_formal_sv_51_cover_43" tracefile="engine_0\trace0.vcd">
+</testcase>
+<system-out>SBY 18:01:09 [counter] Removing directory 'C:\formal_demo\counter'.
+SBY 18:01:09 [counter] Copy 'C:\formal_demo\counter.sv' to 'C:\formal_demo\counter\src\counter.sv'.
+SBY 18:01:09 [counter] Copy 'C:\formal_demo\counter_formal.sv' to 'C:\formal_demo\counter\src\counter_formal.sv'.
+SBY 18:01:09 [counter] engine_0: smtbmc boolector
+SBY 18:01:09 [counter] base: starting process &quot;cd counter/src&amp; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:01:09 [counter] base: Warning: Wire counter_formal.\en is used but has no driver.
+SBY 18:01:09 [counter] base: Warning: Wire counter_formal.\rst is used but has no driver.
+SBY 18:01:09 [counter] base: Warning: Wire counter_formal.\clk is used but has no driver.
+SBY 18:01:10 [counter] base: finished (returncode=0)
+SBY 18:01:10 [counter] prep: starting process &quot;cd counter/model&amp; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:01:10 [counter] prep: Warning: Wire counter_formal.\clk is used but has no driver.
+SBY 18:01:10 [counter] prep: Warning: Wire counter_formal.\rst is used but has no driver.
+SBY 18:01:10 [counter] prep: Warning: Wire counter_formal.\en is used but has no driver.
+SBY 18:01:10 [counter] prep: finished (returncode=0)
+SBY 18:01:10 [counter] smt2: starting process &quot;cd counter/model&amp; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:01:10 [counter] smt2: finished (returncode=0)
+SBY 18:01:10 [counter] engine_0: starting process &quot;cd counter&amp; yosys-smtbmc -s boolector --presat --unroll -c --noprogress -t 10  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 18:01:10 [counter] engine_0: ##   0:00:00  Solver: boolector
+SBY 18:01:10 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:01:10 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 18:01:10 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 18:01:10 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 18:01:10 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Reached cover statement in step 7 at counter_formal: counter_formal.sv:51.13-51.33 (_witness_.check_counter_formal_sv_51_cover_43)
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 18:01:11 [counter] engine_0: ##   0:00:00  Status: passed
+SBY 18:01:11 [counter] engine_0: finished (returncode=0)
+SBY 18:01:11 [counter] engine_0: Status returned by engine: pass
+SBY 18:01:11 [counter] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:01:11 [counter] summary: Elapsed process time unvailable on Windows
+SBY 18:01:11 [counter] summary: engine_0 (smtbmc boolector) returned pass
+SBY 18:01:11 [counter] summary: cover trace: counter\engine_0\trace0.vcd
+SBY 18:01:11 [counter] summary:   reached cover statement counter_formal._witness_.check_counter_formal_sv_51_cover_43 at counter_formal.sv:51.13-51.33 step 7
+SBY 18:01:11 [counter] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>
