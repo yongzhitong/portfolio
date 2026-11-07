@@ -218,17 +218,45 @@ Each sensor needed weak signals amplified before the microcontroller could use t
 
 Resonant RLC coil antenna tuned to an 89 kHz AM carrier, followed by an inverting amplifier (gain ≈ 100), diode rectification, and a low-pass demodulator to recover the message for frequency detection. Coil radius and turns were characterised for inductance and induced EMF so resonance and gain could be sized correctly.
 
+<p align="center">
+  <img src="./signal-detecting-rover/radio-datapath.png" alt="Radio sensor datapath" width="90%" />
+</p>
+<p align="center">
+  <img src="./signal-detecting-rover/radio-ltspice.png" alt="Radio sensor LTspice circuit" width="80%" />
+</p>
+
 #### Magnetic Field Sensor
 
 Linear Hall-effect sensor (A1324) into a non-inverting amplifier (gain ≈ 30). Polarity maps to signed DC voltage (up ≈ negative, down ≈ positive); thresholding in firmware classifies field direction for species ID.
+
+<p align="center">
+  <img src="./signal-detecting-rover/magnetic-datapath.png" alt="Magnetic sensor datapath" width="70%" />
+</p>
+<p align="center">
+  <img src="./signal-detecting-rover/magnetic-ltspice.png" alt="Magnetic sensor LTspice circuit" width="55%" />
+</p>
 
 #### Infrared Sensor
 
 BPW82 photodiode (built-in daylight filter) with a non-inverting gain stage (≈ 30) to sharpen IR pulse edges for frequency measurement. Replaced an ambient-light-sensitive phototransistor; firmware tracks voltage edges rather than a fixed threshold.
 
+<p align="center">
+  <img src="./signal-detecting-rover/infrared-datapath.png" alt="Infrared sensor datapath" width="70%" />
+</p>
+<p align="center">
+  <img src="./signal-detecting-rover/infrared-ltspice.png" alt="Infrared sensor LTspice circuit" width="70%" />
+</p>
+
 #### Ultrasonic Sensor
 
 40 kHz receiver → inverting amplifier (gain ≈ 50) → rectify / low-pass demodulate → comparator (≈ 2.5 V threshold) for clean binary UART/ASK bits. MCU decodes ASCII duck names from the serial bitstream.
+
+<p align="center">
+  <img src="./signal-detecting-rover/ultrasonic-datapath.png" alt="Ultrasonic sensor datapath" width="90%" />
+</p>
+<p align="center">
+  <img src="./signal-detecting-rover/ultrasonic-ltspice.png" alt="Ultrasonic sensor LTspice circuit" width="85%" />
+</p>
 
 #### Mechanical Design & UI
 
