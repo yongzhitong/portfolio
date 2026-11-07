@@ -23,6 +23,18 @@ Implemented two 8K × 16-bit RAM delay lines with time-varying read addresses. A
 **[KG controller RTL](./Voice_Shifter/voice_corruptor/KG_controller.sv)**
 
 <p align="center">
+  <img src="./Voice_Shifter/diagrams/pitch-shift-derivation.png" alt="Derivation of pitch shifting with a time-varying delay" width="80%" />
+  <br />
+  <em>Time-varying delay raises the output frequency; a second channel restores the lost duration.</em>
+</p>
+
+<p align="center">
+  <img src="./Voice_Shifter/diagrams/dual-channel-crossfade.png" alt="Dual-channel delay and gain crossfade design" width="80%" />
+  <br />
+  <em>Two delayed channels use complementary gain envelopes to crossfade without shortening the audio.</em>
+</p>
+
+<p align="center">
   <img src="./Voice_Shifter/diagrams/kg-controller-fsm.png" alt="KG controller gain and delay FSM" width="80%" />
 </p>
 
