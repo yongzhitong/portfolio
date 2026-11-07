@@ -155,7 +155,7 @@ ESP32 SoftAP hosts an HTML/JS UI with directional controls. Hold-to-drive button
 
 Designed an FSM-based Formula 1 starting-light controller in SystemVerilog. The design sequences 10 LEDs at 0.5-second intervals, waits for a pseudo-random duration, then records the user's reaction time.
 
-**[Muted demo video](./Formula_1_Light_Sequence/formula-1-demo-muted.mp4)** · **[Top-level RTL](./Formula_1_Light_Sequence/challenge4.sv)** · **[Design notes](https://app.notion.com/p/Challenge-4-2bfd290cf3a28072bc1df0bbae3b9b6e)**
+**[Muted demo video](./Formula_1_Light_Sequence/formula-1-demo-muted.mp4)** · **[Top-level RTL](./Formula_1_Light_Sequence/challenge4.sv)** · **[Design notes](https://app.notion.com/p/Challenge-4-2bfd290cf3a28072bc1df0bbae3b9b6e)** · **[Circuits and Systems Lab](https://app.notion.com/p/Circuits-and-Systems-Lab-28bd290cf3a280bfaf31fc2327393cc0)**
 
 #### Starting-Light Sequence
 
