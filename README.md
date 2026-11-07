@@ -206,33 +206,33 @@ Achieved **93.75%** functional coverage with robust constrained-random testing (
 
 **First Year Electronics Design Project · May–Jun 2025**
 
-Wi-Fi–controlled rover that surveys “ducks” in a play area using radio, magnetic, infrared, and ultrasonic sensors. Sensor circuits feed an Adafruit Metro M0 Express; a JavaScript app steers the rover and displays species/name in real time. Built with a team of six (sensors + mechanical/UI).
+Wi-Fi–controlled rover that surveys “ducks” in a play area using radio, magnetic, infrared, and ultrasonic sensors. Focus on analogue front-ends — amplifiers, filters, rectifiers, and comparators — simulated in LTspice, then built and characterised before MCU/app integration. Built with a team of six.
 
 **[Full project report](./signal-detecting-rover/Project_Report.pdf)**
 
+#### Analogue Signal Chain
+
+Each sensor needed weak signals amplified before the microcontroller could use them. Circuits used rail-to-rail MCP6022 op-amps (10 MHz GBP) on a ±3.3 V supply from an ADM8660 charge-pump regulator, after earlier TL072 stages saturated and lacked bandwidth for high-gain RF paths.
+
 #### Radio Sensor
 
-Resonant RLC coil antenna for 89 kHz AM, then amplify, rectify, and demodulate for frequency detection. Characterised coil radius/turns vs inductance and range.
+Resonant RLC coil antenna tuned to an 89 kHz AM carrier, followed by an inverting amplifier (gain ≈ 100), diode rectification, and a low-pass demodulator to recover the message for frequency detection. Coil radius and turns were characterised for inductance and induced EMF so resonance and gain could be sized correctly.
 
 #### Magnetic Field Sensor
 
-Hall-effect front-end (A1324) with gain stage to classify up/down field polarity for species ID; optimal sensing ~2 cm, face-parallel to the magnet.
+Linear Hall-effect sensor (A1324) into a non-inverting amplifier (gain ≈ 30). Polarity maps to signed DC voltage (up ≈ negative, down ≈ positive); thresholding in firmware classifies field direction for species ID.
 
 #### Infrared Sensor
 
-BPW82 photodiode with daylight filter and amplification to measure IR pulse frequency; ambient-light robust vs earlier phototransistor.
+BPW82 photodiode (built-in daylight filter) with a non-inverting gain stage (≈ 30) to sharpen IR pulse edges for frequency measurement. Replaced an ambient-light-sensitive phototransistor; firmware tracks voltage edges rather than a fixed threshold.
 
 #### Ultrasonic Sensor
 
-40 kHz receiver with amplify–demodulate–compare chain; UART/ASK decoding recovers the duck’s ASCII name (e.g. “Bip”).
+40 kHz receiver → inverting amplifier (gain ≈ 50) → rectify / low-pass demodulate → comparator (≈ 2.5 V threshold) for clean binary UART/ASK bits. MCU decodes ASCII duck names from the serial bitstream.
 
-#### Mechanical Design
+#### Mechanical Design & UI
 
-Custom chassis and sensor mounts within size/weight limits (~600 g); larger wheels and mounts for coil, IR, ultrasound, and Hall sensor placement.
-
-#### Remote Control UI
-
-MQTT over Wi-Fi for drive commands and sensor telemetry; joystick app with live readings, species ID, and history log.
+Custom chassis and sensor mounts within size/weight limits (~600 g). MQTT joystick app for drive control, live sensor readouts, species ID, and history.
 
 ---
 
