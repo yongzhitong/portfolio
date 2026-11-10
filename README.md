@@ -224,6 +224,12 @@ Wi-Fi–controlled rover that surveys “ducks” in a play area using radio, ma
 
 **[Full project report](./signal-detecting-rover/Project_Report.pdf)**
 
+<p align="center">
+  <img src="./signal-detecting-rover/signal-detecting-rover.png" alt="Completed remote-controlled signal-detecting rover" width="80%" />
+  <br />
+  <em>Completed rover with radio, magnetic, infrared, and ultrasonic sensing hardware.</em>
+</p>
+
 #### Analogue Signal Chain
 
 Each sensor needed weak signals amplified before the microcontroller could use them. Circuits used rail-to-rail MCP6022 op-amps (10 MHz GBP) on a ±3.3 V supply from an ADM8660 charge-pump regulator, after earlier TL072 stages saturated and lacked bandwidth for high-gain RF paths.
