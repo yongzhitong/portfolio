@@ -222,7 +222,7 @@ Achieved **93.75%** functional coverage with robust constrained-random testing (
 
 Wi-Fi–controlled rover that surveys “ducks” in a play area using radio, magnetic, infrared, and ultrasonic sensors. Focus on analogue front-ends — amplifiers, filters, rectifiers, and comparators — simulated in LTspice, then built and characterised before MCU/app integration. Built with a team of six.
 
-**[Full project report](./signal-detecting-rover/Project_Report.pdf)**
+**[Full project report](./signal-detecting-rover/Project_Report.pdf)** · **[Project files and demos](https://drive.google.com/drive/folders/1DyooHDleFkyAjFXFg3lHnRp7tUpoyOT9?usp=sharing)**
 
 <p align="center">
   <img src="./signal-detecting-rover/signal-detecting-rover.png" alt="Completed remote-controlled signal-detecting rover" width="80%" />
