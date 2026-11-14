@@ -179,13 +179,13 @@ Developed binary-to-BCD conversion and seven-segment display logic to present ti
 
 ---
 
-### APB Timer — RTL & UVM Verification
+### APB Timer — RTL, UVM & Formal Verification
 
-**SystemVerilog / UVM Verification Project**
+**SystemVerilog / UVM / SymbiYosys Verification Project**
 
-Designed an APB-controlled 8-bit timer in SystemVerilog and verified it with both a layered class-based testbench and a full UVM environment. The DUT combines a free-running counter with wrap flag and an APB slave register map for enable, limit, count, and flag access.
+Designed an APB-controlled 8-bit timer in SystemVerilog and verified it with a layered class-based testbench, a full UVM environment, and formal property checking. The DUT combines a free-running counter with wrap flag and an APB slave register map for enable, limit, count, and flag access.
 
-**[Project folder](./apb-uvm-timer/)** · **[RTL](./apb-uvm-timer/apb_timer_design.sv)** · **[SV testbench](./apb-uvm-timer/apb_sv_tb.sv)** · **[UVM testbench](./apb-uvm-timer/apb_uvm_tb.sv)** · **[Detailed write-up](./apb-uvm-timer/README.md)**
+**[Project folder](./apb-uvm-timer/)** · **[RTL](./apb-uvm-timer/apb_timer_design.sv)** · **[SV testbench](./apb-uvm-timer/apb_sv_tb.sv)** · **[UVM testbench](./apb-uvm-timer/apb_uvm_tb.sv)** · **[Formal harness](./apb-uvm-timer/apb_timer_formal.sv)** · **[Detailed write-up](./apb-uvm-timer/README.md)**
 
 #### Timer RTL
 
@@ -203,9 +203,13 @@ Developed a mailbox-driven class-based environment (transaction, generator, driv
 
 Reimplemented the same scenarios with a UVM agent (sequencer, driver, monitor), analysis-port scoreboard, subscriber coverage, and sequences for address traffic and timer checks — mapping each SV-TB role onto standard UVM components.
 
+#### Formal Verification
+
+Developed a formal harness using SystemVerilog assumptions, assertions, and cover statements with SymbiYosys/Yosys SMTBMC and Boolector. Properties check APB register accesses, read-data behaviour, counter increment/hold, limit wrap, and flag generation. Separate prove and cover tasks produced a successful depth-30 k-induction proof and reached all 11 cover statements at depth 270, including a full `0xFF → 0x00` wrap witness at step 261.
+
 #### Results
 
-Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**). UVM simulation completed cleanly (**0** errors / warnings / fatals).
+Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**). UVM simulation completed cleanly (**0** errors / warnings / fatals), while formal prove and cover runs both completed with **PASS** results.
 
 <p align="center">
   <img src="./apb-uvm-timer/results/functional-coverage.png" alt="UVM functional coverage report — 93.75% overall" width="90%" />
