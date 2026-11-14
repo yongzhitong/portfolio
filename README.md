@@ -207,6 +207,24 @@ Reimplemented the same scenarios with a UVM agent (sequencer, driver, monitor), 
 
 Developed a formal harness using SystemVerilog assumptions, assertions, and cover statements with SymbiYosys/Yosys SMTBMC and Boolector. Properties check APB register accesses, read-data behaviour, counter increment/hold, limit wrap, and flag generation. Separate prove and cover tasks produced a successful depth-30 k-induction proof and reached all 11 cover statements at depth 270, including a full `0xFF → 0x00` wrap witness at step 261.
 
+##### Deep Cover Run and Tool Selection
+
+The depth-270 cover run successfully reached every target, but took **44 minutes and 5 seconds**. The full-wrap witness requires the solver to unroll more than 260 sequential states while also considering legal APB inputs, making this particular reachability problem much more expensive than the depth-30 induction proof.
+
+<p align="center">
+  <img src="./apb-uvm-timer/results/formal-cover-pass.png" alt="SymbiYosys depth-270 cover run passing after 44 minutes" width="90%" />
+  <br />
+  <em>SymbiYosys cover run completed successfully with SMTBMC and Boolector.</em>
+</p>
+
+<p align="center">
+  <img src="./apb-uvm-timer/results/formal-full-wrap-trace.png" alt="GTKWave formal witness showing the APB timer wrapping from FF to 00" width="90%" />
+  <br />
+  <em>GTKWave witness showing the final counter sequence through 0xFF and back to 0x00.</em>
+</p>
+
+Although formal cover demonstrated that this long path is reachable, a directed simulation is more efficient for checking one known, deterministic 256-count scenario and producing its waveform. I therefore use simulation/UVM for the end-to-end full-count test, while using formal induction to prove the general increment, hold, wrap, flag, and APB properties across all reachable states.
+
 #### Results
 
 Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**). UVM simulation completed cleanly (**0** errors / warnings / fatals), while formal prove and cover runs both completed with **PASS** results.
