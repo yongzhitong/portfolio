@@ -1,8 +1,8 @@
-# APB Timer — RTL & Verification
+# APB Timer — RTL, UVM & Formal Verification
 
-SystemVerilog APB-controlled 8-bit timer with a layered class-based testbench and a full UVM environment. The project covers RTL design of a free-running counter and APB register map, then verifies register access and timer behaviour with constrained-random and directed tests.
+SystemVerilog APB-controlled 8-bit timer verified through a layered class-based testbench, a full UVM environment, and formal property checking. The project combines constrained-random simulation and functional coverage with induction proofs and cover reachability analysis.
 
-**RTL:** [`apb_timer_design.sv`](./apb_timer_design.sv) · **SV TB:** [`apb_sv_tb.sv`](./apb_sv_tb.sv) · **UVM TB:** [`apb_uvm_tb.sv`](./apb_uvm_tb.sv)
+**RTL:** [`apb_timer_design.sv`](./apb_timer_design.sv) · **SV TB:** [`apb_sv_tb.sv`](./apb_sv_tb.sv) · **UVM TB:** [`apb_uvm_tb.sv`](./apb_uvm_tb.sv) · **Formal harness:** [`apb_timer_formal.sv`](./apb_timer_formal.sv) · **[Prove](./apb_timer_fv_prove.sby)** / **[Cover](./apb_timer_fv_cover.sby)**
 
 ---
 
@@ -125,6 +125,26 @@ Sequences reuse helpers (activate / set limit / read count / read flag / deactiv
 
 ---
 
+## Formal verification (`apb_timer_formal.sv`)
+
+The formal flow uses SymbiYosys with Yosys SMTBMC and the Boolector solver. The harness constrains reset sequencing, legal APB addresses, and writable-register accesses, then checks the design with immediate `assume`, `assert`, and `cover` statements.
+
+| Property group | Checks |
+|----------------|--------|
+| APB outputs | `prdata` is zero during writes and outside valid read accesses |
+| Register access | CTRL and LIMIT writes update the correct register; all four addresses return the selected register |
+| Counter safety | Disabled count holds; enabled count increments; reaching LIMIT wraps the count and raises FLAG |
+| Reachability | Enable, flag assertion/readback, write-then-read, counter hold, live LIMIT changes, and full 8-bit wrap |
+
+Two independent tasks keep proof and reachability results distinct:
+
+- [`apb_timer_fv_prove.sby`](./apb_timer_fv_prove.sby) runs a depth-30 base case and induction step. Both passed, giving a successful proof by k-induction.
+- [`apb_timer_fv_cover.sby`](./apb_timer_fv_cover.sby) runs cover reachability to depth 270. All 11 covers were reached, including the complete `0xFF → 0x00` counter wrap at step 261.
+
+The long full-wrap cover demonstrates end-to-end reachability from reset, while induction checks the counter and APB safety properties without requiring a 256-cycle simulation trace.
+
+---
+
 ## Results
 
 | Metric | Result |
@@ -132,6 +152,9 @@ Sequences reuse helpers (activate / set limit / read count / read flag / deactiv
 | Functional coverage | **93.75%** |
 | Constrained-random stimulus | **100+** transactions / tests across address and timer scenarios |
 | Directed counter checks | Count / wrap / stop verified; count checks valid for expected count **> 2** |
+| Formal proof | **PASS** — base case and induction, depth 30 |
+| Formal cover | **PASS** — all 11 covers reached, depth 270 |
+| Full 8-bit wrap witness | Reached at formal step **261** |
 
 Coverage includes write vs read, address bins (CTRL / LIMIT / COUNT / FLAG), data extremes (`0x00` / `0xFF`), and the write×address cross.
 
@@ -142,8 +165,12 @@ Coverage includes write vs read, address bins (CTRL / LIMIT / COUNT / FLAG), dat
 | File | Description |
 |------|-------------|
 | [`apb_timer_design.sv`](./apb_timer_design.sv) | `timer` + `apb_slave` RTL |
+| [`apb_timer_design2.sv`](./apb_timer_design2.sv) | RTL variant exposing internal registers to the formal harness |
 | [`apb_sv_tb.sv`](./apb_sv_tb.sv) | Class-based SystemVerilog testbench |
 | [`apb_uvm_tb.sv`](./apb_uvm_tb.sv) | UVM package + testbench top |
+| [`apb_timer_formal.sv`](./apb_timer_formal.sv) | Formal assumptions, assertions, and cover statements |
+| [`apb_timer_fv_prove.sby`](./apb_timer_fv_prove.sby) | SymbiYosys k-induction configuration |
+| [`apb_timer_fv_cover.sby`](./apb_timer_fv_cover.sby) | SymbiYosys cover-reachability configuration |
 | [`adder_sv_tb.sv`](./adder_sv_tb.sv) / [`adder_uvm_tb.sv`](./adder_uvm_tb.sv) | Earlier adder bring-up TBs (SV → UVM learning path) |
 
 ---
@@ -166,3 +193,10 @@ apb_timer_design.sv  apb_uvm_tb.sv
 ```
 
 Exact compile/elab/simulate flags depend on the tool; ensure `uvm_pkg` is on the include path for the UVM flow.
+
+**Formal proof and cover** (requires SymbiYosys, Yosys SMTBMC, and Boolector):
+
+```text
+sby -f apb_timer_fv_prove.sby
+sby -f apb_timer_fv_cover.sby
+```

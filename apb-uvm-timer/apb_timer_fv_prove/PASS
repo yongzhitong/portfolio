@@ -1,4 +1,4 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:00:04 (4)
+Elapsed clock time [H:MM:SS (secs)]: 0:00:43 (43)
 Elapsed process time unvailable on Windows
 engine_0 (smtbmc boolector) returned pass for basecase
 engine_0 (smtbmc boolector) returned pass for induction

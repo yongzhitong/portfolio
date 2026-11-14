@@ -15,7 +15,8 @@ module apb_timer_formal;
 
     logic [2:0] rst_count;
     logic write, read;
-    logic writable;
+    logic limit_change;
+    logic limit_larger, limit_smaller;
 
     assign write = psel && penable && pwrite;
     assign read = psel && penable && !pwrite;
@@ -38,6 +39,9 @@ module apb_timer_formal;
     initial begin
         assume(rst);
         assume(rst_count == 3'b0);
+        assume(limit_change == 1'b0);
+        assume(limit_larger == 1'b0);
+        assume(limit_smaller == 1'b0);
     end
 
     always @(posedge clk) begin
@@ -46,6 +50,9 @@ module apb_timer_formal;
             assume(rst);
             assume(!psel);
             assume(!penable);
+            assume(limit_change == 1'b0);
+            assume(limit_larger == 1'b0);
+            assume(limit_smaller == 1'b0);
         end else begin
             assume(!rst);
             assume((paddr == 4'h0) || (paddr == 4'h4) || (paddr == 4'h8) || (paddr == 4'hC));
@@ -70,7 +77,7 @@ module apb_timer_formal;
     end
 
     //writing must write correctly, reading must read correctly
-    always_ff @(posedge clk) begin
+    always @(posedge clk) begin
         if (!rst && $past(write)) begin
             if($past(paddr) == 4'h0)
                 assert(ctrl_reg_o == $past(pwdata));
@@ -100,14 +107,36 @@ module apb_timer_formal;
         end
     end
 
+    //limit changing during counter active
+    always_ff @(posedge clk) begin
+        if(!rst) begin
+            if(limit_reg_o != $past(limit_reg_o)) begin
+                limit_change <= 1'b1;
+                if(limit_reg_o >= count_reg_o)
+                    limit_larger <= 1'b1;
+                else
+                    limit_smaller <= 1'b1;
+            end
+            else if(flag_reg_o) begin
+                limit_change <= 1'b0;
+                limit_larger <= 1'b0;
+                limit_smaller <= 1'b0;
+            end
+        end
+    end
+
     //covers
     always @(posedge clk) begin
-        if(!rst)
-            cover(count_reg_o == 8'h15); //covers specific value
-            cover($past(write) && $past(paddr)==4'h0 && ctrl_reg_o[0]); // enable
-            cover(flag_reg_o);                                          // wrap seen
-            cover(read && paddr==4'hC && prdata[0]);                    // flag readback
-            cover($past(write) && read && paddr==$past(paddr));       // write then read same addr
+        if(!rst) begin
+            cover(count_reg_o == 8'h15); //counter reaches 15
+            cover(count_reg_o == 8'h0 && $past(count_reg_o) == 8'hFF); //counter fully wraps
+            cover($past(write) && $past(paddr)==4'h0 && ctrl_reg_o[0]); //disable counter
+            cover(flag_reg_o); //flag is set                                        
+            cover(read && paddr==4'hC && prdata[0]); //read flag and flag is set                  
+            cover($past(write) && read && paddr==$past(paddr)); //read right after write
+            cover(limit_smaller);
+            cover(limit_larger);
+        end   
     end
 
     //cover counter staying at limit (enable disabled the moment it reaches limit)
@@ -115,6 +144,15 @@ module apb_timer_formal;
         if(!rst && ($past(count_reg_o) == $past(limit_reg_o)) && ($past(count_reg_o) > 8'h0) &&
         !flag_reg_o)
             cover(count_reg_o == limit_reg_o);
+    end
+
+    //cover flag behaviour when limit changes
+    always @(posedge clk) begin
+        if(limit_larger) begin
+            cover(flag_reg_o);
+        end else if(limit_smaller) begin
+            cover(flag_reg_o);
+        end
     end
 
 endmodule

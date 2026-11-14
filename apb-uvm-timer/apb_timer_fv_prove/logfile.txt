@@ -1,125 +1,465 @@
-SBY  0:19:39 [apb_timer_fv_prove] Removing directory 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_fv_prove'.
-SBY  0:19:39 [apb_timer_fv_prove] Copy 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_design2.sv' to 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_fv_prove\src\apb_timer_design2.sv'.
-SBY  0:19:39 [apb_timer_fv_prove] Copy 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_formal.sv' to 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_fv_prove\src\apb_timer_formal.sv'.
-SBY  0:19:39 [apb_timer_fv_prove] engine_0: smtbmc boolector
-SBY  0:19:39 [apb_timer_fv_prove] base: starting process "cd apb_timer_fv_prove/src& yosys -ql ../model/design.log ../model/design.ys"
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwrite is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\psel is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\penable is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\rst is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [3] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [2] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [1] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [0] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [7] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [6] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [5] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [4] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [3] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [2] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [1] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [0] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\clk is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] base: finished (returncode=0)
-SBY  0:19:39 [apb_timer_fv_prove] prep: starting process "cd apb_timer_fv_prove/model& yosys -ql design_prep.log design_prep.ys"
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\clk is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [7] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [6] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [5] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [4] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [3] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [2] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [1] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [0] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [3] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [2] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [1] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [0] is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\penable is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\psel is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwrite is used but has no driver.
-SBY  0:19:39 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\rst is used but has no driver.
-SBY  0:19:40 [apb_timer_fv_prove] prep: finished (returncode=0)
-SBY  0:19:40 [apb_timer_fv_prove] smt2: starting process "cd apb_timer_fv_prove/model& yosys -ql design_smt2.log design_smt2.ys"
-SBY  0:19:40 [apb_timer_fv_prove] smt2: finished (returncode=0)
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.basecase: starting process "cd apb_timer_fv_prove& yosys-smtbmc -s boolector --presat --unroll --noprogress -t 30  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: starting process "cd apb_timer_fv_prove& yosys-smtbmc -s boolector --presat --unroll -i --noprogress -t 30  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Solver: boolector
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Trying induction in step 30..
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Trying induction in step 29..
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Trying induction in step 28..
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Temporal induction successful.
-SBY  0:19:40 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Status: passed
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Solver: boolector
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 16..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 16..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 17..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 17..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 18..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 18..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 19..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 19..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 20..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 20..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 21..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 21..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 22..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 22..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 23..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 23..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 24..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 24..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 25..
-SBY  0:19:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 25..
-SBY  0:19:42 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 26..
-SBY  0:19:42 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 26..
-SBY  0:19:42 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 27..
-SBY  0:19:42 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 27..
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 28..
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 28..
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 29..
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 29..
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Status: passed
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.induction: finished (returncode=0)
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.induction: Status returned by engine for induction: pass
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: finished (returncode=0)
-SBY  0:19:43 [apb_timer_fv_prove] engine_0.basecase: Status returned by engine for basecase: pass
-SBY  0:19:43 [apb_timer_fv_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:04 (4)
-SBY  0:19:43 [apb_timer_fv_prove] summary: Elapsed process time unvailable on Windows
-SBY  0:19:43 [apb_timer_fv_prove] summary: engine_0 (smtbmc boolector) returned pass for basecase
-SBY  0:19:43 [apb_timer_fv_prove] summary: engine_0 (smtbmc boolector) returned pass for induction
-SBY  0:19:43 [apb_timer_fv_prove] summary: engine_0 did not produce any traces
-SBY  0:19:43 [apb_timer_fv_prove] summary: successful proof by k-induction.
-SBY  0:19:43 [apb_timer_fv_prove] DONE (PASS, rc=0)
+SBY  0:38:58 [apb_timer_fv_prove] Removing directory 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_fv_prove'.
+SBY  0:38:58 [apb_timer_fv_prove] Copy 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_design2.sv' to 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_fv_prove\src\apb_timer_design2.sv'.
+SBY  0:38:58 [apb_timer_fv_prove] Copy 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_formal.sv' to 'C:\Users\yzt24\Documents\portfolio\apb-uvm-timer\apb_timer_fv_prove\src\apb_timer_formal.sv'.
+SBY  0:38:58 [apb_timer_fv_prove] engine_0: smtbmc boolector
+SBY  0:38:58 [apb_timer_fv_prove] base: starting process "cd apb_timer_fv_prove/src& yosys -ql ../model/design.log ../model/design.ys"
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwrite is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\psel is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\penable is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\rst is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [3] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [2] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [1] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\paddr [0] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [7] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [6] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [5] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [4] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [3] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [2] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [1] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\pwdata [0] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: Warning: Wire apb_timer_formal.\clk is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] base: finished (returncode=0)
+SBY  0:38:59 [apb_timer_fv_prove] prep: starting process "cd apb_timer_fv_prove/model& yosys -ql design_prep.log design_prep.ys"
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\clk is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [7] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [6] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [5] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [4] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [3] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [2] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [1] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwdata [0] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [3] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [2] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [1] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\paddr [0] is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\penable is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\psel is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\pwrite is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: Warning: Wire apb_timer_formal.\rst is used but has no driver.
+SBY  0:38:59 [apb_timer_fv_prove] prep: finished (returncode=0)
+SBY  0:38:59 [apb_timer_fv_prove] smt2: starting process "cd apb_timer_fv_prove/model& yosys -ql design_smt2.log design_smt2.ys"
+SBY  0:39:00 [apb_timer_fv_prove] smt2: finished (returncode=0)
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: starting process "cd apb_timer_fv_prove& yosys-smtbmc -s boolector --presat --unroll --noprogress -t 200  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: starting process "cd apb_timer_fv_prove& yosys-smtbmc -s boolector --presat --unroll -i --noprogress -t 200  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Solver: boolector
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Trying induction in step 200..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Trying induction in step 199..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Trying induction in step 198..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.induction: ##   0:00:00  Status: passed
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Solver: boolector
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 16..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 16..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 17..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 17..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 18..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 18..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 19..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 19..
+SBY  0:39:00 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 20..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 20..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 21..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 21..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 22..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 22..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 23..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 23..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 24..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 24..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 25..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 25..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 26..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 26..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 27..
+SBY  0:39:01 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 27..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 28..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 28..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 29..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 29..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 30..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 30..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 31..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 31..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 32..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 32..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 33..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 33..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 34..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 34..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 35..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 35..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 36..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 36..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 37..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 37..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 38..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 38..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 39..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 39..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 40..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 40..
+SBY  0:39:02 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 41..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 41..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 42..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 42..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 43..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 43..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 44..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 44..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 45..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 45..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 46..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 46..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 47..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 47..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 48..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 48..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 49..
+SBY  0:39:03 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 49..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 50..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 50..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 51..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 51..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 52..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 52..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 53..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 53..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 54..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 54..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 55..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 55..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 56..
+SBY  0:39:04 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 56..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 57..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 57..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assumptions in step 58..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:04  Checking assertions in step 58..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 59..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 59..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 60..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 60..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 61..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 61..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 62..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 62..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 63..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 63..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 64..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 64..
+SBY  0:39:05 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 65..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 65..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assumptions in step 66..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:05  Checking assertions in step 66..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 67..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 67..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 68..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 68..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 69..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 69..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 70..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 70..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 71..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 71..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 72..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 72..
+SBY  0:39:06 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 73..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 73..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 74..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 74..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 75..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 75..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 76..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 76..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 77..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 77..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 78..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 78..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 79..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 79..
+SBY  0:39:07 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 80..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 80..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assumptions in step 81..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:07  Checking assertions in step 81..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 82..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 82..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 83..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 83..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 84..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 84..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 85..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 85..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 86..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 86..
+SBY  0:39:08 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 87..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 87..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 88..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assertions in step 88..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:08  Checking assumptions in step 89..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 89..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 90..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 90..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 91..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 91..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 92..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 92..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 93..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 93..
+SBY  0:39:09 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 94..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 94..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 95..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assertions in step 95..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assumptions in step 96..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assertions in step 96..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assumptions in step 97..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assertions in step 97..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assumptions in step 98..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assertions in step 98..
+SBY  0:39:10 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assumptions in step 99..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assertions in step 99..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:10  Checking assumptions in step 100..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assertions in step 100..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assumptions in step 101..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assertions in step 101..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assumptions in step 102..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assertions in step 102..
+SBY  0:39:11 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assumptions in step 103..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assertions in step 103..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assumptions in step 104..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:11  Checking assertions in step 104..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assumptions in step 105..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assertions in step 105..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assumptions in step 106..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assertions in step 106..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assumptions in step 107..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assertions in step 107..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assumptions in step 108..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assertions in step 108..
+SBY  0:39:12 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assumptions in step 109..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assertions in step 109..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:12  Checking assumptions in step 110..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assertions in step 110..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assumptions in step 111..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assertions in step 111..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assumptions in step 112..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assertions in step 112..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assumptions in step 113..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assertions in step 113..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assumptions in step 114..
+SBY  0:39:13 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assertions in step 114..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assumptions in step 115..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:13  Checking assertions in step 115..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assumptions in step 116..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assertions in step 116..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assumptions in step 117..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assertions in step 117..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assumptions in step 118..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assertions in step 118..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assumptions in step 119..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assertions in step 119..
+SBY  0:39:14 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assumptions in step 120..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:14  Checking assertions in step 120..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assumptions in step 121..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assertions in step 121..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assumptions in step 122..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assertions in step 122..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assumptions in step 123..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assertions in step 123..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assumptions in step 124..
+SBY  0:39:15 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assertions in step 124..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assumptions in step 125..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assertions in step 125..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:15  Checking assumptions in step 126..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assertions in step 126..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assumptions in step 127..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assertions in step 127..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assumptions in step 128..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assertions in step 128..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assumptions in step 129..
+SBY  0:39:16 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assertions in step 129..
+SBY  0:39:17 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assumptions in step 130..
+SBY  0:39:17 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assertions in step 130..
+SBY  0:39:17 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:16  Checking assumptions in step 131..
+SBY  0:39:17 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:17  Checking assertions in step 131..
+SBY  0:39:17 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:17  Checking assumptions in step 132..
+SBY  0:39:17 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:17  Checking assertions in step 132..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:20  Checking assumptions in step 133..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assertions in step 133..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assumptions in step 134..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assertions in step 134..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assumptions in step 135..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assertions in step 135..
+SBY  0:39:21 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assumptions in step 136..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assertions in step 136..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:21  Checking assumptions in step 137..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assertions in step 137..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assumptions in step 138..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assertions in step 138..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assumptions in step 139..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assertions in step 139..
+SBY  0:39:22 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assumptions in step 140..
+SBY  0:39:23 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:22  Checking assertions in step 140..
+SBY  0:39:23 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assumptions in step 141..
+SBY  0:39:23 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assertions in step 141..
+SBY  0:39:23 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assumptions in step 142..
+SBY  0:39:23 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assertions in step 142..
+SBY  0:39:23 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assumptions in step 143..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assertions in step 143..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:23  Checking assumptions in step 144..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assertions in step 144..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assumptions in step 145..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assertions in step 145..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assumptions in step 146..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assertions in step 146..
+SBY  0:39:24 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assumptions in step 147..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assertions in step 147..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:24  Checking assumptions in step 148..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assertions in step 148..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assumptions in step 149..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assertions in step 149..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assumptions in step 150..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assertions in step 150..
+SBY  0:39:25 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assumptions in step 151..
+SBY  0:39:26 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assertions in step 151..
+SBY  0:39:26 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:25  Checking assumptions in step 152..
+SBY  0:39:26 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:26  Checking assertions in step 152..
+SBY  0:39:26 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:26  Checking assumptions in step 153..
+SBY  0:39:26 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:26  Checking assertions in step 153..
+SBY  0:39:27 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:27  Checking assumptions in step 154..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:27  Checking assertions in step 154..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:27  Checking assumptions in step 155..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assertions in step 155..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assumptions in step 156..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assertions in step 156..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assumptions in step 157..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assertions in step 157..
+SBY  0:39:28 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assumptions in step 158..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assertions in step 158..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:28  Checking assumptions in step 159..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assertions in step 159..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assumptions in step 160..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assertions in step 160..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assumptions in step 161..
+SBY  0:39:29 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assertions in step 161..
+SBY  0:39:30 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assumptions in step 162..
+SBY  0:39:30 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:29  Checking assertions in step 162..
+SBY  0:39:30 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:30  Checking assumptions in step 163..
+SBY  0:39:30 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:30  Checking assertions in step 163..
+SBY  0:39:30 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:30  Checking assumptions in step 164..
+SBY  0:39:30 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:30  Checking assertions in step 164..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:30  Checking assumptions in step 165..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assertions in step 165..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assumptions in step 166..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assertions in step 166..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assumptions in step 167..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assertions in step 167..
+SBY  0:39:31 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assumptions in step 168..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assertions in step 168..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:31  Checking assumptions in step 169..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assertions in step 169..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assumptions in step 170..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assertions in step 170..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assumptions in step 171..
+SBY  0:39:32 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assertions in step 171..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assumptions in step 172..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:32  Checking assertions in step 172..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assumptions in step 173..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assertions in step 173..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assumptions in step 174..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assertions in step 174..
+SBY  0:39:33 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assumptions in step 175..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assertions in step 175..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:33  Checking assumptions in step 176..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:34  Checking assertions in step 176..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:34  Checking assumptions in step 177..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:34  Checking assertions in step 177..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:34  Checking assumptions in step 178..
+SBY  0:39:34 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:34  Checking assertions in step 178..
+SBY  0:39:35 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:34  Checking assumptions in step 179..
+SBY  0:39:35 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:35  Checking assertions in step 179..
+SBY  0:39:35 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:35  Checking assumptions in step 180..
+SBY  0:39:35 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:35  Checking assertions in step 180..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:35  Checking assumptions in step 181..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assertions in step 181..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assumptions in step 182..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assertions in step 182..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assumptions in step 183..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assertions in step 183..
+SBY  0:39:36 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assumptions in step 184..
+SBY  0:39:37 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:36  Checking assertions in step 184..
+SBY  0:39:37 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:37  Checking assumptions in step 185..
+SBY  0:39:37 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:37  Checking assertions in step 185..
+SBY  0:39:37 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:37  Checking assumptions in step 186..
+SBY  0:39:37 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:37  Checking assertions in step 186..
+SBY  0:39:37 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:37  Checking assumptions in step 187..
+SBY  0:39:38 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assertions in step 187..
+SBY  0:39:38 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assumptions in step 188..
+SBY  0:39:38 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assertions in step 188..
+SBY  0:39:38 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assumptions in step 189..
+SBY  0:39:38 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assertions in step 189..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assumptions in step 190..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:38  Checking assertions in step 190..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:39  Checking assumptions in step 191..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:39  Checking assertions in step 191..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:39  Checking assumptions in step 192..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:39  Checking assertions in step 192..
+SBY  0:39:39 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:39  Checking assumptions in step 193..
+SBY  0:39:40 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:39  Checking assertions in step 193..
+SBY  0:39:40 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assumptions in step 194..
+SBY  0:39:40 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assertions in step 194..
+SBY  0:39:40 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assumptions in step 195..
+SBY  0:39:40 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assertions in step 195..
+SBY  0:39:40 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assumptions in step 196..
+SBY  0:39:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assertions in step 196..
+SBY  0:39:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:40  Checking assumptions in step 197..
+SBY  0:39:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:41  Checking assertions in step 197..
+SBY  0:39:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:41  Checking assumptions in step 198..
+SBY  0:39:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:41  Checking assertions in step 198..
+SBY  0:39:41 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:41  Checking assumptions in step 199..
+SBY  0:39:42 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:41  Checking assertions in step 199..
+SBY  0:39:42 [apb_timer_fv_prove] engine_0.basecase: ##   0:00:42  Status: passed
+SBY  0:39:42 [apb_timer_fv_prove] engine_0.induction: finished (returncode=0)
+SBY  0:39:42 [apb_timer_fv_prove] engine_0.induction: Status returned by engine for induction: pass
+SBY  0:39:42 [apb_timer_fv_prove] engine_0.basecase: finished (returncode=0)
+SBY  0:39:42 [apb_timer_fv_prove] engine_0.basecase: Status returned by engine for basecase: pass
+SBY  0:39:42 [apb_timer_fv_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:43 (43)
+SBY  0:39:42 [apb_timer_fv_prove] summary: Elapsed process time unvailable on Windows
+SBY  0:39:42 [apb_timer_fv_prove] summary: engine_0 (smtbmc boolector) returned pass for basecase
+SBY  0:39:42 [apb_timer_fv_prove] summary: engine_0 (smtbmc boolector) returned pass for induction
+SBY  0:39:42 [apb_timer_fv_prove] summary: engine_0 did not produce any traces
+SBY  0:39:42 [apb_timer_fv_prove] summary: successful proof by k-induction.
+SBY  0:39:42 [apb_timer_fv_prove] DONE (PASS, rc=0)

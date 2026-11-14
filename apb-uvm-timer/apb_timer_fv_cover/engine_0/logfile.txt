@@ -4,38 +4,56 @@
 ##   0:00:00  Checking cover reachability in step 2..
 ##   0:00:00  Checking cover reachability in step 3..
 ##   0:00:00  Checking cover reachability in step 4..
-##   0:00:00  Reached cover statement in step 4 at apb_timer_formal: apb_timer_formal.sv:110.13-110.63 (_witness_.check_apb_timer_formal_sv_110_cover_115)
+##   0:00:00  Reached cover statement in step 4 at apb_timer_formal: apb_timer_formal.sv:136.13-136.63 (_witness_.check_apb_timer_formal_sv_136_cover_133)
 ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
 ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
 ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
 ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
 ##   0:00:00  Checking cover reachability in step 4..
-##   0:00:00  Reached cover statement in step 4 at apb_timer_formal: apb_timer_formal.sv:107.13-107.71 (_witness_.check_apb_timer_formal_sv_107_cover_106)
+##   0:00:00  Reached cover statement in step 4 at apb_timer_formal: apb_timer_formal.sv:133.13-133.71 (_witness_.check_apb_timer_formal_sv_133_cover_124)
 ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
 ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
 ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
 ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
 ##   0:00:00  Checking cover reachability in step 4..
 ##   0:00:00  Checking cover reachability in step 5..
-##   0:00:00  Reached cover statement in step 5 at apb_timer_formal: apb_timer_formal.sv:108.13-108.30 (_witness_.check_apb_timer_formal_sv_108_cover_110)
+##   0:00:00  Reached cover statement in step 5 at apb_timer_formal: apb_timer_formal.sv:138.13-138.32 (_witness_.check_apb_timer_formal_sv_138_cover_138)
 ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
 ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
 ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
 ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
 ##   0:00:00  Checking cover reachability in step 5..
-##   0:00:00  Reached cover statement in step 5 at apb_timer_formal: apb_timer_formal.sv:109.13-109.52 (_witness_.check_apb_timer_formal_sv_109_cover_111)
+##   0:00:00  Reached cover statement in step 5 at apb_timer_formal: apb_timer_formal.sv:134.13-134.30 (_witness_.check_apb_timer_formal_sv_134_cover_128)
 ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
 ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
 ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
 ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
 ##   0:00:00  Checking cover reachability in step 5..
-##   0:00:00  Checking cover reachability in step 6..
-##   0:00:00  Checking cover reachability in step 7..
-##   0:00:00  Reached cover statement in step 7 at apb_timer_formal: apb_timer_formal.sv:117.13-117.46 (_witness_.check_apb_timer_formal_sv_117_cover_130)
+##   0:00:00  Reached cover statement in step 5 at apb_timer_formal: apb_timer_formal.sv:135.13-135.52 (_witness_.check_apb_timer_formal_sv_135_cover_129)
 ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
 ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
 ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
 ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Checking cover reachability in step 6..
+##   0:00:00  Checking cover reachability in step 7..
+##   0:00:00  Reached cover statement in step 7 at apb_timer_formal: apb_timer_formal.sv:152.13-152.30 (_witness_.check_apb_timer_formal_sv_152_cover_153)
+##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+##   0:00:00  Checking cover reachability in step 7..
+##   0:00:00  Reached cover statement in step 7 at apb_timer_formal: apb_timer_formal.sv:137.13-137.33 (_witness_.check_apb_timer_formal_sv_137_cover_137)
+##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+##   0:00:00  Checking cover reachability in step 7..
+##   0:00:00  Reached cover statement in step 7 at apb_timer_formal: apb_timer_formal.sv:146.13-146.46 (_witness_.check_apb_timer_formal_sv_146_cover_150)
+##   0:00:00  Writing trace to VCD file: engine_0/trace7.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace7_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace7.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace7.yw
 ##   0:00:00  Checking cover reachability in step 7..
 ##   0:00:00  Checking cover reachability in step 8..
 ##   0:00:00  Checking cover reachability in step 9..
@@ -53,12 +71,274 @@
 ##   0:00:00  Checking cover reachability in step 21..
 ##   0:00:00  Checking cover reachability in step 22..
 ##   0:00:00  Checking cover reachability in step 23..
-##   0:00:00  Checking cover reachability in step 24..
-##   0:00:00  Checking cover reachability in step 25..
-##   0:00:00  Checking cover reachability in step 26..
-##   0:00:00  Reached cover statement in step 26 at apb_timer_formal: apb_timer_formal.sv:106.13-106.40 (_witness_.check_apb_timer_formal_sv_106_cover_104)
-##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
-##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
-##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
-##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
-##   0:00:00  Status: passed
+##   0:00:01  Checking cover reachability in step 24..
+##   0:00:01  Checking cover reachability in step 25..
+##   0:00:01  Checking cover reachability in step 26..
+##   0:00:01  Reached cover statement in step 26 at apb_timer_formal: apb_timer_formal.sv:131.13-131.40 (_witness_.check_apb_timer_formal_sv_131_cover_118)
+##   0:00:01  Writing trace to VCD file: engine_0/trace8.vcd
+##   0:00:01  Writing trace to Verilog testbench: engine_0/trace8_tb.v
+##   0:00:01  Writing trace to constraints file: engine_0/trace8.smtc
+##   0:00:01  Writing trace to Yosys witness file: engine_0/trace8.yw
+##   0:00:01  Checking cover reachability in step 26..
+##   0:00:01  Checking cover reachability in step 27..
+##   0:00:01  Checking cover reachability in step 28..
+##   0:00:01  Checking cover reachability in step 29..
+##   0:00:01  Checking cover reachability in step 30..
+##   0:00:01  Checking cover reachability in step 31..
+##   0:00:01  Checking cover reachability in step 32..
+##   0:00:01  Checking cover reachability in step 33..
+##   0:00:01  Checking cover reachability in step 34..
+##   0:00:01  Checking cover reachability in step 35..
+##   0:00:01  Checking cover reachability in step 36..
+##   0:00:01  Checking cover reachability in step 37..
+##   0:00:02  Checking cover reachability in step 38..
+##   0:00:02  Checking cover reachability in step 39..
+##   0:00:02  Checking cover reachability in step 40..
+##   0:00:02  Checking cover reachability in step 41..
+##   0:00:02  Checking cover reachability in step 42..
+##   0:00:02  Checking cover reachability in step 43..
+##   0:00:02  Checking cover reachability in step 44..
+##   0:00:02  Checking cover reachability in step 45..
+##   0:00:03  Checking cover reachability in step 46..
+##   0:00:03  Checking cover reachability in step 47..
+##   0:00:03  Checking cover reachability in step 48..
+##   0:00:04  Checking cover reachability in step 49..
+##   0:00:04  Checking cover reachability in step 50..
+##   0:00:04  Checking cover reachability in step 51..
+##   0:00:06  Checking cover reachability in step 52..
+##   0:00:06  Checking cover reachability in step 53..
+##   0:00:07  Checking cover reachability in step 54..
+##   0:00:07  Checking cover reachability in step 55..
+##   0:00:07  Checking cover reachability in step 56..
+##   0:00:07  Checking cover reachability in step 57..
+##   0:00:08  Checking cover reachability in step 58..
+##   0:00:09  Checking cover reachability in step 59..
+##   0:00:09  Checking cover reachability in step 60..
+##   0:00:09  Checking cover reachability in step 61..
+##   0:00:09  Checking cover reachability in step 62..
+##   0:00:09  Checking cover reachability in step 63..
+##   0:00:09  Checking cover reachability in step 64..
+##   0:00:11  Checking cover reachability in step 65..
+##   0:00:13  Checking cover reachability in step 66..
+##   0:00:15  Checking cover reachability in step 67..
+##   0:00:15  Checking cover reachability in step 68..
+##   0:00:15  Checking cover reachability in step 69..
+##   0:00:15  Checking cover reachability in step 70..
+##   0:00:17  Checking cover reachability in step 71..
+##   0:00:17  Checking cover reachability in step 72..
+##   0:00:17  Checking cover reachability in step 73..
+##   0:00:21  Checking cover reachability in step 74..
+##   0:00:21  Checking cover reachability in step 75..
+##   0:00:24  Checking cover reachability in step 76..
+##   0:00:24  Checking cover reachability in step 77..
+##   0:00:25  Checking cover reachability in step 78..
+##   0:00:25  Checking cover reachability in step 79..
+##   0:00:25  Checking cover reachability in step 80..
+##   0:00:25  Checking cover reachability in step 81..
+##   0:00:25  Checking cover reachability in step 82..
+##   0:00:25  Checking cover reachability in step 83..
+##   0:00:25  Checking cover reachability in step 84..
+##   0:00:25  Checking cover reachability in step 85..
+##   0:00:26  Checking cover reachability in step 86..
+##   0:00:26  Checking cover reachability in step 87..
+##   0:00:31  Checking cover reachability in step 88..
+##   0:00:32  Checking cover reachability in step 89..
+##   0:00:33  Checking cover reachability in step 90..
+##   0:00:33  Checking cover reachability in step 91..
+##   0:00:41  Checking cover reachability in step 92..
+##   0:00:47  Checking cover reachability in step 93..
+##   0:00:48  Checking cover reachability in step 94..
+##   0:00:48  Checking cover reachability in step 95..
+##   0:00:48  Checking cover reachability in step 96..
+##   0:00:48  Checking cover reachability in step 97..
+##   0:00:50  Checking cover reachability in step 98..
+##   0:00:58  Checking cover reachability in step 99..
+##   0:01:03  Checking cover reachability in step 100..
+##   0:01:11  Checking cover reachability in step 101..
+##   0:01:20  Checking cover reachability in step 102..
+##   0:01:23  Checking cover reachability in step 103..
+##   0:01:25  Checking cover reachability in step 104..
+##   0:01:25  Checking cover reachability in step 105..
+##   0:01:25  Checking cover reachability in step 106..
+##   0:01:25  Checking cover reachability in step 107..
+##   0:01:32  Checking cover reachability in step 108..
+##   0:01:37  Checking cover reachability in step 109..
+##   0:01:38  Checking cover reachability in step 110..
+##   0:01:52  Checking cover reachability in step 111..
+##   0:01:53  Checking cover reachability in step 112..
+##   0:01:54  Checking cover reachability in step 113..
+##   0:01:54  Checking cover reachability in step 114..
+##   0:01:54  Checking cover reachability in step 115..
+##   0:01:54  Checking cover reachability in step 116..
+##   0:01:54  Checking cover reachability in step 117..
+##   0:01:54  Checking cover reachability in step 118..
+##   0:01:55  Checking cover reachability in step 119..
+##   0:01:56  Checking cover reachability in step 120..
+##   0:01:57  Checking cover reachability in step 121..
+##   0:01:59  Checking cover reachability in step 122..
+##   0:02:00  Checking cover reachability in step 123..
+##   0:02:00  Checking cover reachability in step 124..
+##   0:02:13  Checking cover reachability in step 125..
+##   0:02:16  Checking cover reachability in step 126..
+##   0:02:16  Checking cover reachability in step 127..
+##   0:02:16  Checking cover reachability in step 128..
+##   0:02:17  Checking cover reachability in step 129..
+##   0:02:17  Checking cover reachability in step 130..
+##   0:02:17  Checking cover reachability in step 131..
+##   0:02:17  Checking cover reachability in step 132..
+##   0:02:17  Checking cover reachability in step 133..
+##   0:02:17  Checking cover reachability in step 134..
+##   0:02:18  Checking cover reachability in step 135..
+##   0:02:18  Checking cover reachability in step 136..
+##   0:02:18  Checking cover reachability in step 137..
+##   0:02:19  Checking cover reachability in step 138..
+##   0:02:20  Checking cover reachability in step 139..
+##   0:02:22  Checking cover reachability in step 140..
+##   0:02:22  Checking cover reachability in step 141..
+##   0:02:22  Checking cover reachability in step 142..
+##   0:02:23  Checking cover reachability in step 143..
+##   0:02:23  Checking cover reachability in step 144..
+##   0:02:38  Checking cover reachability in step 145..
+##   0:02:43  Checking cover reachability in step 146..
+##   0:02:44  Checking cover reachability in step 147..
+##   0:03:01  Checking cover reachability in step 148..
+##   0:03:04  Checking cover reachability in step 149..
+##   0:03:07  Checking cover reachability in step 150..
+##   0:03:08  Checking cover reachability in step 151..
+##   0:03:08  Checking cover reachability in step 152..
+##   0:03:08  Checking cover reachability in step 153..
+##   0:03:32  Checking cover reachability in step 154..
+##   0:03:34  Checking cover reachability in step 155..
+##   0:03:34  Checking cover reachability in step 156..
+##   0:03:46  Checking cover reachability in step 157..
+##   0:03:48  Checking cover reachability in step 158..
+##   0:03:58  Checking cover reachability in step 159..
+##   0:03:59  Checking cover reachability in step 160..
+##   0:03:59  Checking cover reachability in step 161..
+##   0:04:34  Checking cover reachability in step 162..
+##   0:04:55  Checking cover reachability in step 163..
+##   0:04:57  Checking cover reachability in step 164..
+##   0:04:57  Checking cover reachability in step 165..
+##   0:04:57  Checking cover reachability in step 166..
+##   0:04:58  Checking cover reachability in step 167..
+##   0:05:01  Checking cover reachability in step 168..
+##   0:05:01  Checking cover reachability in step 169..
+##   0:05:01  Checking cover reachability in step 170..
+##   0:05:01  Checking cover reachability in step 171..
+##   0:05:32  Checking cover reachability in step 172..
+##   0:05:43  Checking cover reachability in step 173..
+##   0:05:58  Checking cover reachability in step 174..
+##   0:05:59  Checking cover reachability in step 175..
+##   0:05:59  Checking cover reachability in step 176..
+##   0:06:13  Checking cover reachability in step 177..
+##   0:06:49  Checking cover reachability in step 178..
+##   0:06:52  Checking cover reachability in step 179..
+##   0:06:53  Checking cover reachability in step 180..
+##   0:07:23  Checking cover reachability in step 181..
+##   0:07:29  Checking cover reachability in step 182..
+##   0:08:08  Checking cover reachability in step 183..
+##   0:08:15  Checking cover reachability in step 184..
+##   0:09:08  Checking cover reachability in step 185..
+##   0:09:22  Checking cover reachability in step 186..
+##   0:09:49  Checking cover reachability in step 187..
+##   0:10:06  Checking cover reachability in step 188..
+##   0:10:45  Checking cover reachability in step 189..
+##   0:10:48  Checking cover reachability in step 190..
+##   0:10:49  Checking cover reachability in step 191..
+##   0:11:11  Checking cover reachability in step 192..
+##   0:11:17  Checking cover reachability in step 193..
+##   0:11:37  Checking cover reachability in step 194..
+##   0:11:41  Checking cover reachability in step 195..
+##   0:11:41  Checking cover reachability in step 196..
+##   0:11:48  Checking cover reachability in step 197..
+##   0:11:50  Checking cover reachability in step 198..
+##   0:12:17  Checking cover reachability in step 199..
+##   0:12:56  Checking cover reachability in step 200..
+##   0:13:24  Checking cover reachability in step 201..
+##   0:13:27  Checking cover reachability in step 202..
+##   0:14:25  Checking cover reachability in step 203..
+##   0:14:27  Checking cover reachability in step 204..
+##   0:14:29  Checking cover reachability in step 205..
+##   0:14:33  Checking cover reachability in step 206..
+##   0:14:33  Checking cover reachability in step 207..
+##   0:15:33  waiting for solver (1 minute)
+##   0:15:46  Checking cover reachability in step 208..
+##   0:15:50  Checking cover reachability in step 209..
+##   0:16:19  Checking cover reachability in step 210..
+##   0:16:21  Checking cover reachability in step 211..
+##   0:16:22  Checking cover reachability in step 212..
+##   0:16:23  Checking cover reachability in step 213..
+##   0:17:02  Checking cover reachability in step 214..
+##   0:18:02  waiting for solver (1 minute)
+##   0:18:28  Checking cover reachability in step 215..
+##   0:18:33  Checking cover reachability in step 216..
+##   0:18:43  Checking cover reachability in step 217..
+##   0:19:21  Checking cover reachability in step 218..
+##   0:19:24  Checking cover reachability in step 219..
+##   0:19:25  Checking cover reachability in step 220..
+##   0:19:26  Checking cover reachability in step 221..
+##   0:20:26  waiting for solver (1 minute)
+##   0:20:50  Checking cover reachability in step 222..
+##   0:21:22  Checking cover reachability in step 223..
+##   0:22:17  Checking cover reachability in step 224..
+##   0:23:08  Checking cover reachability in step 225..
+##   0:23:30  Checking cover reachability in step 226..
+##   0:23:58  Checking cover reachability in step 227..
+##   0:24:00  Checking cover reachability in step 228..
+##   0:24:36  Checking cover reachability in step 229..
+##   0:24:40  Checking cover reachability in step 230..
+##   0:25:40  waiting for solver (1 minute)
+##   0:26:21  Checking cover reachability in step 231..
+##   0:26:56  Checking cover reachability in step 232..
+##   0:27:27  Checking cover reachability in step 233..
+##   0:28:27  waiting for solver (1 minute)
+##   0:28:58  Checking cover reachability in step 234..
+##   0:29:06  Checking cover reachability in step 235..
+##   0:29:08  Checking cover reachability in step 236..
+##   0:29:08  Checking cover reachability in step 237..
+##   0:30:08  waiting for solver (1 minute)
+##   0:30:17  Checking cover reachability in step 238..
+##   0:30:31  Checking cover reachability in step 239..
+##   0:30:34  Checking cover reachability in step 240..
+##   0:30:35  Checking cover reachability in step 241..
+##   0:30:35  Checking cover reachability in step 242..
+##   0:30:48  Checking cover reachability in step 243..
+##   0:30:50  Checking cover reachability in step 244..
+##   0:31:08  Checking cover reachability in step 245..
+##   0:32:08  waiting for solver (1 minute)
+##   0:32:43  Checking cover reachability in step 246..
+##   0:32:48  Checking cover reachability in step 247..
+##   0:32:49  Checking cover reachability in step 248..
+##   0:32:50  Checking cover reachability in step 249..
+##   0:33:50  waiting for solver (1 minute)
+##   0:34:03  Checking cover reachability in step 250..
+##   0:34:09  Checking cover reachability in step 251..
+##   0:34:10  Checking cover reachability in step 252..
+##   0:34:37  Checking cover reachability in step 253..
+##   0:34:43  Checking cover reachability in step 254..
+##   0:34:45  Checking cover reachability in step 255..
+##   0:34:50  Checking cover reachability in step 256..
+##   0:35:07  Checking cover reachability in step 257..
+##   0:35:57  Checking cover reachability in step 258..
+##   0:36:57  waiting for solver (1 minute)
+##   0:37:36  Checking cover reachability in step 259..
+##   0:37:44  Checking cover reachability in step 260..
+##   0:38:44  waiting for solver (1 minute)
+##   0:38:51  Checking cover reachability in step 261..
+##   0:38:52  Reached cover statement in step 261 at apb_timer_formal: apb_timer_formal.sv:132.13-132.70 (_witness_.check_apb_timer_formal_sv_132_cover_120)
+##   0:38:52  Writing trace to VCD file: engine_0/trace9.vcd
+##   0:38:53  Writing trace to Verilog testbench: engine_0/trace9_tb.v
+##   0:38:53  Writing trace to constraints file: engine_0/trace9.smtc
+##   0:38:53  Writing trace to Yosys witness file: engine_0/trace9.yw
+##   0:38:53  Checking cover reachability in step 261..
+##   0:38:59  Checking cover reachability in step 262..
+##   0:39:59  waiting for solver (1 minute)
+##   0:40:55  Checking cover reachability in step 263..
+##   0:41:55  waiting for solver (1 minute)
+##   0:43:20  Checking cover reachability in step 264..
+##   0:44:02  Reached cover statement in step 264 at apb_timer_formal: apb_timer_formal.sv:154.13-154.30 (_witness_.check_apb_timer_formal_sv_154_cover_154)
+##   0:44:02  Writing trace to VCD file: engine_0/trace10.vcd
+##   0:44:03  Writing trace to Verilog testbench: engine_0/trace10_tb.v
+##   0:44:03  Writing trace to constraints file: engine_0/trace10.smtc
+##   0:44:03  Writing trace to Yosys witness file: engine_0/trace10.yw
+##   0:44:03  Status: passed

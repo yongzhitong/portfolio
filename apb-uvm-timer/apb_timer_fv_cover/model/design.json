@@ -81,7 +81,7 @@
             ],
             "cells": [
                 {
-                  "name": "$procmux$169",
+                  "name": "$procmux$198",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:91.13-91.39|apb_timer_design2.sv:91.9-101.12"
@@ -91,7 +91,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$172",
+                  "name": "$procmux$201",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:71.20-71.20|apb_timer_design2.sv:68.13-79.20"
@@ -101,7 +101,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$174",
+                  "name": "$procmux$203",
                   "attributes": {
                     "src": "apb_timer_design2.sv:67.22-67.47|apb_timer_design2.sv:67.18-80.12"
                   },
@@ -110,7 +110,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$178",
+                  "name": "$procmux$207",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:68.25-68.25|apb_timer_design2.sv:68.13-79.20"
@@ -120,7 +120,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$180",
+                  "name": "$procmux$209",
                   "attributes": {
                     "src": "apb_timer_design2.sv:67.22-67.47|apb_timer_design2.sv:67.18-80.12"
                   },
@@ -151,7 +151,7 @@
             ],
             "cells": [
                 {
-                  "name": "$procmux$162_CMP0",
+                  "name": "$procmux$191_CMP0",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:95.48-95.48|apb_timer_design2.sv:92.13-98.20"
@@ -165,7 +165,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$163_CMP0",
+                  "name": "$procmux$192_CMP0",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:94.48-94.48|apb_timer_design2.sv:92.13-98.20"
@@ -179,7 +179,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$173_CMP0",
+                  "name": "$procmux$202_CMP0",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:71.20-71.20|apb_timer_design2.sv:68.13-79.20"
@@ -220,7 +220,7 @@
             ],
             "cells": [
                 {
-                  "name": "$procmux$161",
+                  "name": "$procmux$190",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:95.48-95.48|apb_timer_design2.sv:92.13-98.20"
@@ -258,7 +258,7 @@
             ],
             "cells": [
                 {
-                  "name": "$procdff$298",
+                  "name": "$procdff$385",
                   "attributes": {
                     "always_ff": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:63.5-81.8"
@@ -271,7 +271,7 @@
                   }
                 },
                 {
-                  "name": "$procdff$301",
+                  "name": "$procdff$388",
                   "attributes": {
                     "always_ff": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:63.5-81.8"
@@ -301,7 +301,7 @@
             ],
             "cells": [
                 {
-                  "name": "$apb_timer_design2.sv:91$logic_not$141",
+                  "name": "$apb_timer_design2.sv:91$logic_not$170",
                   "attributes": {
                     "src": "apb_timer_design2.sv:91.32-91.39"
                   },
@@ -312,7 +312,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$179_CMP0",
+                  "name": "$procmux$208_CMP0",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:68.25-68.25|apb_timer_design2.sv:68.13-79.20"
@@ -346,7 +346,7 @@
             ],
             "cells": [
                 {
-                  "name": "$apb_timer_design2.sv:67$logic_and$138",
+                  "name": "$apb_timer_design2.sv:67$logic_and$167",
                   "attributes": {
                     "src": "apb_timer_design2.sv:67.22-67.47"
                   },
@@ -359,7 +359,7 @@
                   }
                 },
                 {
-                  "name": "$apb_timer_design2.sv:91$logic_and$140",
+                  "name": "$apb_timer_design2.sv:91$logic_and$169",
                   "attributes": {
                     "src": "apb_timer_design2.sv:91.13-91.28"
                   },
@@ -372,7 +372,7 @@
                   }
                 },
                 {
-                  "name": "$apb_timer_design2.sv:91$logic_and$142",
+                  "name": "$apb_timer_design2.sv:91$logic_and$171",
                   "attributes": {
                     "src": "apb_timer_design2.sv:91.13-91.39"
                   },
@@ -395,6 +395,1353 @@
       {
         "name": "apb_timer_formal",
         "cell_sorts": [
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:100$logic_and$95",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:100.12-100.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:102$logic_and$99",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:102.17-102.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:132$logic_and$123",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:132.19-132.69"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:133$logic_and$126",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:133.19-133.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:133$logic_and$127",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:133.19-133.70"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:135$logic_and$131",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:135.19-135.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:135$logic_and$132",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:135.19-135.51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:136$logic_and$134",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:136.19-136.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:136$logic_and$136",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:136.19-136.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:144$logic_and$145",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.12-144.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:144$logic_and$147",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.12-144.93"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:144$logic_and$149",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.12-145.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:21$logic_and$21",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:21.20-21.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:22$logic_and$22",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:22.19-22.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:22$logic_and$24",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:22.19-22.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:81$logic_and$69",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:81.13-81.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:101$eq$97",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:101.20-101.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:104$eq$103",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:104.24-104.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:105$eq$104",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:105.21-105.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:131$eq$119",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:131.19-131.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:132$eq$122",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:132.42-132.69"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:135$eq$130",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:135.27-135.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:136$eq$135",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:136.43-136.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:144$eq$144",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.21-144.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:146$eq$151",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:146.19-146.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:83$eq$72",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:83.24-83.51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:85$eq$74",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:85.24-85.52"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:88$eq$77",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:88.24-88.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:89$eq$78",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:89.21-89.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:90$eq$80",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:90.24-90.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:91$eq$81",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:91.21-91.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:92$eq$83",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:92.24-92.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:94$eq$85",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:94.24-94.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_bool",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:103$ne$100",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:103.16-103.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [9, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:104$add$102",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:104.39-104.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000001001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:49$add$27",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:49.26-49.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000011"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$211",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:153.21-153.34|apb_timer_formal.sv:153.18-155.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$214",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:151.12-151.24|apb_timer_formal.sv:151.9-155.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$217",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:151.12-151.24|apb_timer_formal.sv:151.9-155.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$219",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.12-145.20|apb_timer_formal.sv:144.9-146.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$235",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:130.12-130.16|apb_timer_formal.sv:130.9-139.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$237",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:120.21-120.31|apb_timer_formal.sv:120.18-124.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$241",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:115.20-115.46|apb_timer_formal.sv:115.17-118.43"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$243",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:113.16-113.49|apb_timer_formal.sv:113.13-124.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$245",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:112.12-112.16|apb_timer_formal.sv:112.9-125.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$247",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:120.21-120.31|apb_timer_formal.sv:120.18-124.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$251",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:115.20-115.46|apb_timer_formal.sv:115.17-118.43"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$253",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:113.16-113.49|apb_timer_formal.sv:113.13-124.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$255",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:112.12-112.16|apb_timer_formal.sv:112.9-125.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$257",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:120.21-120.31|apb_timer_formal.sv:120.18-124.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$260",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:113.16-113.49|apb_timer_formal.sv:113.13-124.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$262",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:112.12-112.16|apb_timer_formal.sv:112.9-125.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$264",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:105.21-105.61|apb_timer_formal.sv:105.18-106.36"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$267",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:103.16-103.35|apb_timer_formal.sv:103.13-106.36"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$269",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:102.17-102.45|apb_timer_formal.sv:102.14-107.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$272",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:100.12-100.41|apb_timer_formal.sv:100.9-107.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$275",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:103.16-103.35|apb_timer_formal.sv:103.13-106.36"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$277",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:102.17-102.45|apb_timer_formal.sv:102.14-107.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$280",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:100.12-100.41|apb_timer_formal.sv:100.9-107.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$283",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:100.12-100.41|apb_timer_formal.sv:100.9-107.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$286",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:91.21-91.34|apb_timer_formal.sv:91.18-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$289",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:89.21-89.34|apb_timer_formal.sv:89.18-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$292",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:87.16-87.29|apb_timer_formal.sv:87.13-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$294",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:86.22-86.26|apb_timer_formal.sv:86.18-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$297",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:81.13-81.33|apb_timer_formal.sv:81.9-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$300",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:91.21-91.34|apb_timer_formal.sv:91.18-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$303",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:89.21-89.34|apb_timer_formal.sv:89.18-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$306",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:87.16-87.29|apb_timer_formal.sv:87.13-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$308",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:86.22-86.26|apb_timer_formal.sv:86.18-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$311",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:81.13-81.33|apb_timer_formal.sv:81.9-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$314",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:89.21-89.34|apb_timer_formal.sv:89.18-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$317",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:87.16-87.29|apb_timer_formal.sv:87.13-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$319",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:86.22-86.26|apb_timer_formal.sv:86.18-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$322",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:81.13-81.33|apb_timer_formal.sv:81.9-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$325",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:87.16-87.29|apb_timer_formal.sv:87.13-94.46"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$327",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:86.22-86.26|apb_timer_formal.sv:86.18-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$330",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:81.13-81.33|apb_timer_formal.sv:81.9-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$334",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:82.16-82.36|apb_timer_formal.sv:82.13-85.54"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$336",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:81.13-81.33|apb_timer_formal.sv:81.9-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$340",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:82.16-82.36|apb_timer_formal.sv:82.13-85.54"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$342",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:81.13-81.33|apb_timer_formal.sv:81.9-95.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$344",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:75.13-75.30|apb_timer_formal.sv:75.9-76.36"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$348",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:63.12-63.17|apb_timer_formal.sv:63.9-64.52"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$354",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:48.12-48.28|apb_timer_formal.sv:48.9-59.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$372",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:48.12-48.28|apb_timer_formal.sv:48.9-59.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$375",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:48.12-48.28|apb_timer_formal.sv:48.9-59.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ne",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:113$ne$109",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:113.16-113.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$gt",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:144$gt$146",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.67-144.92"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ge",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:115$ge$110",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:115.20-115.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:100$logic_not$94",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:100.20-100.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:132$eq$121",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:132.19-132.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:133$eq$125",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:133.35-133.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:144$logic_not$143",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:144.12-144.16"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:145$logic_not$148",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:145.9-145.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:22$logic_not$23",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:22.38-22.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:41$eq$158",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:41.16-41.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:75$logic_not$58",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:75.13-75.18"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:75$logic_not$59",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:75.22-75.30"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:76$eq$62",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:76.20-76.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:82$eq$70",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:82.16-82.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$apb_timer_formal.sv:87$eq$75",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:87.16-87.29"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$lt",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [3, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:48$lt$26",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:48.12-48.28"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
           {
             "type": "apb_slave2",
             "ports": [
@@ -464,812 +1811,10 @@
                   "name": "dut",
                   "attributes": {
                     "module_not_derived": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:23.16-36.6"
+                    "src": "apb_timer_formal.sv:24.16-37.6"
                   },
                   "parameters": {
 
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$mux",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "S",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$procmux$182",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:115.12-116.20|apb_timer_formal.sv:115.9-117.47"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$184",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:105.12-105.16|apb_timer_formal.sv:105.9-106.41"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$186",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:98.21-98.61|apb_timer_formal.sv:98.18-99.36"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$189",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:96.16-96.35|apb_timer_formal.sv:96.13-99.36"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$191",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:95.17-95.45|apb_timer_formal.sv:95.14-100.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$194",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:93.12-93.41|apb_timer_formal.sv:93.9-100.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$197",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:96.16-96.35|apb_timer_formal.sv:96.13-99.36"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$199",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:95.17-95.45|apb_timer_formal.sv:95.14-100.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$202",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:93.12-93.41|apb_timer_formal.sv:93.9-100.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$205",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:93.12-93.41|apb_timer_formal.sv:93.9-100.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$208",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:84.21-84.34|apb_timer_formal.sv:84.18-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$211",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:82.21-82.34|apb_timer_formal.sv:82.18-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$214",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:80.16-80.29|apb_timer_formal.sv:80.13-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$216",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:79.22-79.26|apb_timer_formal.sv:79.18-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$219",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:74.13-74.33|apb_timer_formal.sv:74.9-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$222",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:84.21-84.34|apb_timer_formal.sv:84.18-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$225",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:82.21-82.34|apb_timer_formal.sv:82.18-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$228",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:80.16-80.29|apb_timer_formal.sv:80.13-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$230",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:79.22-79.26|apb_timer_formal.sv:79.18-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$233",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:74.13-74.33|apb_timer_formal.sv:74.9-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$236",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:82.21-82.34|apb_timer_formal.sv:82.18-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$239",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:80.16-80.29|apb_timer_formal.sv:80.13-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$241",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:79.22-79.26|apb_timer_formal.sv:79.18-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$244",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:74.13-74.33|apb_timer_formal.sv:74.9-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$247",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:80.16-80.29|apb_timer_formal.sv:80.13-87.46"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$249",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:79.22-79.26|apb_timer_formal.sv:79.18-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$252",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:74.13-74.33|apb_timer_formal.sv:74.9-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$256",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:75.16-75.36|apb_timer_formal.sv:75.13-78.54"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$258",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:74.13-74.33|apb_timer_formal.sv:74.9-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$262",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:75.16-75.36|apb_timer_formal.sv:75.13-78.54"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$264",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:74.13-74.33|apb_timer_formal.sv:74.9-88.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$266",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:68.13-68.30|apb_timer_formal.sv:68.9-69.36"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$270",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:56.12-56.17|apb_timer_formal.sv:56.9-57.52"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$276",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:44.12-44.28|apb_timer_formal.sv:44.9-52.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$285",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:44.12-44.28|apb_timer_formal.sv:44.9-52.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$288",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:44.12-44.28|apb_timer_formal.sv:44.9-52.12"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000011"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$reduce_bool",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [8, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:96$ne$92",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:96.16-96.35"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$logic_or",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:51$logic_or$38",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:51.20-51.73"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:51$logic_or$40",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:51.20-51.92"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:57$logic_or$45",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:57.20-57.50"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:68$logic_or$52",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:68.13-68.30"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$add",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [3, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [3, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:45$add$25",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:45.26-45.39"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000011",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000011"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:97$add$94",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:97.39-97.61"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000001001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$dff",
-            "ports": [
-                {
-                  "name": "CLK",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "D",
-                  "direction": "io",
-                  "range": [8, 0]
-                },
-                {
-                  "name": "Q",
-                  "direction": "",
-                  "range": [8, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$procdff$302",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:114.5-118.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$303",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:114.5-118.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$304",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:114.5-118.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$305",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:104.5-111.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$306",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:104.5-111.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000100"
-                  }
-                },
-                {
-                  "name": "$procdff$307",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:104.5-111.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$308",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:104.5-111.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000100"
-                  }
-                },
-                {
-                  "name": "$procdff$309",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:92.5-101.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$310",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:92.5-101.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$311",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:92.5-101.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$312",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:92.5-101.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$313",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:92.5-101.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$314",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:92.5-101.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$315",
-                  "attributes": {
-                    "always_ff": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:73.5-89.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$316",
-                  "attributes": {
-                    "always_ff": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:73.5-89.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000100"
-                  }
-                },
-                {
-                  "name": "$procdff$317",
-                  "attributes": {
-                    "always_ff": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:73.5-89.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$318",
-                  "attributes": {
-                    "always_ff": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:73.5-89.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procdff$319",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:43.5-53.8"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000011"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$lt",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [3, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [2, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:44$lt$24",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:44.12-44.28"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000011",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000010",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$gt",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [8, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:115$gt$126",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:115.67-115.92"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 }
             ]
@@ -1300,11 +1845,62 @@
             ],
             "cells": [
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_106_cover_104",
+                  "name": "_witness_.check_apb_timer_formal_sv_101_assert_96",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_106_cover_104",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_101_assert_96",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:106.13-106.40"
+                    "src": "apb_timer_formal.sv:101.13-101.54"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_104_assert_101",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_104_assert_101",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:104.17-104.62"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_106_assert_105",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_106_assert_105",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:106.17-106.35"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_131_cover_118",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_131_cover_118",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:131.13-131.40"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1317,11 +1913,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_107_cover_106",
+                  "name": "_witness_.check_apb_timer_formal_sv_132_cover_120",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_107_cover_106",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_132_cover_120",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:107.13-107.71"
+                    "src": "apb_timer_formal.sv:132.13-132.70"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1334,11 +1930,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_108_cover_110",
+                  "name": "_witness_.check_apb_timer_formal_sv_133_cover_124",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_108_cover_110",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_133_cover_124",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:108.13-108.30"
+                    "src": "apb_timer_formal.sv:133.13-133.71"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1351,11 +1947,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_109_cover_111",
+                  "name": "_witness_.check_apb_timer_formal_sv_134_cover_128",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_109_cover_111",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_134_cover_128",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:109.13-109.52"
+                    "src": "apb_timer_formal.sv:134.13-134.30"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1368,11 +1964,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_110_cover_115",
+                  "name": "_witness_.check_apb_timer_formal_sv_135_cover_129",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_110_cover_115",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_135_cover_129",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:110.13-110.63"
+                    "src": "apb_timer_formal.sv:135.13-135.52"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1385,11 +1981,62 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_117_cover_130",
+                  "name": "_witness_.check_apb_timer_formal_sv_136_cover_133",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_117_cover_130",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_136_cover_133",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:117.13-117.46"
+                    "src": "apb_timer_formal.sv:136.13-136.63"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111010",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_137_cover_137",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_137_cover_137",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:137.13-137.33"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111001",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_138_cover_138",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_138_cover_138",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:138.13-138.32"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111000",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_146_cover_150",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_146_cover_150",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:146.13-146.46"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1402,11 +2049,45 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_39_assume_133",
+                  "name": "_witness_.check_apb_timer_formal_sv_152_cover_153",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_39_assume_133",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_152_cover_153",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:39.9-39.20"
+                    "src": "apb_timer_formal.sv:152.13-152.30"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_154_cover_154",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_154_cover_154",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:154.13-154.30"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_40_assume_156",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_40_assume_156",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:40.9-40.20"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1419,11 +2100,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_40_assume_134",
+                  "name": "_witness_.check_apb_timer_formal_sv_41_assume_157",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_40_assume_134",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_41_assume_157",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:40.9-40.34"
+                    "src": "apb_timer_formal.sv:41.9-41.34"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1436,11 +2117,62 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_46_assume_26",
+                  "name": "_witness_.check_apb_timer_formal_sv_42_assume_159",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_46_assume_26",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_42_assume_159",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:46.13-46.24"
+                    "src": "apb_timer_formal.sv:42.9-42.37"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_43_assume_161",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_43_assume_161",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:43.9-43.37"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111100",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_44_assume_163",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_44_assume_163",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:44.9-44.38"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111011",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_50_assume_28",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_50_assume_28",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:50.13-50.24"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1453,11 +2185,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_47_assume_27",
+                  "name": "_witness_.check_apb_timer_formal_sv_51_assume_29",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_47_assume_27",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_51_assume_29",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:47.13-47.26"
+                    "src": "apb_timer_formal.sv:51.13-51.26"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1470,11 +2202,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_48_assume_29",
+                  "name": "_witness_.check_apb_timer_formal_sv_52_assume_31",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_48_assume_29",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_52_assume_31",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:48.13-48.29"
+                    "src": "apb_timer_formal.sv:52.13-52.29"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1487,11 +2219,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_50_assume_31",
+                  "name": "_witness_.check_apb_timer_formal_sv_53_assume_33",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_50_assume_31",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_53_assume_33",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:50.13-50.25"
+                    "src": "apb_timer_formal.sv:53.13-53.41"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1504,11 +2236,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_51_assume_33",
+                  "name": "_witness_.check_apb_timer_formal_sv_54_assume_35",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_51_assume_33",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_54_assume_35",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:51.13-51.93"
+                    "src": "apb_timer_formal.sv:54.13-54.41"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1521,11 +2253,62 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_57_assume_42",
+                  "name": "_witness_.check_apb_timer_formal_sv_55_assume_37",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_57_assume_42",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_55_assume_37",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:57.13-57.51"
+                    "src": "apb_timer_formal.sv:55.13-55.42"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111010",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_57_assume_39",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_57_assume_39",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:57.13-57.25"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111001",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_58_assume_41",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_58_assume_41",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:58.13-58.93"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111000",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_apb_timer_formal_sv_64_assume_50",
+                  "attributes": {
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_64_assume_50",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:64.13-64.51"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1538,11 +2321,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_63_assert_47",
+                  "name": "_witness_.check_apb_timer_formal_sv_70_assert_55",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_63_assert_47",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_70_assert_55",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:63.13-63.35"
+                    "src": "apb_timer_formal.sv:70.13-70.35"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1555,68 +2338,17 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_69_assert_53",
+                  "name": "_witness_.check_apb_timer_formal_sv_76_assert_61",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_69_assert_53",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_76_assert_61",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:69.13-69.35"
+                    "src": "apb_timer_formal.sv:76.13-76.35"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
                     "FLAVOR": "assert",
                     "FORMAT": true,
                     "PRIORITY": "11111111111111111111111111111111",
-                    "TRG_ENABLE": "00000000000000000000000000000001",
-                    "TRG_POLARITY": "1",
-                    "TRG_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "_witness_.check_apb_timer_formal_sv_76_assert_63",
-                  "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_76_assert_63",
-                    "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:76.17-76.52"
-                  },
-                  "parameters": {
-                    "ARGS_WIDTH": "00000000000000000000000000000000",
-                    "FLAVOR": "assert",
-                    "FORMAT": true,
-                    "PRIORITY": "11111111111111111111111111111111",
-                    "TRG_ENABLE": "00000000000000000000000000000001",
-                    "TRG_POLARITY": "1",
-                    "TRG_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "_witness_.check_apb_timer_formal_sv_78_assert_65",
-                  "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_78_assert_65",
-                    "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:78.17-78.53"
-                  },
-                  "parameters": {
-                    "ARGS_WIDTH": "00000000000000000000000000000000",
-                    "FLAVOR": "assert",
-                    "FORMAT": true,
-                    "PRIORITY": "11111111111111111111111111111110",
-                    "TRG_ENABLE": "00000000000000000000000000000001",
-                    "TRG_POLARITY": "1",
-                    "TRG_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "_witness_.check_apb_timer_formal_sv_81_assert_68",
-                  "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_81_assert_68",
-                    "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:81.17-81.45"
-                  },
-                  "parameters": {
-                    "ARGS_WIDTH": "00000000000000000000000000000000",
-                    "FLAVOR": "assert",
-                    "FORMAT": true,
-                    "PRIORITY": "11111111111111111111111111111101",
                     "TRG_ENABLE": "00000000000000000000000000000001",
                     "TRG_POLARITY": "1",
                     "TRG_WIDTH": "00000000000000000000000000000001"
@@ -1627,58 +2359,7 @@
                   "attributes": {
                     "hdlname": "_witness_ check_apb_timer_formal_sv_83_assert_71",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:83.17-83.46"
-                  },
-                  "parameters": {
-                    "ARGS_WIDTH": "00000000000000000000000000000000",
-                    "FLAVOR": "assert",
-                    "FORMAT": true,
-                    "PRIORITY": "11111111111111111111111111111100",
-                    "TRG_ENABLE": "00000000000000000000000000000001",
-                    "TRG_POLARITY": "1",
-                    "TRG_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "_witness_.check_apb_timer_formal_sv_85_assert_74",
-                  "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_85_assert_74",
-                    "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:85.17-85.46"
-                  },
-                  "parameters": {
-                    "ARGS_WIDTH": "00000000000000000000000000000000",
-                    "FLAVOR": "assert",
-                    "FORMAT": true,
-                    "PRIORITY": "11111111111111111111111111111011",
-                    "TRG_ENABLE": "00000000000000000000000000000001",
-                    "TRG_POLARITY": "1",
-                    "TRG_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "_witness_.check_apb_timer_formal_sv_87_assert_76",
-                  "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_87_assert_76",
-                    "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:87.17-87.45"
-                  },
-                  "parameters": {
-                    "ARGS_WIDTH": "00000000000000000000000000000000",
-                    "FLAVOR": "assert",
-                    "FORMAT": true,
-                    "PRIORITY": "11111111111111111111111111111010",
-                    "TRG_ENABLE": "00000000000000000000000000000001",
-                    "TRG_POLARITY": "1",
-                    "TRG_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "_witness_.check_apb_timer_formal_sv_94_assert_88",
-                  "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_94_assert_88",
-                    "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:94.13-94.54"
+                    "src": "apb_timer_formal.sv:83.17-83.52"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1691,11 +2372,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_97_assert_93",
+                  "name": "_witness_.check_apb_timer_formal_sv_85_assert_73",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_97_assert_93",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_85_assert_73",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:97.17-97.62"
+                    "src": "apb_timer_formal.sv:85.17-85.53"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1708,11 +2389,11 @@
                   }
                 },
                 {
-                  "name": "_witness_.check_apb_timer_formal_sv_99_assert_97",
+                  "name": "_witness_.check_apb_timer_formal_sv_88_assert_76",
                   "attributes": {
-                    "hdlname": "_witness_ check_apb_timer_formal_sv_99_assert_97",
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_88_assert_76",
                     "keep": "00000000000000000000000000000001",
-                    "src": "apb_timer_formal.sv:99.17-99.35"
+                    "src": "apb_timer_formal.sv:88.17-88.45"
                   },
                   "parameters": {
                     "ARGS_WIDTH": "00000000000000000000000000000000",
@@ -1723,376 +2404,323 @@
                     "TRG_POLARITY": "1",
                     "TRG_WIDTH": "00000000000000000000000000000001"
                   }
-                }
-            ]
-          },
-          {
-            "type": "$logic_and",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
                 },
                 {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:107$logic_and$108",
+                  "name": "_witness_.check_apb_timer_formal_sv_90_assert_79",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:107.19-107.53"
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_90_assert_79",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:90.17-90.46"
                   },
                   "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111100",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:107$logic_and$109",
+                  "name": "_witness_.check_apb_timer_formal_sv_92_assert_82",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:107.19-107.70"
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_92_assert_82",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:92.17-92.46"
                   },
                   "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111011",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:109$logic_and$113",
+                  "name": "_witness_.check_apb_timer_formal_sv_94_assert_84",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:109.19-109.38"
+                    "hdlname": "_witness_ check_apb_timer_formal_sv_94_assert_84",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:94.17-94.45"
                   },
                   "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:109$logic_and$114",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:109.19-109.51"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:110$logic_and$116",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:110.19-110.39"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:110$logic_and$118",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:110.19-110.62"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:115$logic_and$125",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:115.12-115.62"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:115$logic_and$127",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:115.12-115.93"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:115$logic_and$129",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:115.12-116.20"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:20$logic_and$19",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:20.20-20.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:21$logic_and$20",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:21.19-21.34"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:21$logic_and$22",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:21.19-21.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:74$logic_and$61",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:74.13-74.33"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:93$logic_and$87",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:93.12-93.41"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:95$logic_and$91",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:95.17-95.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111010",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
                   }
                 }
             ]
           },
           {
-            "type": "$logic_not",
+            "type": "$dff",
             "ports": [
                 {
-                  "name": "A",
+                  "name": "CLK",
                   "direction": "io",
-                  "range": [4, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
                   "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$apb_timer_formal.sv:107$eq$107",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:107.35-107.53"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:115$logic_not$123",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:115.12-115.16"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:116$logic_not$128",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:116.9-116.20"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:21$logic_not$21",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:21.38-21.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:40$eq$135",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:40.16-40.33"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000011",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:68$logic_not$50",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:68.13-68.18"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:68$logic_not$51",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:68.22-68.30"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:69$eq$54",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:69.20-69.34"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:75$eq$62",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:75.16-75.36"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:80$eq$67",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:80.16-80.29"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:93$logic_not$86",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:93.20-93.41"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$eq",
-            "ports": [
-                {
-                  "name": "A",
+                  "name": "D",
                   "direction": "io",
                   "range": [8, 0]
                 },
                 {
-                  "name": "B",
+                  "name": "Q",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$389",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:143.5-147.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$390",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:143.5-147.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$391",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:143.5-147.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$392",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:129.5-140.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$393",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:129.5-140.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$394",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:129.5-140.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procdff$395",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:129.5-140.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$396",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:129.5-140.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procdff$397",
+                  "attributes": {
+                    "always_ff": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:111.5-126.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$398",
+                  "attributes": {
+                    "always_ff": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:111.5-126.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$399",
+                  "attributes": {
+                    "always_ff": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:111.5-126.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$400",
+                  "attributes": {
+                    "always_ff": "00000000000000000000000000000001",
+                    "src": "apb_timer_formal.sv:111.5-126.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$401",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:99.5-108.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$402",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:99.5-108.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$403",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:99.5-108.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$404",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:99.5-108.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$405",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:99.5-108.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$406",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:99.5-108.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$407",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:80.5-96.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$408",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:80.5-96.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procdff$409",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:80.5-96.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$410",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:80.5-96.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$411",
+                  "attributes": {
+                    "src": "apb_timer_formal.sv:47.5-60.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
                   "direction": "io",
-                  "range": [5, 0]
+                  "range": [0, 0]
                 },
                 {
                   "name": "Y",
@@ -2102,210 +2730,109 @@
             ],
             "cells": [
                 {
-                  "name": "$apb_timer_formal.sv:106$eq$105",
+                  "name": "$apb_timer_formal.sv:42$eq$160",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:106.19-106.39"
+                    "src": "apb_timer_formal.sv:42.16-42.36"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000101",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:109$eq$112",
+                  "name": "$apb_timer_formal.sv:43$eq$162",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:109.27-109.38"
+                    "src": "apb_timer_formal.sv:43.16-43.36"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000100",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:110$eq$117",
+                  "name": "$apb_timer_formal.sv:44$eq$164",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:110.43-110.62"
+                    "src": "apb_timer_formal.sv:44.16-44.37"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000100",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
                 },
                 {
-                  "name": "$apb_timer_formal.sv:115$eq$124",
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$apb_timer_formal.sv:58$logic_or$46",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:115.21-115.61"
+                    "src": "apb_timer_formal.sv:58.20-58.73"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:117$eq$131",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:117.19-117.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:76$eq$64",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:76.24-76.51"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:78$eq$66",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:78.24-78.52"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:81$eq$69",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:81.24-81.44"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:82$eq$70",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:82.21-82.34"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000011",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:83$eq$72",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:83.24-83.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:84$eq$73",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:84.21-84.34"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000100",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000100",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:85$eq$75",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:85.24-85.45"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$apb_timer_formal.sv:87$eq$77",
-                  "attributes": {
-                    "src": "apb_timer_formal.sv:87.24-87.44"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "B_SIGNED": "00000000000000000000000000000000",
                     "B_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:94$eq$89",
+                  "name": "$apb_timer_formal.sv:58$logic_or$48",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:94.20-94.53"
+                    "src": "apb_timer_formal.sv:58.20-58.92"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
+                    "B_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:97$eq$95",
+                  "name": "$apb_timer_formal.sv:64$logic_or$53",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:97.24-97.61"
+                    "src": "apb_timer_formal.sv:64.20-64.50"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001001",
+                    "B_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$apb_timer_formal.sv:98$eq$96",
+                  "name": "$apb_timer_formal.sv:75$logic_or$60",
                   "attributes": {
-                    "src": "apb_timer_formal.sv:98.21-98.61"
+                    "src": "apb_timer_formal.sv:75.13-75.30"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
+                    "A_WIDTH": "00000000000000000000000000000001",
                     "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
+                    "B_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 }
@@ -2316,7 +2843,7 @@
             "keep": "00000000000000000000000000000001",
             "hdlname": "apb_timer_formal",
             "top": "00000000000000000000000000000001",
-            "src": "apb_timer_formal.sv:1.1-120.10"
+            "src": "apb_timer_formal.sv:1.1-158.10"
         }
       },
       {
@@ -2348,7 +2875,7 @@
             ],
             "cells": [
                 {
-                  "name": "$procmux$148",
+                  "name": "$procmux$177",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:16.22-16.36|apb_timer_design2.sv:16.18-22.12"
@@ -2358,7 +2885,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$151",
+                  "name": "$procmux$180",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:14.22-14.29|apb_timer_design2.sv:14.18-22.12"
@@ -2368,7 +2895,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$154",
+                  "name": "$procmux$183",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:16.22-16.36|apb_timer_design2.sv:16.18-22.12"
@@ -2378,7 +2905,7 @@
                   }
                 },
                 {
-                  "name": "$procmux$157",
+                  "name": "$procmux$186",
                   "attributes": {
                     "full_case": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:14.22-14.29|apb_timer_design2.sv:14.18-22.12"
@@ -2415,7 +2942,7 @@
             ],
             "cells": [
                 {
-                  "name": "$procdff$292",
+                  "name": "$procdff$379",
                   "attributes": {
                     "always_ff": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:10.5-23.8"
@@ -2428,7 +2955,7 @@
                   }
                 },
                 {
-                  "name": "$procdff$295",
+                  "name": "$procdff$382",
                   "attributes": {
                     "always_ff": "00000000000000000000000000000001",
                     "src": "apb_timer_design2.sv:10.5-23.8"
@@ -2463,7 +2990,7 @@
             ],
             "cells": [
                 {
-                  "name": "$apb_timer_design2.sv:20$add$146",
+                  "name": "$apb_timer_design2.sv:20$add$175",
                   "attributes": {
                     "src": "apb_timer_design2.sv:20.22-20.34"
                   },
@@ -2498,7 +3025,7 @@
             ],
             "cells": [
                 {
-                  "name": "$apb_timer_design2.sv:16$eq$145",
+                  "name": "$apb_timer_design2.sv:16$eq$174",
                   "attributes": {
                     "src": "apb_timer_design2.sv:16.22-16.36"
                   },

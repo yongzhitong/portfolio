@@ -28,26 +28,35 @@ module testbench(input clock, output reg genclock);
 `ifndef VERILATOR
     #1;
 `endif
-    // UUT.$auto$async2sync.\cc:107:execute$326  = 1'b0;
-    // UUT.$auto$async2sync.\cc:107:execute$350  = 1'b0;
-    // UUT.$auto$async2sync.\cc:107:execute$356  = 1'b0;
-    // UUT.$auto$async2sync.\cc:116:execute$330  = 1'b1;
-    // UUT.$auto$async2sync.\cc:116:execute$336  = 1'b1;
-    // UUT.$auto$async2sync.\cc:116:execute$342  = 1'b1;
-    // UUT.$auto$async2sync.\cc:116:execute$348  = 1'b1;
-    // UUT.$auto$async2sync.\cc:116:execute$354  = 1'b1;
-    // UUT.$auto$async2sync.\cc:116:execute$360  = 1'b1;
-    UUT._witness_.anyinit_procdff_302 = 8'b00000000;
-    UUT._witness_.anyinit_procdff_303 = 8'b00000000;
-    UUT._witness_.anyinit_procdff_304 = 8'b00000000;
-    UUT._witness_.anyinit_procdff_305 = 1'b0;
-    UUT._witness_.anyinit_procdff_306 = 4'b0000;
-    UUT._witness_.anyinit_procdff_307 = 1'b0;
-    UUT._witness_.anyinit_procdff_308 = 4'b0000;
-    UUT.dut._witness_.anyinit_procdff_298 = 8'b00000000;
-    UUT.dut._witness_.anyinit_procdff_301 = 8'b00000000;
-    UUT.dut.timer_inst._witness_.anyinit_procdff_292 = 8'b00000000;
-    UUT.dut.timer_inst._witness_.anyinit_procdff_295 = 1'b0;
+    // UUT.$auto$async2sync.\cc:107:execute$478  = 1'b0;
+    // UUT.$auto$async2sync.\cc:107:execute$484  = 1'b0;
+    // UUT.$auto$async2sync.\cc:107:execute$490  = 1'b0;
+    // UUT.$auto$async2sync.\cc:107:execute$496  = 1'b0;
+    // UUT.$auto$async2sync.\cc:116:execute$440  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$446  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$452  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$464  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$470  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$476  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$482  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$488  = 1'b1;
+    // UUT.$auto$async2sync.\cc:116:execute$494  = 1'b1;
+    UUT._witness_.anyinit_procdff_389 = 8'b00000000;
+    UUT._witness_.anyinit_procdff_390 = 8'b00000000;
+    UUT._witness_.anyinit_procdff_391 = 8'b00000000;
+    UUT._witness_.anyinit_procdff_392 = 8'b00000000;
+    UUT._witness_.anyinit_procdff_393 = 1'b0;
+    UUT._witness_.anyinit_procdff_394 = 4'b0000;
+    UUT._witness_.anyinit_procdff_395 = 1'b0;
+    UUT._witness_.anyinit_procdff_396 = 4'b0000;
+    UUT._witness_.anyinit_procdff_400 = 8'b00000000;
+    UUT.dut._witness_.anyinit_procdff_385 = 8'b00000000;
+    UUT.dut._witness_.anyinit_procdff_388 = 8'b00000000;
+    UUT.dut.timer_inst._witness_.anyinit_procdff_379 = 8'b00000000;
+    UUT.dut.timer_inst._witness_.anyinit_procdff_382 = 1'b0;
+    UUT.limit_change = 1'b0;
+    UUT.limit_larger = 1'b0;
+    UUT.limit_smaller = 1'b0;
     UUT.rst_count = 3'b000;
 
     // state 0
@@ -73,15 +82,7 @@ module testbench(input clock, output reg genclock);
     if (cycle == 4) begin
     end
 
-    // state 6
-    if (cycle == 5) begin
-    end
-
-    // state 7
-    if (cycle == 6) begin
-    end
-
-    genclock <= cycle < 7;
+    genclock <= cycle < 5;
     cycle <= cycle + 1;
   end
 endmodule

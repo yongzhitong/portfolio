@@ -3,17 +3,17 @@
 (declare-sort |timer2_s| 0)
 (declare-fun |timer2_is| (|timer2_s|) Bool)
 ; yosys-smt2-anyinit timer2#0 8 apb_timer_design2.sv:10.5-23.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_292"], "smtname": 0, "smtoffset": 0, "type": "init", "width": 8}
-(declare-fun |timer2#0| (|timer2_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_292
-; yosys-smt2-register _witness_.anyinit_procdff_292 8
-; yosys-smt2-wire _witness_.anyinit_procdff_292 8
-(define-fun |timer2_n _witness_.anyinit_procdff_292| ((state |timer2_s|)) (_ BitVec 8) (|timer2#0| state))
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_379"], "smtname": 0, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |timer2#0| (|timer2_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_379
+; yosys-smt2-register _witness_.anyinit_procdff_379 8
+; yosys-smt2-wire _witness_.anyinit_procdff_379 8
+(define-fun |timer2_n _witness_.anyinit_procdff_379| ((state |timer2_s|)) (_ BitVec 8) (|timer2#0| state))
 ; yosys-smt2-anyinit timer2#1 1 apb_timer_design2.sv:10.5-23.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_295"], "smtname": 1, "smtoffset": 0, "type": "init", "width": 1}
-(declare-fun |timer2#1| (|timer2_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_295
-; yosys-smt2-register _witness_.anyinit_procdff_295 1
-; yosys-smt2-wire _witness_.anyinit_procdff_295 1
-(define-fun |timer2_n _witness_.anyinit_procdff_295| ((state |timer2_s|)) Bool (= ((_ extract 0 0) (|timer2#1| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_382"], "smtname": 1, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |timer2#1| (|timer2_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_382
+; yosys-smt2-register _witness_.anyinit_procdff_382 1
+; yosys-smt2-wire _witness_.anyinit_procdff_382 1
+(define-fun |timer2_n _witness_.anyinit_procdff_382| ((state |timer2_s|)) Bool (= ((_ extract 0 0) (|timer2#1| state)) #b1))
 (declare-fun |timer2#2| (|timer2_s|) Bool) ; \clk
 ; yosys-smt2-input clk 1
 ; yosys-smt2-wire clk 1
@@ -44,17 +44,17 @@
 ; yosys-smt2-wire rst 1
 ; yosys-smt2-witness {"offset": 0, "path": ["\\rst"], "smtname": "rst", "smtoffset": 0, "type": "input", "width": 1}
 (define-fun |timer2_n rst| ((state |timer2_s|)) Bool (= ((_ extract 0 0) (|timer2#3| state)) #b1))
-(define-fun |timer2#8| ((state |timer2_s|)) (_ BitVec 1) (bvnot (ite (|timer2#2| state) #b1 #b0))) ; $auto$rtlil.cc:3207:Not$638
-; yosys-smt2-assume 0 $auto$formalff.cc:987:execute$639
-(define-fun |timer2_u 0| ((state |timer2_s|)) Bool (or (= ((_ extract 0 0) (|timer2#8| state)) #b1) (not true))) ; $auto$formalff.cc:987:execute$639
-(define-fun |timer2#9| ((state |timer2_s|)) Bool (= (|timer2#4| state) (|timer2#7| state))) ; $apb_timer_design2.sv:16$eq$145_Y
-(define-fun |timer2#10| ((state |timer2_s|)) (_ BitVec 1) (ite (|timer2#9| state) #b1 #b0)) ; $procmux$148_Y
+(define-fun |timer2#8| ((state |timer2_s|)) (_ BitVec 1) (bvnot (ite (|timer2#2| state) #b1 #b0))) ; $auto$rtlil.cc:3207:Not$831
+; yosys-smt2-assume 0 $auto$formalff.cc:987:execute$832
+(define-fun |timer2_u 0| ((state |timer2_s|)) Bool (or (= ((_ extract 0 0) (|timer2#8| state)) #b1) (not true))) ; $auto$formalff.cc:987:execute$832
+(define-fun |timer2#9| ((state |timer2_s|)) Bool (= (|timer2#4| state) (|timer2#7| state))) ; $apb_timer_design2.sv:16$eq$174_Y
+(define-fun |timer2#10| ((state |timer2_s|)) (_ BitVec 1) (ite (|timer2#9| state) #b1 #b0)) ; $procmux$177_Y
 (define-fun |timer2#11| ((state |timer2_s|)) (_ BitVec 1) (ite (|timer2#5| state) (|timer2#10| state) #b0)) ; $0\flag[0:0]
-(define-fun |timer2#12| ((state |timer2_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|timer2#3| state)) #b1) #b0 (|timer2#11| state))) ; $auto$rtlil.cc:3343:Mux$592
-(define-fun |timer2#13| ((state |timer2_s|)) (_ BitVec 8) (bvadd (|timer2#4| state) #b00000001)) ; $apb_timer_design2.sv:20$add$146_Y
-(define-fun |timer2#14| ((state |timer2_s|)) (_ BitVec 8) (ite (|timer2#9| state) #b00000000 (|timer2#13| state))) ; $procmux$154_Y
+(define-fun |timer2#12| ((state |timer2_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|timer2#3| state)) #b1) #b0 (|timer2#11| state))) ; $auto$rtlil.cc:3343:Mux$783
+(define-fun |timer2#13| ((state |timer2_s|)) (_ BitVec 8) (bvadd (|timer2#4| state) #b00000001)) ; $apb_timer_design2.sv:20$add$175_Y
+(define-fun |timer2#14| ((state |timer2_s|)) (_ BitVec 8) (ite (|timer2#9| state) #b00000000 (|timer2#13| state))) ; $procmux$183_Y
 (define-fun |timer2#15| ((state |timer2_s|)) (_ BitVec 8) (ite (|timer2#5| state) (|timer2#14| state) (|timer2#4| state))) ; $0\count[7:0]
-(define-fun |timer2#16| ((state |timer2_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|timer2#3| state)) #b1) #b00000000 (|timer2#15| state))) ; $auto$rtlil.cc:3343:Mux$594
+(define-fun |timer2#16| ((state |timer2_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|timer2#3| state)) #b1) #b00000000 (|timer2#15| state))) ; $auto$rtlil.cc:3343:Mux$785
 (define-fun |timer2_a| ((state |timer2_s|)) Bool true)
 (define-fun |timer2_u| ((state |timer2_s|)) Bool 
   (|timer2_u 0| state)
@@ -62,24 +62,24 @@
 (define-fun |timer2_i| ((state |timer2_s|)) Bool true)
 (define-fun |timer2_h| ((state |timer2_s|)) Bool true)
 (define-fun |timer2_t| ((state |timer2_s|) (next_state |timer2_s|)) Bool (and
-  (= (|timer2#12| state) (|timer2#1| next_state)) ; $procdff$295 \_witness_.anyinit_procdff_295
-  (= (|timer2#16| state) (|timer2#0| next_state)) ; $procdff$292 \_witness_.anyinit_procdff_292
+  (= (|timer2#12| state) (|timer2#1| next_state)) ; $procdff$382 \_witness_.anyinit_procdff_382
+  (= (|timer2#16| state) (|timer2#0| next_state)) ; $procdff$379 \_witness_.anyinit_procdff_379
 )) ; end of module timer2
 ; yosys-smt2-module apb_slave2
 (declare-sort |apb_slave2_s| 0)
 (declare-fun |apb_slave2_is| (|apb_slave2_s|) Bool)
 ; yosys-smt2-anyinit apb_slave2#0 8 apb_timer_design2.sv:63.5-81.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_298"], "smtname": 0, "smtoffset": 0, "type": "init", "width": 8}
-(declare-fun |apb_slave2#0| (|apb_slave2_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_298
-; yosys-smt2-register _witness_.anyinit_procdff_298 8
-; yosys-smt2-wire _witness_.anyinit_procdff_298 8
-(define-fun |apb_slave2_n _witness_.anyinit_procdff_298| ((state |apb_slave2_s|)) (_ BitVec 8) (|apb_slave2#0| state))
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_385"], "smtname": 0, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_slave2#0| (|apb_slave2_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_385
+; yosys-smt2-register _witness_.anyinit_procdff_385 8
+; yosys-smt2-wire _witness_.anyinit_procdff_385 8
+(define-fun |apb_slave2_n _witness_.anyinit_procdff_385| ((state |apb_slave2_s|)) (_ BitVec 8) (|apb_slave2#0| state))
 ; yosys-smt2-anyinit apb_slave2#1 8 apb_timer_design2.sv:63.5-81.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_301"], "smtname": 1, "smtoffset": 0, "type": "init", "width": 8}
-(declare-fun |apb_slave2#1| (|apb_slave2_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_301
-; yosys-smt2-register _witness_.anyinit_procdff_301 8
-; yosys-smt2-wire _witness_.anyinit_procdff_301 8
-(define-fun |apb_slave2_n _witness_.anyinit_procdff_301| ((state |apb_slave2_s|)) (_ BitVec 8) (|apb_slave2#1| state))
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_388"], "smtname": 1, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_slave2#1| (|apb_slave2_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_388
+; yosys-smt2-register _witness_.anyinit_procdff_388 8
+; yosys-smt2-wire _witness_.anyinit_procdff_388 8
+(define-fun |apb_slave2_n _witness_.anyinit_procdff_388| ((state |apb_slave2_s|)) (_ BitVec 8) (|apb_slave2#1| state))
 (declare-fun |apb_slave2#2| (|apb_slave2_s|) Bool) ; \clk
 ; yosys-smt2-input clk 1
 ; yosys-smt2-wire clk 1
@@ -125,16 +125,16 @@
 ; yosys-smt2-wire penable 1
 ; yosys-smt2-witness {"offset": 0, "path": ["\\penable"], "smtname": "penable", "smtoffset": 0, "type": "input", "width": 1}
 (define-fun |apb_slave2_n penable| ((state |apb_slave2_s|)) Bool (|apb_slave2#9| state))
-(define-fun |apb_slave2#10| ((state |apb_slave2_s|)) Bool (= (|apb_slave2#8| state) #b1100)) ; $procmux$162_CMP
-(define-fun |apb_slave2#11| ((state |apb_slave2_s|)) Bool (= (|apb_slave2#8| state) #b1000)) ; $procmux$163_CMP
-(define-fun |apb_slave2#12| ((state |apb_slave2_s|)) Bool (= (|apb_slave2#8| state) #b0100)) ; $procmux$164_CMP
-(define-fun |apb_slave2#13| ((state |apb_slave2_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_slave2#8| state)) #b1) (= ((_ extract 1 1) (|apb_slave2#8| state)) #b1) (= ((_ extract 2 2) (|apb_slave2#8| state)) #b1) (= ((_ extract 3 3) (|apb_slave2#8| state)) #b1)))) ; $procmux$165_CMP
+(define-fun |apb_slave2#10| ((state |apb_slave2_s|)) Bool (= (|apb_slave2#8| state) #b1100)) ; $procmux$191_CMP
+(define-fun |apb_slave2#11| ((state |apb_slave2_s|)) Bool (= (|apb_slave2#8| state) #b1000)) ; $procmux$192_CMP
+(define-fun |apb_slave2#12| ((state |apb_slave2_s|)) Bool (= (|apb_slave2#8| state) #b0100)) ; $procmux$193_CMP
+(define-fun |apb_slave2#13| ((state |apb_slave2_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_slave2#8| state)) #b1) (= ((_ extract 1 1) (|apb_slave2#8| state)) #b1) (= ((_ extract 2 2) (|apb_slave2#8| state)) #b1) (= ((_ extract 3 3) (|apb_slave2#8| state)) #b1)))) ; $procmux$194_CMP
 (define-fun |apb_slave2#14| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#13| state) (|apb_slave2#6| state) (ite (|apb_slave2#12| state) (|apb_slave2#7| state) (ite (|apb_slave2#11| state) (|apb_slave2#3| state) (ite (|apb_slave2#10| state) (concat #b0000000 (ite (|apb_slave2#4| state) #b1 #b0)) #b00000000))))) ; $2\prdata[7:0]
 (declare-fun |apb_slave2#15| (|apb_slave2_s|) Bool) ; \psel
-(define-fun |apb_slave2#16| ((state |apb_slave2_s|)) Bool (and (or  (|apb_slave2#15| state) false) (or  (|apb_slave2#9| state) false))) ; $apb_timer_design2.sv:67$logic_and$137_Y
+(define-fun |apb_slave2#16| ((state |apb_slave2_s|)) Bool (and (or  (|apb_slave2#15| state) false) (or  (|apb_slave2#9| state) false))) ; $apb_timer_design2.sv:67$logic_and$166_Y
 (declare-fun |apb_slave2#17| (|apb_slave2_s|) Bool) ; \pwrite
-(define-fun |apb_slave2#18| ((state |apb_slave2_s|)) Bool (not (or  (|apb_slave2#17| state) false))) ; $apb_timer_design2.sv:91$logic_not$141_Y
-(define-fun |apb_slave2#19| ((state |apb_slave2_s|)) Bool (and (or  (|apb_slave2#16| state) false) (or  (|apb_slave2#18| state) false))) ; $apb_timer_design2.sv:91$logic_and$142_Y
+(define-fun |apb_slave2#18| ((state |apb_slave2_s|)) Bool (not (or  (|apb_slave2#17| state) false))) ; $apb_timer_design2.sv:91$logic_not$170_Y
+(define-fun |apb_slave2#19| ((state |apb_slave2_s|)) Bool (and (or  (|apb_slave2#16| state) false) (or  (|apb_slave2#18| state) false))) ; $apb_timer_design2.sv:91$logic_and$171_Y
 (define-fun |apb_slave2#20| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#19| state) (|apb_slave2#14| state) #b00000000)) ; \prdata
 ; yosys-smt2-output prdata 8
 ; yosys-smt2-wire prdata 8
@@ -156,16 +156,16 @@
 ; yosys-smt2-wire rst 1
 ; yosys-smt2-witness {"offset": 0, "path": ["\\rst"], "smtname": "rst", "smtoffset": 0, "type": "input", "width": 1}
 (define-fun |apb_slave2_n rst| ((state |apb_slave2_s|)) Bool (= ((_ extract 0 0) (|apb_slave2#5| state)) #b1))
-(define-fun |apb_slave2#22| ((state |apb_slave2_s|)) (_ BitVec 1) (bvnot (ite (|apb_slave2#2| state) #b1 #b0))) ; $auto$rtlil.cc:3207:Not$632
-; yosys-smt2-assume 0 $auto$formalff.cc:987:execute$633
-(define-fun |apb_slave2_u 0| ((state |apb_slave2_s|)) Bool (or (= ((_ extract 0 0) (|apb_slave2#22| state)) #b1) (not true))) ; $auto$formalff.cc:987:execute$633
-(define-fun |apb_slave2#23| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#12| state) (|apb_slave2#21| state) (|apb_slave2#7| state))) ; $procmux$172_Y
-(define-fun |apb_slave2#24| ((state |apb_slave2_s|)) Bool (and (or  (|apb_slave2#16| state) false) (or  (|apb_slave2#17| state) false))) ; $apb_timer_design2.sv:67$logic_and$138_Y
+(define-fun |apb_slave2#22| ((state |apb_slave2_s|)) (_ BitVec 1) (bvnot (ite (|apb_slave2#2| state) #b1 #b0))) ; $auto$rtlil.cc:3207:Not$825
+; yosys-smt2-assume 0 $auto$formalff.cc:987:execute$826
+(define-fun |apb_slave2_u 0| ((state |apb_slave2_s|)) Bool (or (= ((_ extract 0 0) (|apb_slave2#22| state)) #b1) (not true))) ; $auto$formalff.cc:987:execute$826
+(define-fun |apb_slave2#23| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#12| state) (|apb_slave2#21| state) (|apb_slave2#7| state))) ; $procmux$201_Y
+(define-fun |apb_slave2#24| ((state |apb_slave2_s|)) Bool (and (or  (|apb_slave2#16| state) false) (or  (|apb_slave2#17| state) false))) ; $apb_timer_design2.sv:67$logic_and$167_Y
 (define-fun |apb_slave2#25| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#24| state) (|apb_slave2#23| state) (|apb_slave2#7| state))) ; $0\limit_reg[7:0]
-(define-fun |apb_slave2#26| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|apb_slave2#5| state)) #b1) #b00000000 (|apb_slave2#25| state))) ; $auto$rtlil.cc:3343:Mux$588
-(define-fun |apb_slave2#27| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#13| state) (|apb_slave2#21| state) (|apb_slave2#6| state))) ; $procmux$178_Y
+(define-fun |apb_slave2#26| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|apb_slave2#5| state)) #b1) #b00000000 (|apb_slave2#25| state))) ; $auto$rtlil.cc:3343:Mux$779
+(define-fun |apb_slave2#27| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#13| state) (|apb_slave2#21| state) (|apb_slave2#6| state))) ; $procmux$207_Y
 (define-fun |apb_slave2#28| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (|apb_slave2#24| state) (|apb_slave2#27| state) (|apb_slave2#6| state))) ; $0\ctrl_reg[7:0]
-(define-fun |apb_slave2#29| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|apb_slave2#5| state)) #b1) #b00000000 (|apb_slave2#28| state))) ; $auto$rtlil.cc:3343:Mux$590
+(define-fun |apb_slave2#29| ((state |apb_slave2_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|apb_slave2#5| state)) #b1) #b00000000 (|apb_slave2#28| state))) ; $auto$rtlil.cc:3343:Mux$781
 (define-fun |apb_slave2_a| ((state |apb_slave2_s|)) Bool 
   (|timer2_a| (|apb_slave2_h timer_inst| state))
 )
@@ -187,253 +187,346 @@
   (|timer2_h| (|apb_slave2_h timer_inst| state))
 ))
 (define-fun |apb_slave2_t| ((state |apb_slave2_s|) (next_state |apb_slave2_s|)) Bool (and
-  (= (|apb_slave2#26| state) (|apb_slave2#1| next_state)) ; $procdff$301 \_witness_.anyinit_procdff_301
-  (= (|apb_slave2#29| state) (|apb_slave2#0| next_state)) ; $procdff$298 \_witness_.anyinit_procdff_298
+  (= (|apb_slave2#26| state) (|apb_slave2#1| next_state)) ; $procdff$388 \_witness_.anyinit_procdff_388
+  (= (|apb_slave2#29| state) (|apb_slave2#0| next_state)) ; $procdff$385 \_witness_.anyinit_procdff_385
   (|timer2_t| (|apb_slave2_h timer_inst| state) (|apb_slave2_h timer_inst| next_state))
 )) ; end of module apb_slave2
 ; yosys-smt2-module apb_timer_formal
 (declare-sort |apb_timer_formal_s| 0)
 (declare-fun |apb_timer_formal_is| (|apb_timer_formal_s|) Bool)
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$326"], "smtname": 0, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#0| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$326
-; yosys-smt2-register $auto$async2sync.cc:107:execute$326 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$326| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#0| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$330"], "smtname": 1, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#1| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$330
-; yosys-smt2-register $auto$async2sync.cc:116:execute$330 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$330| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#1| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$336"], "smtname": 2, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#2| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$336
-; yosys-smt2-register $auto$async2sync.cc:116:execute$336 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$336| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#2| state)) #b1))
-; yosys-smt2-anyinit apb_timer_formal#3 8 apb_timer_formal.sv:114.5-118.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_304"], "smtname": 3, "smtoffset": 0, "type": "init", "width": 8}
-(declare-fun |apb_timer_formal#3| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_304
-; yosys-smt2-register _witness_.anyinit_procdff_304 8
-; yosys-smt2-wire _witness_.anyinit_procdff_304 8
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_304| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#3| state))
-; yosys-smt2-anyinit apb_timer_formal#4 1 apb_timer_formal.sv:104.5-111.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_305"], "smtname": 4, "smtoffset": 0, "type": "init", "width": 1}
-(declare-fun |apb_timer_formal#4| (|apb_timer_formal_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_305
-; yosys-smt2-register _witness_.anyinit_procdff_305 1
-; yosys-smt2-wire _witness_.anyinit_procdff_305 1
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_305| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#4| state)) #b1))
-; yosys-smt2-anyinit apb_timer_formal#5 4 apb_timer_formal.sv:104.5-111.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_306"], "smtname": 5, "smtoffset": 0, "type": "init", "width": 4}
-(declare-fun |apb_timer_formal#5| (|apb_timer_formal_s|) (_ BitVec 4)) ; \_witness_.anyinit_procdff_306
-; yosys-smt2-register _witness_.anyinit_procdff_306 4
-; yosys-smt2-wire _witness_.anyinit_procdff_306 4
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_306| ((state |apb_timer_formal_s|)) (_ BitVec 4) (|apb_timer_formal#5| state))
-; yosys-smt2-anyinit apb_timer_formal#6 1 apb_timer_formal.sv:104.5-111.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_307"], "smtname": 6, "smtoffset": 0, "type": "init", "width": 1}
-(declare-fun |apb_timer_formal#6| (|apb_timer_formal_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_307
-; yosys-smt2-register _witness_.anyinit_procdff_307 1
-; yosys-smt2-wire _witness_.anyinit_procdff_307 1
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_307| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#6| state)) #b1))
-; yosys-smt2-anyinit apb_timer_formal#7 4 apb_timer_formal.sv:104.5-111.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_308"], "smtname": 7, "smtoffset": 0, "type": "init", "width": 4}
-(declare-fun |apb_timer_formal#7| (|apb_timer_formal_s|) (_ BitVec 4)) ; \_witness_.anyinit_procdff_308
-; yosys-smt2-register _witness_.anyinit_procdff_308 4
-; yosys-smt2-wire _witness_.anyinit_procdff_308 4
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_308| ((state |apb_timer_formal_s|)) (_ BitVec 4) (|apb_timer_formal#7| state))
-; yosys-smt2-anyinit apb_timer_formal#8 8 apb_timer_formal.sv:114.5-118.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_302"], "smtname": 8, "smtoffset": 0, "type": "init", "width": 8}
-(declare-fun |apb_timer_formal#8| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_302
-; yosys-smt2-register _witness_.anyinit_procdff_302 8
-; yosys-smt2-wire _witness_.anyinit_procdff_302 8
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_302| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#8| state))
-; yosys-smt2-anyinit apb_timer_formal#9 8 apb_timer_formal.sv:114.5-118.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_303"], "smtname": 9, "smtoffset": 0, "type": "init", "width": 8}
-(declare-fun |apb_timer_formal#9| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_303
-; yosys-smt2-register _witness_.anyinit_procdff_303 8
-; yosys-smt2-wire _witness_.anyinit_procdff_303 8
-(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_303| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#9| state))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$342"], "smtname": 10, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#10| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$342
-; yosys-smt2-register $auto$async2sync.cc:116:execute$342 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$342| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#10| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$348"], "smtname": 11, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#11| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$348
-; yosys-smt2-register $auto$async2sync.cc:116:execute$348 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$348| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#11| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$350"], "smtname": 12, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#12| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$350
-; yosys-smt2-register $auto$async2sync.cc:107:execute$350 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$350| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#12| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$354"], "smtname": 13, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#13| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$354
-; yosys-smt2-register $auto$async2sync.cc:116:execute$354 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$354| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#13| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$356"], "smtname": 14, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#14| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$356
-; yosys-smt2-register $auto$async2sync.cc:107:execute$356 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$356| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#14| state)) #b1))
-; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$360"], "smtname": 15, "smtoffset": 0, "type": "reg", "width": 1}
-(declare-fun |apb_timer_formal#15| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$360
-; yosys-smt2-register $auto$async2sync.cc:116:execute$360 1
-(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$360| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))
-; yosys-smt2-anyseq apb_timer_formal#16 1 $auto$setundef.cc:352:execute$609
-; yosys-smt2-witness {"offset": 0, "path": ["\\clk"], "smtname": 16, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#16| (|apb_timer_formal_s|) (_ BitVec 1)) ; \clk
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$440"], "smtname": 0, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#0| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$440
+; yosys-smt2-register $auto$async2sync.cc:116:execute$440 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$440| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#0| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$446"], "smtname": 1, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#1| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$446
+; yosys-smt2-register $auto$async2sync.cc:116:execute$446 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$446| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#1| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$452"], "smtname": 2, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#2| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$452
+; yosys-smt2-register $auto$async2sync.cc:116:execute$452 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$452| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#2| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$464"], "smtname": 3, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#3| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$464
+; yosys-smt2-register $auto$async2sync.cc:116:execute$464 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$464| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#3| state)) #b1))
+; yosys-smt2-anyinit apb_timer_formal#4 8 apb_timer_formal.sv:143.5-147.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_389"], "smtname": 4, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_timer_formal#4| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_389
+; yosys-smt2-register _witness_.anyinit_procdff_389 8
+; yosys-smt2-wire _witness_.anyinit_procdff_389 8
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_389| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#4| state))
+; yosys-smt2-anyinit apb_timer_formal#5 8 apb_timer_formal.sv:143.5-147.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_390"], "smtname": 5, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_timer_formal#5| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_390
+; yosys-smt2-register _witness_.anyinit_procdff_390 8
+; yosys-smt2-wire _witness_.anyinit_procdff_390 8
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_390| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#5| state))
+; yosys-smt2-anyinit apb_timer_formal#6 8 apb_timer_formal.sv:143.5-147.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_391"], "smtname": 6, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_timer_formal#6| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_391
+; yosys-smt2-register _witness_.anyinit_procdff_391 8
+; yosys-smt2-wire _witness_.anyinit_procdff_391 8
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_391| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#6| state))
+; yosys-smt2-anyinit apb_timer_formal#7 8 apb_timer_formal.sv:129.5-140.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_392"], "smtname": 7, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_timer_formal#7| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_392
+; yosys-smt2-register _witness_.anyinit_procdff_392 8
+; yosys-smt2-wire _witness_.anyinit_procdff_392 8
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_392| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#7| state))
+; yosys-smt2-anyinit apb_timer_formal#8 1 apb_timer_formal.sv:129.5-140.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_393"], "smtname": 8, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |apb_timer_formal#8| (|apb_timer_formal_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_393
+; yosys-smt2-register _witness_.anyinit_procdff_393 1
+; yosys-smt2-wire _witness_.anyinit_procdff_393 1
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_393| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#8| state)) #b1))
+; yosys-smt2-anyinit apb_timer_formal#9 4 apb_timer_formal.sv:129.5-140.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_394"], "smtname": 9, "smtoffset": 0, "type": "init", "width": 4}
+(declare-fun |apb_timer_formal#9| (|apb_timer_formal_s|) (_ BitVec 4)) ; \_witness_.anyinit_procdff_394
+; yosys-smt2-register _witness_.anyinit_procdff_394 4
+; yosys-smt2-wire _witness_.anyinit_procdff_394 4
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_394| ((state |apb_timer_formal_s|)) (_ BitVec 4) (|apb_timer_formal#9| state))
+; yosys-smt2-anyinit apb_timer_formal#10 1 apb_timer_formal.sv:129.5-140.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_395"], "smtname": 10, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |apb_timer_formal#10| (|apb_timer_formal_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_395
+; yosys-smt2-register _witness_.anyinit_procdff_395 1
+; yosys-smt2-wire _witness_.anyinit_procdff_395 1
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_395| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#10| state)) #b1))
+; yosys-smt2-anyinit apb_timer_formal#11 4 apb_timer_formal.sv:129.5-140.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_396"], "smtname": 11, "smtoffset": 0, "type": "init", "width": 4}
+(declare-fun |apb_timer_formal#11| (|apb_timer_formal_s|) (_ BitVec 4)) ; \_witness_.anyinit_procdff_396
+; yosys-smt2-register _witness_.anyinit_procdff_396 4
+; yosys-smt2-wire _witness_.anyinit_procdff_396 4
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_396| ((state |apb_timer_formal_s|)) (_ BitVec 4) (|apb_timer_formal#11| state))
+; yosys-smt2-anyinit apb_timer_formal#12 8 apb_timer_formal.sv:111.5-126.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_400"], "smtname": 12, "smtoffset": 0, "type": "init", "width": 8}
+(declare-fun |apb_timer_formal#12| (|apb_timer_formal_s|) (_ BitVec 8)) ; \_witness_.anyinit_procdff_400
+; yosys-smt2-register _witness_.anyinit_procdff_400 8
+; yosys-smt2-wire _witness_.anyinit_procdff_400 8
+(define-fun |apb_timer_formal_n _witness_.anyinit_procdff_400| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#12| state))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$470"], "smtname": 13, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#13| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$470
+; yosys-smt2-register $auto$async2sync.cc:116:execute$470 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$470| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#13| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$476"], "smtname": 14, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#14| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$476
+; yosys-smt2-register $auto$async2sync.cc:116:execute$476 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$476| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#14| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$478"], "smtname": 15, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#15| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$478
+; yosys-smt2-register $auto$async2sync.cc:107:execute$478 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$478| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$482"], "smtname": 16, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#16| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$482
+; yosys-smt2-register $auto$async2sync.cc:116:execute$482 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$482| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#16| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$484"], "smtname": 17, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#17| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$484
+; yosys-smt2-register $auto$async2sync.cc:107:execute$484 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$484| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#17| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$488"], "smtname": 18, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#18| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$488
+; yosys-smt2-register $auto$async2sync.cc:116:execute$488 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$488| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#18| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$490"], "smtname": 19, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#19| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$490
+; yosys-smt2-register $auto$async2sync.cc:107:execute$490 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$490| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#19| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:116:execute$494"], "smtname": 20, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#20| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:116:execute$494
+; yosys-smt2-register $auto$async2sync.cc:116:execute$494 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:116:execute$494| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#20| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["$auto$async2sync.cc:107:execute$496"], "smtname": 21, "smtoffset": 0, "type": "reg", "width": 1}
+(declare-fun |apb_timer_formal#21| (|apb_timer_formal_s|) (_ BitVec 1)) ; $auto$async2sync.cc:107:execute$496
+; yosys-smt2-register $auto$async2sync.cc:107:execute$496 1
+(define-fun |apb_timer_formal_n $auto$async2sync.cc:107:execute$496| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#21| state)) #b1))
+; yosys-smt2-anyseq apb_timer_formal#22 1 $auto$setundef.cc:352:execute$790
+; yosys-smt2-witness {"offset": 0, "path": ["\\clk"], "smtname": 22, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#22| (|apb_timer_formal_s|) (_ BitVec 1)) ; \clk
 ; yosys-smt2-wire clk 1
 ; yosys-smt2-clock clk posedge
-(define-fun |apb_timer_formal_n clk| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#16| state)) #b1))
+(define-fun |apb_timer_formal_n clk| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#22| state)) #b1))
 ; yosys-smt2-cell apb_slave2 dut
 ; yosys-smt2-witness {"path": ["\\dut"], "smtname": "dut", "type": "cell"}
-(declare-fun |apb_timer_formal#17| (|apb_timer_formal_s|) (_ BitVec 8)) ; \count_reg_o
-(declare-fun |apb_timer_formal#18| (|apb_timer_formal_s|) (_ BitVec 8)) ; \ctrl_reg_o
-(declare-fun |apb_timer_formal#19| (|apb_timer_formal_s|) Bool) ; \flag_reg_o
-(declare-fun |apb_timer_formal#20| (|apb_timer_formal_s|) (_ BitVec 8)) ; \limit_reg_o
-(declare-fun |apb_timer_formal#21| (|apb_timer_formal_s|) (_ BitVec 8)) ; \prdata
+(declare-fun |apb_timer_formal#23| (|apb_timer_formal_s|) (_ BitVec 8)) ; \count_reg_o
+(declare-fun |apb_timer_formal#24| (|apb_timer_formal_s|) (_ BitVec 8)) ; \ctrl_reg_o
+(declare-fun |apb_timer_formal#25| (|apb_timer_formal_s|) Bool) ; \flag_reg_o
+(declare-fun |apb_timer_formal#26| (|apb_timer_formal_s|) (_ BitVec 8)) ; \limit_reg_o
+(declare-fun |apb_timer_formal#27| (|apb_timer_formal_s|) (_ BitVec 8)) ; \prdata
 (declare-fun |apb_timer_formal_h dut| (|apb_timer_formal_s|) |apb_slave2_s|)
 ; yosys-smt2-wire count_reg_o 8
-(define-fun |apb_timer_formal_n count_reg_o| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#17| state))
+(define-fun |apb_timer_formal_n count_reg_o| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#23| state))
 ; yosys-smt2-wire ctrl_reg_o 8
-(define-fun |apb_timer_formal_n ctrl_reg_o| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#18| state))
+(define-fun |apb_timer_formal_n ctrl_reg_o| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#24| state))
 ; yosys-smt2-wire flag_reg_o 1
-(define-fun |apb_timer_formal_n flag_reg_o| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal#19| state))
+(define-fun |apb_timer_formal_n flag_reg_o| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal#25| state))
+; yosys-smt2-anyinit apb_timer_formal#28 1 apb_timer_formal.sv:111.5-126.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\limit_change"], "smtname": 28, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |apb_timer_formal#28| (|apb_timer_formal_s|) (_ BitVec 1)) ; \limit_change
+; yosys-smt2-register limit_change 1
+; yosys-smt2-wire limit_change 1
+(define-fun |apb_timer_formal_n limit_change| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#28| state)) #b1))
+; yosys-smt2-anyinit apb_timer_formal#29 1 apb_timer_formal.sv:111.5-126.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\limit_larger"], "smtname": 29, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |apb_timer_formal#29| (|apb_timer_formal_s|) (_ BitVec 1)) ; \limit_larger
+; yosys-smt2-register limit_larger 1
+; yosys-smt2-wire limit_larger 1
+(define-fun |apb_timer_formal_n limit_larger| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#29| state)) #b1))
 ; yosys-smt2-wire limit_reg_o 8
-(define-fun |apb_timer_formal_n limit_reg_o| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#20| state))
-; yosys-smt2-anyseq apb_timer_formal#22 1 $auto$setundef.cc:352:execute$625
-; yosys-smt2-witness {"offset": 0, "path": ["\\paddr"], "smtname": 22, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#22| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [0]
-; yosys-smt2-anyseq apb_timer_formal#23 1 $auto$setundef.cc:352:execute$605
-; yosys-smt2-witness {"offset": 1, "path": ["\\paddr"], "smtname": 23, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#23| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [1]
-; yosys-smt2-anyseq apb_timer_formal#24 1 $auto$setundef.cc:352:execute$619
-; yosys-smt2-witness {"offset": 2, "path": ["\\paddr"], "smtname": 24, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#24| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [2]
-; yosys-smt2-anyseq apb_timer_formal#25 1 $auto$setundef.cc:352:execute$607
-; yosys-smt2-witness {"offset": 3, "path": ["\\paddr"], "smtname": 25, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#25| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [3]
+(define-fun |apb_timer_formal_n limit_reg_o| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#26| state))
+; yosys-smt2-anyinit apb_timer_formal#30 1 apb_timer_formal.sv:111.5-126.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\limit_smaller"], "smtname": 30, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |apb_timer_formal#30| (|apb_timer_formal_s|) (_ BitVec 1)) ; \limit_smaller
+; yosys-smt2-register limit_smaller 1
+; yosys-smt2-wire limit_smaller 1
+(define-fun |apb_timer_formal_n limit_smaller| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#30| state)) #b1))
+; yosys-smt2-anyseq apb_timer_formal#31 1 $auto$setundef.cc:352:execute$806
+; yosys-smt2-witness {"offset": 0, "path": ["\\paddr"], "smtname": 31, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#31| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [0]
+; yosys-smt2-anyseq apb_timer_formal#32 1 $auto$setundef.cc:352:execute$796
+; yosys-smt2-witness {"offset": 1, "path": ["\\paddr"], "smtname": 32, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#32| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [1]
+; yosys-smt2-anyseq apb_timer_formal#33 1 $auto$setundef.cc:352:execute$818
+; yosys-smt2-witness {"offset": 2, "path": ["\\paddr"], "smtname": 33, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#33| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [2]
+; yosys-smt2-anyseq apb_timer_formal#34 1 $auto$setundef.cc:352:execute$810
+; yosys-smt2-witness {"offset": 3, "path": ["\\paddr"], "smtname": 34, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#34| (|apb_timer_formal_s|) (_ BitVec 1)) ; \paddr [3]
 ; yosys-smt2-wire paddr 4
-(define-fun |apb_timer_formal_n paddr| ((state |apb_timer_formal_s|)) (_ BitVec 4) (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))))
-; yosys-smt2-anyseq apb_timer_formal#26 1 $auto$setundef.cc:352:execute$603
-; yosys-smt2-witness {"offset": 0, "path": ["\\penable"], "smtname": 26, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#26| (|apb_timer_formal_s|) (_ BitVec 1)) ; \penable
+(define-fun |apb_timer_formal_n paddr| ((state |apb_timer_formal_s|)) (_ BitVec 4) (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))))
+; yosys-smt2-anyseq apb_timer_formal#35 1 $auto$setundef.cc:352:execute$804
+; yosys-smt2-witness {"offset": 0, "path": ["\\penable"], "smtname": 35, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#35| (|apb_timer_formal_s|) (_ BitVec 1)) ; \penable
 ; yosys-smt2-wire penable 1
-(define-fun |apb_timer_formal_n penable| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#26| state)) #b1))
+(define-fun |apb_timer_formal_n penable| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1))
 ; yosys-smt2-wire prdata 8
-(define-fun |apb_timer_formal_n prdata| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#21| state))
-; yosys-smt2-anyseq apb_timer_formal#27 1 $auto$setundef.cc:352:execute$621
-; yosys-smt2-witness {"offset": 0, "path": ["\\psel"], "smtname": 27, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#27| (|apb_timer_formal_s|) (_ BitVec 1)) ; \psel
+(define-fun |apb_timer_formal_n prdata| ((state |apb_timer_formal_s|)) (_ BitVec 8) (|apb_timer_formal#27| state))
+; yosys-smt2-anyseq apb_timer_formal#36 1 $auto$setundef.cc:352:execute$816
+; yosys-smt2-witness {"offset": 0, "path": ["\\psel"], "smtname": 36, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#36| (|apb_timer_formal_s|) (_ BitVec 1)) ; \psel
 ; yosys-smt2-wire psel 1
-(define-fun |apb_timer_formal_n psel| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#27| state)) #b1))
-; yosys-smt2-anyseq apb_timer_formal#28 2 $auto$setundef.cc:352:execute$617
-; yosys-smt2-witness {"offset": 0, "path": ["\\pwdata"], "smtname": 28, "smtoffset": 0, "type": "seq", "width": 2}
-(declare-fun |apb_timer_formal#28| (|apb_timer_formal_s|) (_ BitVec 2)) ; \pwdata [1:0]
-; yosys-smt2-anyseq apb_timer_formal#29 1 $auto$setundef.cc:352:execute$611
-; yosys-smt2-witness {"offset": 2, "path": ["\\pwdata"], "smtname": 29, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#29| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [2]
-; yosys-smt2-anyseq apb_timer_formal#30 1 $auto$setundef.cc:352:execute$623
-; yosys-smt2-witness {"offset": 3, "path": ["\\pwdata"], "smtname": 30, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#30| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [3]
-; yosys-smt2-anyseq apb_timer_formal#31 1 $auto$setundef.cc:352:execute$599
-; yosys-smt2-witness {"offset": 4, "path": ["\\pwdata"], "smtname": 31, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#31| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [4]
-; yosys-smt2-anyseq apb_timer_formal#32 1 $auto$setundef.cc:352:execute$615
-; yosys-smt2-witness {"offset": 5, "path": ["\\pwdata"], "smtname": 32, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#32| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [5]
-; yosys-smt2-anyseq apb_timer_formal#33 1 $auto$setundef.cc:352:execute$601
-; yosys-smt2-witness {"offset": 6, "path": ["\\pwdata"], "smtname": 33, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#33| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [6]
-; yosys-smt2-anyseq apb_timer_formal#34 1 $auto$setundef.cc:352:execute$627
-; yosys-smt2-witness {"offset": 7, "path": ["\\pwdata"], "smtname": 34, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#34| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [7]
+(define-fun |apb_timer_formal_n psel| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#36| state)) #b1))
+; yosys-smt2-anyseq apb_timer_formal#37 1 $auto$setundef.cc:352:execute$794
+; yosys-smt2-witness {"offset": 0, "path": ["\\pwdata"], "smtname": 37, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#37| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [0]
+; yosys-smt2-anyseq apb_timer_formal#38 1 $auto$setundef.cc:352:execute$822
+; yosys-smt2-witness {"offset": 1, "path": ["\\pwdata"], "smtname": 38, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#38| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [1]
+; yosys-smt2-anyseq apb_timer_formal#39 1 $auto$setundef.cc:352:execute$812
+; yosys-smt2-witness {"offset": 2, "path": ["\\pwdata"], "smtname": 39, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#39| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [2]
+; yosys-smt2-anyseq apb_timer_formal#40 1 $auto$setundef.cc:352:execute$820
+; yosys-smt2-witness {"offset": 3, "path": ["\\pwdata"], "smtname": 40, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#40| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [3]
+; yosys-smt2-anyseq apb_timer_formal#41 1 $auto$setundef.cc:352:execute$800
+; yosys-smt2-witness {"offset": 4, "path": ["\\pwdata"], "smtname": 41, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#41| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [4]
+; yosys-smt2-anyseq apb_timer_formal#42 1 $auto$setundef.cc:352:execute$808
+; yosys-smt2-witness {"offset": 5, "path": ["\\pwdata"], "smtname": 42, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#42| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [5]
+; yosys-smt2-anyseq apb_timer_formal#43 1 $auto$setundef.cc:352:execute$792
+; yosys-smt2-witness {"offset": 6, "path": ["\\pwdata"], "smtname": 43, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#43| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [6]
+; yosys-smt2-anyseq apb_timer_formal#44 1 $auto$setundef.cc:352:execute$802
+; yosys-smt2-witness {"offset": 7, "path": ["\\pwdata"], "smtname": 44, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#44| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwdata [7]
 ; yosys-smt2-wire pwdata 8
-(define-fun |apb_timer_formal_n pwdata| ((state |apb_timer_formal_s|)) (_ BitVec 8) (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (concat (|apb_timer_formal#31| state) (concat (|apb_timer_formal#30| state) (concat (|apb_timer_formal#29| state) (|apb_timer_formal#28| state))))))))
-; yosys-smt2-anyseq apb_timer_formal#35 1 $auto$setundef.cc:352:execute$613
-; yosys-smt2-witness {"offset": 0, "path": ["\\pwrite"], "smtname": 35, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#35| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwrite
+(define-fun |apb_timer_formal_n pwdata| ((state |apb_timer_formal_s|)) (_ BitVec 8) (concat (|apb_timer_formal#44| state) (concat (|apb_timer_formal#43| state) (concat (|apb_timer_formal#42| state) (concat (|apb_timer_formal#41| state) (concat (|apb_timer_formal#40| state) (concat (|apb_timer_formal#39| state) (concat (|apb_timer_formal#38| state) (|apb_timer_formal#37| state)))))))))
+; yosys-smt2-anyseq apb_timer_formal#45 1 $auto$setundef.cc:352:execute$814
+; yosys-smt2-witness {"offset": 0, "path": ["\\pwrite"], "smtname": 45, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#45| (|apb_timer_formal_s|) (_ BitVec 1)) ; \pwrite
 ; yosys-smt2-wire pwrite 1
-(define-fun |apb_timer_formal_n pwrite| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1))
-(define-fun |apb_timer_formal#36| ((state |apb_timer_formal_s|)) Bool (and (or  (= ((_ extract 0 0) (|apb_timer_formal#27| state)) #b1) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#26| state)) #b1) false))) ; $apb_timer_formal.sv:20$logic_and$18_Y
-(define-fun |apb_timer_formal#37| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1) false))) ; $apb_timer_formal.sv:21$logic_not$21_Y
-(define-fun |apb_timer_formal#38| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#36| state) false) (or  (|apb_timer_formal#37| state) false))) ; \read
+(define-fun |apb_timer_formal_n pwrite| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#45| state)) #b1))
+(define-fun |apb_timer_formal#46| ((state |apb_timer_formal_s|)) Bool (and (or  (= ((_ extract 0 0) (|apb_timer_formal#36| state)) #b1) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1) false))) ; $apb_timer_formal.sv:21$logic_and$20_Y
+(define-fun |apb_timer_formal#47| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#45| state)) #b1) false))) ; $apb_timer_formal.sv:22$logic_not$23_Y
+(define-fun |apb_timer_formal#48| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#46| state) false) (or  (|apb_timer_formal#47| state) false))) ; \read
 ; yosys-smt2-wire read 1
-(define-fun |apb_timer_formal_n read| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal#38| state))
-; yosys-smt2-anyseq apb_timer_formal#39 1 $auto$setundef.cc:352:execute$629
-; yosys-smt2-witness {"offset": 0, "path": ["\\rst"], "smtname": 39, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |apb_timer_formal#39| (|apb_timer_formal_s|) (_ BitVec 1)) ; \rst
+(define-fun |apb_timer_formal_n read| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal#48| state))
+; yosys-smt2-anyseq apb_timer_formal#49 1 $auto$setundef.cc:352:execute$798
+; yosys-smt2-witness {"offset": 0, "path": ["\\rst"], "smtname": 49, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |apb_timer_formal#49| (|apb_timer_formal_s|) (_ BitVec 1)) ; \rst
 ; yosys-smt2-wire rst 1
-(define-fun |apb_timer_formal_n rst| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#39| state)) #b1))
-; yosys-smt2-anyinit apb_timer_formal#40 3 apb_timer_formal.sv:43.5-53.8
-; yosys-smt2-witness {"offset": 0, "path": ["\\rst_count"], "smtname": 40, "smtoffset": 0, "type": "init", "width": 3}
-(declare-fun |apb_timer_formal#40| (|apb_timer_formal_s|) (_ BitVec 3)) ; \rst_count
+(define-fun |apb_timer_formal_n rst| ((state |apb_timer_formal_s|)) Bool (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1))
+; yosys-smt2-anyinit apb_timer_formal#50 3 apb_timer_formal.sv:47.5-60.8
+; yosys-smt2-witness {"offset": 0, "path": ["\\rst_count"], "smtname": 50, "smtoffset": 0, "type": "init", "width": 3}
+(declare-fun |apb_timer_formal#50| (|apb_timer_formal_s|) (_ BitVec 3)) ; \rst_count
 ; yosys-smt2-register rst_count 3
 ; yosys-smt2-wire rst_count 3
-(define-fun |apb_timer_formal_n rst_count| ((state |apb_timer_formal_s|)) (_ BitVec 3) (|apb_timer_formal#40| state))
-(define-fun |apb_timer_formal#41| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#36| state) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1) false))) ; \write
+(define-fun |apb_timer_formal_n rst_count| ((state |apb_timer_formal_s|)) (_ BitVec 3) (|apb_timer_formal#50| state))
+(define-fun |apb_timer_formal#51| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#46| state) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#45| state)) #b1) false))) ; \write
 ; yosys-smt2-wire write 1
-(define-fun |apb_timer_formal_n write| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal#41| state))
-(define-fun |apb_timer_formal#42| ((state |apb_timer_formal_s|)) (_ BitVec 1) (bvnot (|apb_timer_formal#16| state))) ; $auto$rtlil.cc:3207:Not$635
-; yosys-smt2-assume 0 $auto$formalff.cc:987:execute$636
-(define-fun |apb_timer_formal_u 0| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#42| state)) #b1) (not true))) ; $auto$formalff.cc:987:execute$636
-; yosys-smt2-cover 0 _witness_.check_apb_timer_formal_sv_106_cover_104 apb_timer_formal.sv:106.13-106.40
-(define-fun |apb_timer_formal_c 0| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#1| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#0| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_106_cover_104
-; yosys-smt2-cover 1 _witness_.check_apb_timer_formal_sv_107_cover_106 apb_timer_formal.sv:107.13-107.71
-(define-fun |apb_timer_formal_c 1| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#2| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#12| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_107_cover_106
-; yosys-smt2-cover 2 _witness_.check_apb_timer_formal_sv_108_cover_110 apb_timer_formal.sv:108.13-108.30
-(define-fun |apb_timer_formal_c 2| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#10| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#12| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_108_cover_110
-; yosys-smt2-cover 3 _witness_.check_apb_timer_formal_sv_109_cover_111 apb_timer_formal.sv:109.13-109.52
-(define-fun |apb_timer_formal_c 3| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#11| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#12| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_109_cover_111
-; yosys-smt2-cover 4 _witness_.check_apb_timer_formal_sv_110_cover_115 apb_timer_formal.sv:110.13-110.63
-(define-fun |apb_timer_formal_c 4| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#13| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#12| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_110_cover_115
-; yosys-smt2-cover 5 _witness_.check_apb_timer_formal_sv_117_cover_130 apb_timer_formal.sv:117.13-117.46
-(define-fun |apb_timer_formal_c 5| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#14| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_117_cover_130
-(define-fun |apb_timer_formal#43| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal_is| state)) ; $auto$rtlil.cc:3255:And$365
-; yosys-smt2-assume 1 _witness_.check_apb_timer_formal_sv_39_assume_133 apb_timer_formal.sv:39.9-39.20
-(define-fun |apb_timer_formal_u 1| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#39| state)) #b1) (not (|apb_timer_formal#43| state)))) ; _witness_.check_apb_timer_formal_sv_39_assume_133
-(define-fun |apb_timer_formal#44| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#40| state)) #b1) (= ((_ extract 1 1) (|apb_timer_formal#40| state)) #b1) (= ((_ extract 2 2) (|apb_timer_formal#40| state)) #b1)))) ; $apb_timer_formal.sv:40$eq$135_Y
-; yosys-smt2-assume 2 _witness_.check_apb_timer_formal_sv_40_assume_134 apb_timer_formal.sv:40.9-40.34
-(define-fun |apb_timer_formal_u 2| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#44| state) (not (|apb_timer_formal#43| state)))) ; _witness_.check_apb_timer_formal_sv_40_assume_134
-(define-fun |apb_timer_formal#45| ((state |apb_timer_formal_s|)) Bool (bvult (|apb_timer_formal#40| state) #b010)) ; $apb_timer_formal.sv:44$lt$24_Y
-(define-fun |apb_timer_formal#46| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#45| state) #b1 #b0)) ; $apb_timer_formal.sv:46$assume$26_EN
-; yosys-smt2-assume 3 _witness_.check_apb_timer_formal_sv_46_assume_26 apb_timer_formal.sv:46.13-46.24
-(define-fun |apb_timer_formal_u 3| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#39| state)) #b1) (not (= ((_ extract 0 0) (|apb_timer_formal#46| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_46_assume_26
-(define-fun |apb_timer_formal#47| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#27| state)) #b1) false))) ; $apb_timer_formal.sv:47$logic_not$28_Y
-; yosys-smt2-assume 4 _witness_.check_apb_timer_formal_sv_47_assume_27 apb_timer_formal.sv:47.13-47.26
-(define-fun |apb_timer_formal_u 4| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#47| state) (not (= ((_ extract 0 0) (|apb_timer_formal#46| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_47_assume_27
-(define-fun |apb_timer_formal#48| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#26| state)) #b1) false))) ; $apb_timer_formal.sv:48$logic_not$30_Y
-; yosys-smt2-assume 5 _witness_.check_apb_timer_formal_sv_48_assume_29 apb_timer_formal.sv:48.13-48.29
-(define-fun |apb_timer_formal_u 5| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#48| state) (not (= ((_ extract 0 0) (|apb_timer_formal#46| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_48_assume_29
-(define-fun |apb_timer_formal#49| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#39| state)) #b1) false))) ; $apb_timer_formal.sv:115$logic_not$123_Y
-(define-fun |apb_timer_formal#50| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#45| state) #b0 #b1)) ; $apb_timer_formal.sv:50$assume$31_EN
-; yosys-smt2-assume 6 _witness_.check_apb_timer_formal_sv_50_assume_31 apb_timer_formal.sv:50.13-50.25
-(define-fun |apb_timer_formal_u 6| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#49| state) (not (= ((_ extract 0 0) (|apb_timer_formal#50| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_50_assume_31
-(define-fun |apb_timer_formal#51| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#22| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#24| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#25| state)) #b1)))) ; $apb_timer_formal.sv:51$eq$34_Y
-(define-fun |apb_timer_formal#52| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) #b0100)) ; $apb_timer_formal.sv:51$eq$35_Y
-(define-fun |apb_timer_formal#53| ((state |apb_timer_formal_s|)) Bool (or  (|apb_timer_formal#51| state) false  (|apb_timer_formal#52| state) false)) ; $apb_timer_formal.sv:51$logic_or$36_Y
-(define-fun |apb_timer_formal#54| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) #b1000)) ; $apb_timer_formal.sv:51$eq$37_Y
-(define-fun |apb_timer_formal#55| ((state |apb_timer_formal_s|)) Bool (or  (|apb_timer_formal#53| state) false  (|apb_timer_formal#54| state) false)) ; $apb_timer_formal.sv:51$logic_or$38_Y
-(define-fun |apb_timer_formal#56| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) #b1100)) ; $apb_timer_formal.sv:109$eq$112_Y
-(define-fun |apb_timer_formal#57| ((state |apb_timer_formal_s|)) Bool (or  (|apb_timer_formal#55| state) false  (|apb_timer_formal#56| state) false)) ; $apb_timer_formal.sv:51$logic_or$40_Y
-; yosys-smt2-assume 7 _witness_.check_apb_timer_formal_sv_51_assume_33 apb_timer_formal.sv:51.13-51.93
-(define-fun |apb_timer_formal_u 7| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#57| state) (not (= ((_ extract 0 0) (|apb_timer_formal#50| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_51_assume_33
-(define-fun |apb_timer_formal#58| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#41| state) #b1 #b0)) ; $apb_timer_formal.sv:57$assume$42_EN
-; yosys-smt2-assume 8 _witness_.check_apb_timer_formal_sv_57_assume_42 apb_timer_formal.sv:57.13-57.51
-(define-fun |apb_timer_formal_u 8| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#53| state) (not (= ((_ extract 0 0) (|apb_timer_formal#58| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_57_assume_42
-(define-fun |apb_timer_formal#59| ((state |apb_timer_formal_s|)) (_ BitVec 3) (bvadd (|apb_timer_formal#40| state) #b001)) ; $apb_timer_formal.sv:45$add$25_Y
-(define-fun |apb_timer_formal#60| ((state |apb_timer_formal_s|)) (_ BitVec 3) (ite (|apb_timer_formal#45| state) (|apb_timer_formal#59| state) (|apb_timer_formal#40| state))) ; $0\rst_count[2:0]
-(define-fun |apb_timer_formal#61| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#17| state) (|apb_timer_formal#20| state))) ; $apb_timer_formal.sv:117$eq$131_Y
-(define-fun |apb_timer_formal#62| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#8| state) (|apb_timer_formal#9| state))) ; $apb_timer_formal.sv:115$eq$124_Y
-(define-fun |apb_timer_formal#63| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#49| state) false) (or  (|apb_timer_formal#62| state) false))) ; $apb_timer_formal.sv:115$logic_and$125_Y
-(define-fun |apb_timer_formal#64| ((state |apb_timer_formal_s|)) Bool (bvugt (|apb_timer_formal#3| state) #b00000000)) ; $apb_timer_formal.sv:115$gt$126_Y
-(define-fun |apb_timer_formal#65| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#63| state) false) (or  (|apb_timer_formal#64| state) false))) ; $apb_timer_formal.sv:115$logic_and$127_Y
-(define-fun |apb_timer_formal#66| ((state |apb_timer_formal_s|)) Bool (not (or  (|apb_timer_formal#19| state) false))) ; $apb_timer_formal.sv:116$logic_not$128_Y
-(define-fun |apb_timer_formal#67| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#65| state) false) (or  (|apb_timer_formal#66| state) false))) ; $apb_timer_formal.sv:115$logic_and$129_Y
-(define-fun |apb_timer_formal#68| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#67| state) #b1 #b0)) ; $apb_timer_formal.sv:117$cover$130_EN
-(define-fun |apb_timer_formal#69| ((state |apb_timer_formal_s|)) Bool (and (or  (= ((_ extract 0 0) (|apb_timer_formal#6| state)) #b1) false) (or  (|apb_timer_formal#38| state) false))) ; $apb_timer_formal.sv:110$logic_and$116_Y
-(define-fun |apb_timer_formal#70| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) (|apb_timer_formal#7| state))) ; $apb_timer_formal.sv:110$eq$117_Y
-(define-fun |apb_timer_formal#71| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#69| state) false) (or  (|apb_timer_formal#70| state) false))) ; $apb_timer_formal.sv:110$logic_and$118_Y
-(define-fun |apb_timer_formal#72| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#38| state) false) (or  (|apb_timer_formal#56| state) false))) ; $apb_timer_formal.sv:109$logic_and$113_Y
-(define-fun |apb_timer_formal#73| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#72| state) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#21| state)) #b1) false))) ; $apb_timer_formal.sv:109$logic_and$114_Y
-(define-fun |apb_timer_formal#74| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#5| state)) #b1) (= ((_ extract 1 1) (|apb_timer_formal#5| state)) #b1) (= ((_ extract 2 2) (|apb_timer_formal#5| state)) #b1) (= ((_ extract 3 3) (|apb_timer_formal#5| state)) #b1)))) ; $apb_timer_formal.sv:107$eq$107_Y
-(define-fun |apb_timer_formal#75| ((state |apb_timer_formal_s|)) Bool (and (or  (= ((_ extract 0 0) (|apb_timer_formal#4| state)) #b1) false) (or  (|apb_timer_formal#74| state) false))) ; $apb_timer_formal.sv:107$logic_and$108_Y
-(define-fun |apb_timer_formal#76| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#75| state) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#18| state)) #b1) false))) ; $apb_timer_formal.sv:107$logic_and$109_Y
-(define-fun |apb_timer_formal#77| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#17| state) #b00010101)) ; $apb_timer_formal.sv:106$eq$105_Y
-(define-fun |apb_timer_formal#78| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#39| state)) #b1) #b0 #b1)) ; $apb_timer_formal.sv:106$cover$104_EN
+(define-fun |apb_timer_formal_n write| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal#51| state))
+(define-fun |apb_timer_formal#52| ((state |apb_timer_formal_s|)) (_ BitVec 1) (bvnot (|apb_timer_formal#22| state))) ; $auto$rtlil.cc:3207:Not$828
+; yosys-smt2-assume 0 $auto$formalff.cc:987:execute$829
+(define-fun |apb_timer_formal_u 0| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#52| state)) #b1) (not true))) ; $auto$formalff.cc:987:execute$829
+; yosys-smt2-cover 0 _witness_.check_apb_timer_formal_sv_131_cover_118 apb_timer_formal.sv:131.13-131.40
+(define-fun |apb_timer_formal_c 0| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#0| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_131_cover_118
+; yosys-smt2-cover 1 _witness_.check_apb_timer_formal_sv_132_cover_120 apb_timer_formal.sv:132.13-132.70
+(define-fun |apb_timer_formal_c 1| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#1| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_132_cover_120
+; yosys-smt2-cover 2 _witness_.check_apb_timer_formal_sv_133_cover_124 apb_timer_formal.sv:133.13-133.71
+(define-fun |apb_timer_formal_c 2| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#2| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_133_cover_124
+; yosys-smt2-cover 3 _witness_.check_apb_timer_formal_sv_134_cover_128 apb_timer_formal.sv:134.13-134.30
+(define-fun |apb_timer_formal_c 3| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#20| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_134_cover_128
+; yosys-smt2-cover 4 _witness_.check_apb_timer_formal_sv_135_cover_129 apb_timer_formal.sv:135.13-135.52
+(define-fun |apb_timer_formal_c 4| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#3| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_135_cover_129
+; yosys-smt2-cover 5 _witness_.check_apb_timer_formal_sv_136_cover_133 apb_timer_formal.sv:136.13-136.63
+(define-fun |apb_timer_formal_c 5| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#13| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_136_cover_133
+; yosys-smt2-cover 6 _witness_.check_apb_timer_formal_sv_137_cover_137 apb_timer_formal.sv:137.13-137.33
+(define-fun |apb_timer_formal_c 6| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#14| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_137_cover_137
+; yosys-smt2-cover 7 _witness_.check_apb_timer_formal_sv_138_cover_138 apb_timer_formal.sv:138.13-138.32
+(define-fun |apb_timer_formal_c 7| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#16| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_138_cover_138
+; yosys-smt2-cover 8 _witness_.check_apb_timer_formal_sv_146_cover_150 apb_timer_formal.sv:146.13-146.46
+(define-fun |apb_timer_formal_c 8| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#18| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#17| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_146_cover_150
+; yosys-smt2-cover 9 _witness_.check_apb_timer_formal_sv_152_cover_153 apb_timer_formal.sv:152.13-152.30
+(define-fun |apb_timer_formal_c 9| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#20| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#19| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_152_cover_153
+; yosys-smt2-cover 10 _witness_.check_apb_timer_formal_sv_154_cover_154 apb_timer_formal.sv:154.13-154.30
+(define-fun |apb_timer_formal_c 10| ((state |apb_timer_formal_s|)) Bool (and (= ((_ extract 0 0) (|apb_timer_formal#20| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#21| state)) #b1))) ; _witness_.check_apb_timer_formal_sv_154_cover_154
+(define-fun |apb_timer_formal#53| ((state |apb_timer_formal_s|)) Bool (|apb_timer_formal_is| state)) ; $auto$rtlil.cc:3255:And$505
+; yosys-smt2-assume 1 _witness_.check_apb_timer_formal_sv_40_assume_156 apb_timer_formal.sv:40.9-40.20
+(define-fun |apb_timer_formal_u 1| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) (not (|apb_timer_formal#53| state)))) ; _witness_.check_apb_timer_formal_sv_40_assume_156
+(define-fun |apb_timer_formal#54| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#50| state)) #b1) (= ((_ extract 1 1) (|apb_timer_formal#50| state)) #b1) (= ((_ extract 2 2) (|apb_timer_formal#50| state)) #b1)))) ; $apb_timer_formal.sv:41$eq$158_Y
+; yosys-smt2-assume 2 _witness_.check_apb_timer_formal_sv_41_assume_157 apb_timer_formal.sv:41.9-41.34
+(define-fun |apb_timer_formal_u 2| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#54| state) (not (|apb_timer_formal#53| state)))) ; _witness_.check_apb_timer_formal_sv_41_assume_157
+(define-fun |apb_timer_formal#55| ((state |apb_timer_formal_s|)) (_ BitVec 1) (bvnot (|apb_timer_formal#28| state))) ; $apb_timer_formal.sv:42$eq$160_Y
+; yosys-smt2-assume 3 _witness_.check_apb_timer_formal_sv_42_assume_159 apb_timer_formal.sv:42.9-42.37
+(define-fun |apb_timer_formal_u 3| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#55| state)) #b1) (not (|apb_timer_formal#53| state)))) ; _witness_.check_apb_timer_formal_sv_42_assume_159
+(define-fun |apb_timer_formal#56| ((state |apb_timer_formal_s|)) (_ BitVec 1) (bvnot (|apb_timer_formal#29| state))) ; $apb_timer_formal.sv:43$eq$162_Y
+; yosys-smt2-assume 4 _witness_.check_apb_timer_formal_sv_43_assume_161 apb_timer_formal.sv:43.9-43.37
+(define-fun |apb_timer_formal_u 4| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#56| state)) #b1) (not (|apb_timer_formal#53| state)))) ; _witness_.check_apb_timer_formal_sv_43_assume_161
+(define-fun |apb_timer_formal#57| ((state |apb_timer_formal_s|)) (_ BitVec 1) (bvnot (|apb_timer_formal#30| state))) ; $apb_timer_formal.sv:44$eq$164_Y
+; yosys-smt2-assume 5 _witness_.check_apb_timer_formal_sv_44_assume_163 apb_timer_formal.sv:44.9-44.38
+(define-fun |apb_timer_formal_u 5| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#57| state)) #b1) (not (|apb_timer_formal#53| state)))) ; _witness_.check_apb_timer_formal_sv_44_assume_163
+(define-fun |apb_timer_formal#58| ((state |apb_timer_formal_s|)) Bool (bvult (|apb_timer_formal#50| state) #b010)) ; $apb_timer_formal.sv:48$lt$26_Y
+(define-fun |apb_timer_formal#59| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#58| state) #b1 #b0)) ; $apb_timer_formal.sv:50$assume$28_EN
+; yosys-smt2-assume 6 _witness_.check_apb_timer_formal_sv_50_assume_28 apb_timer_formal.sv:50.13-50.24
+(define-fun |apb_timer_formal_u 6| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) (not (= ((_ extract 0 0) (|apb_timer_formal#59| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_50_assume_28
+(define-fun |apb_timer_formal#60| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#36| state)) #b1) false))) ; $apb_timer_formal.sv:51$logic_not$30_Y
+; yosys-smt2-assume 7 _witness_.check_apb_timer_formal_sv_51_assume_29 apb_timer_formal.sv:51.13-51.26
+(define-fun |apb_timer_formal_u 7| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#60| state) (not (= ((_ extract 0 0) (|apb_timer_formal#59| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_51_assume_29
+(define-fun |apb_timer_formal#61| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1) false))) ; $apb_timer_formal.sv:52$logic_not$32_Y
+; yosys-smt2-assume 8 _witness_.check_apb_timer_formal_sv_52_assume_31 apb_timer_formal.sv:52.13-52.29
+(define-fun |apb_timer_formal_u 8| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#61| state) (not (= ((_ extract 0 0) (|apb_timer_formal#59| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_52_assume_31
+; yosys-smt2-assume 9 _witness_.check_apb_timer_formal_sv_53_assume_33 apb_timer_formal.sv:53.13-53.41
+(define-fun |apb_timer_formal_u 9| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#55| state)) #b1) (not (= ((_ extract 0 0) (|apb_timer_formal#59| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_53_assume_33
+; yosys-smt2-assume 10 _witness_.check_apb_timer_formal_sv_54_assume_35 apb_timer_formal.sv:54.13-54.41
+(define-fun |apb_timer_formal_u 10| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#56| state)) #b1) (not (= ((_ extract 0 0) (|apb_timer_formal#59| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_54_assume_35
+; yosys-smt2-assume 11 _witness_.check_apb_timer_formal_sv_55_assume_37 apb_timer_formal.sv:55.13-55.42
+(define-fun |apb_timer_formal_u 11| ((state |apb_timer_formal_s|)) Bool (or (= ((_ extract 0 0) (|apb_timer_formal#57| state)) #b1) (not (= ((_ extract 0 0) (|apb_timer_formal#59| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_55_assume_37
+(define-fun |apb_timer_formal#62| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) false))) ; $apb_timer_formal.sv:100$logic_not$93_Y
+(define-fun |apb_timer_formal#63| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#58| state) #b0 #b1)) ; $apb_timer_formal.sv:57$assume$39_EN
+; yosys-smt2-assume 12 _witness_.check_apb_timer_formal_sv_57_assume_39 apb_timer_formal.sv:57.13-57.25
+(define-fun |apb_timer_formal_u 12| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#62| state) (not (= ((_ extract 0 0) (|apb_timer_formal#63| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_57_assume_39
+(define-fun |apb_timer_formal#64| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#31| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#32| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#33| state)) #b1) (= ((_ extract 0 0) (|apb_timer_formal#34| state)) #b1)))) ; $apb_timer_formal.sv:58$eq$42_Y
+(define-fun |apb_timer_formal#65| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) #b0100)) ; $apb_timer_formal.sv:58$eq$43_Y
+(define-fun |apb_timer_formal#66| ((state |apb_timer_formal_s|)) Bool (or  (|apb_timer_formal#64| state) false  (|apb_timer_formal#65| state) false)) ; $apb_timer_formal.sv:58$logic_or$44_Y
+(define-fun |apb_timer_formal#67| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) #b1000)) ; $apb_timer_formal.sv:58$eq$45_Y
+(define-fun |apb_timer_formal#68| ((state |apb_timer_formal_s|)) Bool (or  (|apb_timer_formal#66| state) false  (|apb_timer_formal#67| state) false)) ; $apb_timer_formal.sv:58$logic_or$46_Y
+(define-fun |apb_timer_formal#69| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) #b1100)) ; $apb_timer_formal.sv:135$eq$130_Y
+(define-fun |apb_timer_formal#70| ((state |apb_timer_formal_s|)) Bool (or  (|apb_timer_formal#68| state) false  (|apb_timer_formal#69| state) false)) ; $apb_timer_formal.sv:58$logic_or$48_Y
+; yosys-smt2-assume 13 _witness_.check_apb_timer_formal_sv_58_assume_41 apb_timer_formal.sv:58.13-58.93
+(define-fun |apb_timer_formal_u 13| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#70| state) (not (= ((_ extract 0 0) (|apb_timer_formal#63| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_58_assume_41
+(define-fun |apb_timer_formal#71| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#51| state) #b1 #b0)) ; $apb_timer_formal.sv:64$assume$50_EN
+; yosys-smt2-assume 14 _witness_.check_apb_timer_formal_sv_64_assume_50 apb_timer_formal.sv:64.13-64.51
+(define-fun |apb_timer_formal_u 14| ((state |apb_timer_formal_s|)) Bool (or (|apb_timer_formal#66| state) (not (= ((_ extract 0 0) (|apb_timer_formal#71| state)) #b1)))) ; _witness_.check_apb_timer_formal_sv_64_assume_50
+(define-fun |apb_timer_formal#72| ((state |apb_timer_formal_s|)) (_ BitVec 3) (bvadd (|apb_timer_formal#50| state) #b001)) ; $apb_timer_formal.sv:49$add$27_Y
+(define-fun |apb_timer_formal#73| ((state |apb_timer_formal_s|)) (_ BitVec 3) (ite (|apb_timer_formal#58| state) (|apb_timer_formal#72| state) (|apb_timer_formal#50| state))) ; $0\rst_count[2:0]
+(define-fun |apb_timer_formal#74| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#25| state) #b0 (|apb_timer_formal#30| state))) ; $procmux$237_Y
+(define-fun |apb_timer_formal#75| ((state |apb_timer_formal_s|)) Bool (bvuge (|apb_timer_formal#26| state) (|apb_timer_formal#23| state))) ; $apb_timer_formal.sv:115$ge$110_Y
+(define-fun |apb_timer_formal#76| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#75| state) (|apb_timer_formal#30| state) #b1)) ; $procmux$241_Y
+(define-fun |apb_timer_formal#77| ((state |apb_timer_formal_s|)) Bool (distinct (|apb_timer_formal#26| state) (|apb_timer_formal#12| state))) ; $apb_timer_formal.sv:113$ne$109_Y
+(define-fun |apb_timer_formal#78| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#77| state) (|apb_timer_formal#76| state) (|apb_timer_formal#74| state))) ; $procmux$243_Y
+(define-fun |apb_timer_formal#79| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) (|apb_timer_formal#30| state) (|apb_timer_formal#78| state))) ; $0\limit_smaller[0:0]
+(define-fun |apb_timer_formal#80| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#25| state) #b0 (|apb_timer_formal#29| state))) ; $procmux$247_Y
+(define-fun |apb_timer_formal#81| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#75| state) #b1 (|apb_timer_formal#29| state))) ; $procmux$251_Y
+(define-fun |apb_timer_formal#82| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#77| state) (|apb_timer_formal#81| state) (|apb_timer_formal#80| state))) ; $procmux$253_Y
+(define-fun |apb_timer_formal#83| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) (|apb_timer_formal#29| state) (|apb_timer_formal#82| state))) ; $0\limit_larger[0:0]
+(define-fun |apb_timer_formal#84| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#25| state) #b0 (|apb_timer_formal#28| state))) ; $procmux$257_Y
+(define-fun |apb_timer_formal#85| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#77| state) #b1 (|apb_timer_formal#84| state))) ; $procmux$260_Y
+(define-fun |apb_timer_formal#86| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) (|apb_timer_formal#28| state) (|apb_timer_formal#85| state))) ; $0\limit_change[0:0]
+(define-fun |apb_timer_formal#87| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#30| state)) #b1) #b1 #b0)) ; $procmux$211_Y
+(define-fun |apb_timer_formal#88| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#29| state)) #b1) #b0 (|apb_timer_formal#87| state))) ; $apb_timer_formal.sv:154$cover$154_EN
+(define-fun |apb_timer_formal#89| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#29| state)) #b1) #b1 #b0)) ; $apb_timer_formal.sv:152$cover$153_EN
+(define-fun |apb_timer_formal#90| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#23| state) (|apb_timer_formal#26| state))) ; $apb_timer_formal.sv:146$eq$151_Y
+(define-fun |apb_timer_formal#91| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#4| state) (|apb_timer_formal#5| state))) ; $apb_timer_formal.sv:144$eq$144_Y
+(define-fun |apb_timer_formal#92| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#62| state) false) (or  (|apb_timer_formal#91| state) false))) ; $apb_timer_formal.sv:144$logic_and$145_Y
+(define-fun |apb_timer_formal#93| ((state |apb_timer_formal_s|)) Bool (bvugt (|apb_timer_formal#6| state) #b00000000)) ; $apb_timer_formal.sv:144$gt$146_Y
+(define-fun |apb_timer_formal#94| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#92| state) false) (or  (|apb_timer_formal#93| state) false))) ; $apb_timer_formal.sv:144$logic_and$147_Y
+(define-fun |apb_timer_formal#95| ((state |apb_timer_formal_s|)) Bool (not (or  (|apb_timer_formal#25| state) false))) ; $apb_timer_formal.sv:145$logic_not$148_Y
+(define-fun |apb_timer_formal#96| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#94| state) false) (or  (|apb_timer_formal#95| state) false))) ; $apb_timer_formal.sv:144$logic_and$149_Y
+(define-fun |apb_timer_formal#97| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (|apb_timer_formal#96| state) #b1 #b0)) ; $apb_timer_formal.sv:146$cover$150_EN
+(define-fun |apb_timer_formal#98| ((state |apb_timer_formal_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) #b0 #b1)) ; $apb_timer_formal.sv:131$cover$118_EN
+(define-fun |apb_timer_formal#99| ((state |apb_timer_formal_s|)) Bool (and (or  (= ((_ extract 0 0) (|apb_timer_formal#10| state)) #b1) false) (or  (|apb_timer_formal#48| state) false))) ; $apb_timer_formal.sv:136$logic_and$134_Y
+(define-fun |apb_timer_formal#100| ((state |apb_timer_formal_s|)) Bool (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) (|apb_timer_formal#11| state))) ; $apb_timer_formal.sv:136$eq$135_Y
+(define-fun |apb_timer_formal#101| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#99| state) false) (or  (|apb_timer_formal#100| state) false))) ; $apb_timer_formal.sv:136$logic_and$136_Y
+(define-fun |apb_timer_formal#102| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#48| state) false) (or  (|apb_timer_formal#69| state) false))) ; $apb_timer_formal.sv:135$logic_and$131_Y
+(define-fun |apb_timer_formal#103| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#102| state) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#27| state)) #b1) false))) ; $apb_timer_formal.sv:135$logic_and$132_Y
+(define-fun |apb_timer_formal#104| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#9| state)) #b1) (= ((_ extract 1 1) (|apb_timer_formal#9| state)) #b1) (= ((_ extract 2 2) (|apb_timer_formal#9| state)) #b1) (= ((_ extract 3 3) (|apb_timer_formal#9| state)) #b1)))) ; $apb_timer_formal.sv:133$eq$125_Y
+(define-fun |apb_timer_formal#105| ((state |apb_timer_formal_s|)) Bool (and (or  (= ((_ extract 0 0) (|apb_timer_formal#8| state)) #b1) false) (or  (|apb_timer_formal#104| state) false))) ; $apb_timer_formal.sv:133$logic_and$126_Y
+(define-fun |apb_timer_formal#106| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#105| state) false) (or  (= ((_ extract 0 0) (|apb_timer_formal#24| state)) #b1) false))) ; $apb_timer_formal.sv:133$logic_and$127_Y
+(define-fun |apb_timer_formal#107| ((state |apb_timer_formal_s|)) Bool (not (or  (= ((_ extract 0 0) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 1 1) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 2 2) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 3 3) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 4 4) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 5 5) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 6 6) (|apb_timer_formal#23| state)) #b1) (= ((_ extract 7 7) (|apb_timer_formal#23| state)) #b1)))) ; $apb_timer_formal.sv:132$eq$121_Y
+(define-fun |apb_timer_formal#108| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#7| state) #b11111111)) ; $apb_timer_formal.sv:132$eq$122_Y
+(define-fun |apb_timer_formal#109| ((state |apb_timer_formal_s|)) Bool (and (or  (|apb_timer_formal#107| state) false) (or  (|apb_timer_formal#108| state) false))) ; $apb_timer_formal.sv:132$logic_and$123_Y
+(define-fun |apb_timer_formal#110| ((state |apb_timer_formal_s|)) Bool (= (|apb_timer_formal#23| state) #b00010101)) ; $apb_timer_formal.sv:131$eq$119_Y
 (define-fun |apb_timer_formal_a| ((state |apb_timer_formal_s|)) Bool 
   (|apb_slave2_a| (|apb_timer_formal_h dut| state))
 )
@@ -447,54 +540,73 @@
   (|apb_timer_formal_u 6| state)
   (|apb_timer_formal_u 7| state)
   (|apb_timer_formal_u 8| state)
+  (|apb_timer_formal_u 9| state)
+  (|apb_timer_formal_u 10| state)
+  (|apb_timer_formal_u 11| state)
+  (|apb_timer_formal_u 12| state)
+  (|apb_timer_formal_u 13| state)
+  (|apb_timer_formal_u 14| state)
   (|apb_slave2_u| (|apb_timer_formal_h dut| state))
 ))
 (define-fun |apb_timer_formal_i| ((state |apb_timer_formal_s|)) Bool (and
-  (= (= ((_ extract 0 0) (|apb_timer_formal#0| state)) #b1) false) ; $auto$async2sync.cc:107:execute$326
-  (= (= ((_ extract 0 0) (|apb_timer_formal#1| state)) #b1) true) ; $auto$async2sync.cc:116:execute$330
-  (= (= ((_ extract 0 0) (|apb_timer_formal#2| state)) #b1) true) ; $auto$async2sync.cc:116:execute$336
-  (= (= ((_ extract 0 0) (|apb_timer_formal#10| state)) #b1) true) ; $auto$async2sync.cc:116:execute$342
-  (= (= ((_ extract 0 0) (|apb_timer_formal#11| state)) #b1) true) ; $auto$async2sync.cc:116:execute$348
-  (= (= ((_ extract 0 0) (|apb_timer_formal#12| state)) #b1) false) ; $auto$async2sync.cc:107:execute$350
-  (= (= ((_ extract 0 0) (|apb_timer_formal#13| state)) #b1) true) ; $auto$async2sync.cc:116:execute$354
-  (= (= ((_ extract 0 0) (|apb_timer_formal#14| state)) #b1) false) ; $auto$async2sync.cc:107:execute$356
-  (= (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1) true) ; $auto$async2sync.cc:116:execute$360
+  (= (= ((_ extract 0 0) (|apb_timer_formal#0| state)) #b1) true) ; $auto$async2sync.cc:116:execute$440
+  (= (= ((_ extract 0 0) (|apb_timer_formal#1| state)) #b1) true) ; $auto$async2sync.cc:116:execute$446
+  (= (= ((_ extract 0 0) (|apb_timer_formal#2| state)) #b1) true) ; $auto$async2sync.cc:116:execute$452
+  (= (= ((_ extract 0 0) (|apb_timer_formal#3| state)) #b1) true) ; $auto$async2sync.cc:116:execute$464
+  (= (= ((_ extract 0 0) (|apb_timer_formal#13| state)) #b1) true) ; $auto$async2sync.cc:116:execute$470
+  (= (= ((_ extract 0 0) (|apb_timer_formal#14| state)) #b1) true) ; $auto$async2sync.cc:116:execute$476
+  (= (= ((_ extract 0 0) (|apb_timer_formal#15| state)) #b1) false) ; $auto$async2sync.cc:107:execute$478
+  (= (= ((_ extract 0 0) (|apb_timer_formal#16| state)) #b1) true) ; $auto$async2sync.cc:116:execute$482
+  (= (= ((_ extract 0 0) (|apb_timer_formal#17| state)) #b1) false) ; $auto$async2sync.cc:107:execute$484
+  (= (= ((_ extract 0 0) (|apb_timer_formal#18| state)) #b1) true) ; $auto$async2sync.cc:116:execute$488
+  (= (= ((_ extract 0 0) (|apb_timer_formal#19| state)) #b1) false) ; $auto$async2sync.cc:107:execute$490
+  (= (= ((_ extract 0 0) (|apb_timer_formal#20| state)) #b1) true) ; $auto$async2sync.cc:116:execute$494
+  (= (= ((_ extract 0 0) (|apb_timer_formal#21| state)) #b1) false) ; $auto$async2sync.cc:107:execute$496
   (|apb_slave2_i| (|apb_timer_formal_h dut| state))
 ))
 (define-fun |apb_timer_formal_h| ((state |apb_timer_formal_s|)) Bool (and
   (= (|apb_timer_formal_is| state) (|apb_slave2_is| (|apb_timer_formal_h dut| state)))
-  (= (= ((_ extract 0 0) (|apb_timer_formal#16| state)) #b1) (|apb_slave2_n clk| (|apb_timer_formal_h dut| state))) ; apb_slave2.clk
-  (= (|apb_timer_formal#17| state) (|apb_slave2_n count_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.count_reg_o
-  (= (|apb_timer_formal#18| state) (|apb_slave2_n ctrl_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.ctrl_reg_o
-  (= (|apb_timer_formal#19| state) (|apb_slave2_n flag_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.flag_reg_o
-  (= (|apb_timer_formal#20| state) (|apb_slave2_n limit_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.limit_reg_o
-  (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) (|apb_slave2_n paddr| (|apb_timer_formal_h dut| state))) ; apb_slave2.paddr
-  (= (= ((_ extract 0 0) (|apb_timer_formal#26| state)) #b1) (|apb_slave2_n penable| (|apb_timer_formal_h dut| state))) ; apb_slave2.penable
-  (= (|apb_timer_formal#21| state) (|apb_slave2_n prdata| (|apb_timer_formal_h dut| state))) ; apb_slave2.prdata
-  (= (= ((_ extract 0 0) (|apb_timer_formal#27| state)) #b1) (|apb_slave2_n psel| (|apb_timer_formal_h dut| state))) ; apb_slave2.psel
-  (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (concat (|apb_timer_formal#31| state) (concat (|apb_timer_formal#30| state) (concat (|apb_timer_formal#29| state) (|apb_timer_formal#28| state))))))) (|apb_slave2_n pwdata| (|apb_timer_formal_h dut| state))) ; apb_slave2.pwdata
-  (= (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1) (|apb_slave2_n pwrite| (|apb_timer_formal_h dut| state))) ; apb_slave2.pwrite
-  (= (= ((_ extract 0 0) (|apb_timer_formal#39| state)) #b1) (|apb_slave2_n rst| (|apb_timer_formal_h dut| state))) ; apb_slave2.rst
+  (= (= ((_ extract 0 0) (|apb_timer_formal#22| state)) #b1) (|apb_slave2_n clk| (|apb_timer_formal_h dut| state))) ; apb_slave2.clk
+  (= (|apb_timer_formal#23| state) (|apb_slave2_n count_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.count_reg_o
+  (= (|apb_timer_formal#24| state) (|apb_slave2_n ctrl_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.ctrl_reg_o
+  (= (|apb_timer_formal#25| state) (|apb_slave2_n flag_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.flag_reg_o
+  (= (|apb_timer_formal#26| state) (|apb_slave2_n limit_reg_o| (|apb_timer_formal_h dut| state))) ; apb_slave2.limit_reg_o
+  (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) (|apb_slave2_n paddr| (|apb_timer_formal_h dut| state))) ; apb_slave2.paddr
+  (= (= ((_ extract 0 0) (|apb_timer_formal#35| state)) #b1) (|apb_slave2_n penable| (|apb_timer_formal_h dut| state))) ; apb_slave2.penable
+  (= (|apb_timer_formal#27| state) (|apb_slave2_n prdata| (|apb_timer_formal_h dut| state))) ; apb_slave2.prdata
+  (= (= ((_ extract 0 0) (|apb_timer_formal#36| state)) #b1) (|apb_slave2_n psel| (|apb_timer_formal_h dut| state))) ; apb_slave2.psel
+  (= (concat (|apb_timer_formal#44| state) (concat (|apb_timer_formal#43| state) (concat (|apb_timer_formal#42| state) (concat (|apb_timer_formal#41| state) (concat (|apb_timer_formal#40| state) (concat (|apb_timer_formal#39| state) (concat (|apb_timer_formal#38| state) (|apb_timer_formal#37| state)))))))) (|apb_slave2_n pwdata| (|apb_timer_formal_h dut| state))) ; apb_slave2.pwdata
+  (= (= ((_ extract 0 0) (|apb_timer_formal#45| state)) #b1) (|apb_slave2_n pwrite| (|apb_timer_formal_h dut| state))) ; apb_slave2.pwrite
+  (= (= ((_ extract 0 0) (|apb_timer_formal#49| state)) #b1) (|apb_slave2_n rst| (|apb_timer_formal_h dut| state))) ; apb_slave2.rst
   (|apb_slave2_h| (|apb_timer_formal_h dut| state))
 ))
 (define-fun |apb_timer_formal_t| ((state |apb_timer_formal_s|) (next_state |apb_timer_formal_s|)) Bool (and
-  (= (|apb_timer_formal#60| state) (|apb_timer_formal#40| next_state)) ; $procdff$319 \rst_count
-  (= (ite (|apb_timer_formal#61| state) #b1 #b0) (|apb_timer_formal#15| next_state)) ; $auto$async2sync.cc:118:execute$361 $auto$async2sync.cc:116:execute$360
-  (= (|apb_timer_formal#68| state) (|apb_timer_formal#14| next_state)) ; $auto$async2sync.cc:110:execute$358 $auto$async2sync.cc:107:execute$356
-  (= (ite (|apb_timer_formal#71| state) #b1 #b0) (|apb_timer_formal#13| next_state)) ; $auto$async2sync.cc:118:execute$355 $auto$async2sync.cc:116:execute$354
-  (= #b1 (|apb_timer_formal#12| next_state)) ; $auto$async2sync.cc:110:execute$352 $auto$async2sync.cc:107:execute$350
-  (= (ite (|apb_timer_formal#73| state) #b1 #b0) (|apb_timer_formal#11| next_state)) ; $auto$async2sync.cc:118:execute$349 $auto$async2sync.cc:116:execute$348
-  (= (ite (|apb_timer_formal#19| state) #b1 #b0) (|apb_timer_formal#10| next_state)) ; $auto$async2sync.cc:118:execute$343 $auto$async2sync.cc:116:execute$342
-  (= (|apb_timer_formal#20| state) (|apb_timer_formal#9| next_state)) ; $procdff$303 \_witness_.anyinit_procdff_303
-  (= (|apb_timer_formal#17| state) (|apb_timer_formal#8| next_state)) ; $procdff$302 \_witness_.anyinit_procdff_302
-  (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) (|apb_timer_formal#7| next_state)) ; $procdff$308 \_witness_.anyinit_procdff_308
-  (= (ite (|apb_timer_formal#41| state) #b1 #b0) (|apb_timer_formal#6| next_state)) ; $procdff$307 \_witness_.anyinit_procdff_307
-  (= (concat (|apb_timer_formal#25| state) (concat (|apb_timer_formal#24| state) (concat (|apb_timer_formal#23| state) (|apb_timer_formal#22| state)))) (|apb_timer_formal#5| next_state)) ; $procdff$306 \_witness_.anyinit_procdff_306
-  (= (ite (|apb_timer_formal#41| state) #b1 #b0) (|apb_timer_formal#4| next_state)) ; $procdff$305 \_witness_.anyinit_procdff_305
-  (= (|apb_timer_formal#17| state) (|apb_timer_formal#3| next_state)) ; $procdff$304 \_witness_.anyinit_procdff_304
-  (= (ite (|apb_timer_formal#76| state) #b1 #b0) (|apb_timer_formal#2| next_state)) ; $auto$async2sync.cc:118:execute$337 $auto$async2sync.cc:116:execute$336
-  (= (ite (|apb_timer_formal#77| state) #b1 #b0) (|apb_timer_formal#1| next_state)) ; $auto$async2sync.cc:118:execute$331 $auto$async2sync.cc:116:execute$330
-  (= (|apb_timer_formal#78| state) (|apb_timer_formal#0| next_state)) ; $auto$async2sync.cc:110:execute$328 $auto$async2sync.cc:107:execute$326
+  (= (|apb_timer_formal#73| state) (|apb_timer_formal#50| next_state)) ; $procdff$411 \rst_count
+  (= (|apb_timer_formal#79| state) (|apb_timer_formal#30| next_state)) ; $procdff$399 \limit_smaller
+  (= (|apb_timer_formal#83| state) (|apb_timer_formal#29| next_state)) ; $procdff$398 \limit_larger
+  (= (|apb_timer_formal#86| state) (|apb_timer_formal#28| next_state)) ; $procdff$397 \limit_change
+  (= (|apb_timer_formal#88| state) (|apb_timer_formal#21| next_state)) ; $auto$async2sync.cc:110:execute$498 $auto$async2sync.cc:107:execute$496
+  (= (ite (|apb_timer_formal#25| state) #b1 #b0) (|apb_timer_formal#20| next_state)) ; $auto$async2sync.cc:118:execute$495 $auto$async2sync.cc:116:execute$494
+  (= (|apb_timer_formal#89| state) (|apb_timer_formal#19| next_state)) ; $auto$async2sync.cc:110:execute$492 $auto$async2sync.cc:107:execute$490
+  (= (ite (|apb_timer_formal#90| state) #b1 #b0) (|apb_timer_formal#18| next_state)) ; $auto$async2sync.cc:118:execute$489 $auto$async2sync.cc:116:execute$488
+  (= (|apb_timer_formal#97| state) (|apb_timer_formal#17| next_state)) ; $auto$async2sync.cc:110:execute$486 $auto$async2sync.cc:107:execute$484
+  (= (|apb_timer_formal#29| state) (|apb_timer_formal#16| next_state)) ; $auto$async2sync.cc:118:execute$483 $auto$async2sync.cc:116:execute$482
+  (= (|apb_timer_formal#98| state) (|apb_timer_formal#15| next_state)) ; $auto$async2sync.cc:110:execute$480 $auto$async2sync.cc:107:execute$478
+  (= (|apb_timer_formal#30| state) (|apb_timer_formal#14| next_state)) ; $auto$async2sync.cc:118:execute$477 $auto$async2sync.cc:116:execute$476
+  (= (ite (|apb_timer_formal#101| state) #b1 #b0) (|apb_timer_formal#13| next_state)) ; $auto$async2sync.cc:118:execute$471 $auto$async2sync.cc:116:execute$470
+  (= (|apb_timer_formal#26| state) (|apb_timer_formal#12| next_state)) ; $procdff$400 \_witness_.anyinit_procdff_400
+  (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) (|apb_timer_formal#11| next_state)) ; $procdff$396 \_witness_.anyinit_procdff_396
+  (= (ite (|apb_timer_formal#51| state) #b1 #b0) (|apb_timer_formal#10| next_state)) ; $procdff$395 \_witness_.anyinit_procdff_395
+  (= (concat (|apb_timer_formal#34| state) (concat (|apb_timer_formal#33| state) (concat (|apb_timer_formal#32| state) (|apb_timer_formal#31| state)))) (|apb_timer_formal#9| next_state)) ; $procdff$394 \_witness_.anyinit_procdff_394
+  (= (ite (|apb_timer_formal#51| state) #b1 #b0) (|apb_timer_formal#8| next_state)) ; $procdff$393 \_witness_.anyinit_procdff_393
+  (= (|apb_timer_formal#23| state) (|apb_timer_formal#7| next_state)) ; $procdff$392 \_witness_.anyinit_procdff_392
+  (= (|apb_timer_formal#23| state) (|apb_timer_formal#6| next_state)) ; $procdff$391 \_witness_.anyinit_procdff_391
+  (= (|apb_timer_formal#26| state) (|apb_timer_formal#5| next_state)) ; $procdff$390 \_witness_.anyinit_procdff_390
+  (= (|apb_timer_formal#23| state) (|apb_timer_formal#4| next_state)) ; $procdff$389 \_witness_.anyinit_procdff_389
+  (= (ite (|apb_timer_formal#103| state) #b1 #b0) (|apb_timer_formal#3| next_state)) ; $auto$async2sync.cc:118:execute$465 $auto$async2sync.cc:116:execute$464
+  (= (ite (|apb_timer_formal#106| state) #b1 #b0) (|apb_timer_formal#2| next_state)) ; $auto$async2sync.cc:118:execute$453 $auto$async2sync.cc:116:execute$452
+  (= (ite (|apb_timer_formal#109| state) #b1 #b0) (|apb_timer_formal#1| next_state)) ; $auto$async2sync.cc:118:execute$447 $auto$async2sync.cc:116:execute$446
+  (= (ite (|apb_timer_formal#110| state) #b1 #b0) (|apb_timer_formal#0| next_state)) ; $auto$async2sync.cc:118:execute$441 $auto$async2sync.cc:116:execute$440
   (|apb_slave2_t| (|apb_timer_formal_h dut| state) (|apb_timer_formal_h dut| next_state))
 )) ; end of module apb_timer_formal
 ; yosys-smt2-topmod apb_timer_formal
