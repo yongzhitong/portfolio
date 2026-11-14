@@ -90,6 +90,7 @@ Class-based, mailbox-driven environment (no UVM). Same roles as a typical UVM ag
 2. **Counter cycle** — random LIMIT, enable, wait `limit` clocks, read FLAG (expect wrap).  
 3. **Counter count** — fixed LIMIT = 255, enable, wait *N* clocks, read COUNT (expect *N*). Verified for count values **> 2**.  
 4. **Counter stop** — enable, count for *N* clocks, disable, wait extra cycles, read COUNT (expect count frozen near *N*).  
+5. **Full wrap after live LIMIT update** — begin with LIMIT = 255, write a new LIMIT below the current COUNT, verify `0xFF → 0x00`, then verify the counter reaches the new LIMIT and wraps with FLAG asserted.
 
 Each phase is separated by a short reset so state does not bleed between scenarios.
 
@@ -155,8 +156,12 @@ The long full-wrap cover demonstrates end-to-end reachability from reset, while 
 | Formal proof | **PASS** — base case and induction, depth 30 |
 | Formal cover | **PASS** — all 11 covers reached, depth 270 |
 | Full 8-bit wrap witness | Reached at formal step **261** |
+| Full-wrap UVM simulation | **0 errors / warnings** — 5305 ns simulated in 16 seconds |
+| Directed simulation vs deep cover | Approximately **165× faster** for this specific scenario |
 
 Coverage includes write vs read, address bins (CTRL / LIMIT / COUNT / FLAG), data extremes (`0x00` / `0xFF`), and the write×address cross.
+
+The timing comparison is not a comparison of equivalent guarantees: the UVM test efficiently checks one directed sequence, whereas the formal run explores legal behaviours and establishes broader reachability and safety results.
 
 ---
 

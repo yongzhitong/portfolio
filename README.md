@@ -225,9 +225,21 @@ The depth-270 cover run successfully reached every target, but took **44 minutes
 
 Although formal cover demonstrated that this long path is reachable, a directed simulation is more efficient for checking one known, deterministic 256-count scenario and producing its waveform. I therefore use simulation/UVM for the end-to-end full-count test, while using formal induction to prove the general increment, hold, wrap, flag, and APB properties across all reachable states.
 
+##### UVM Full-Wrap Simulation
+
+I added a dedicated UVM sequence for the same corner case. The test starts with LIMIT at `0xFF`, waits until COUNT is above a smaller replacement limit, writes that lower limit, checks the natural `0xFF → 0x00` overflow, and then confirms that the counter reaches the new LIMIT and wraps with FLAG asserted.
+
+The complete Questa UVM job simulated **5305 ns** with **0 errors and 0 warnings** in **16 seconds**, compared with **2645 seconds** for the depth-270 formal cover run. For this specific directed scenario, simulation was approximately **165× faster**. The comparison is about wall-clock cost rather than equivalent guarantees: simulation checks the chosen sequence efficiently, while formal explores legal behaviours and proves the general safety properties.
+
+<p align="center">
+  <img src="./apb-uvm-timer/results/uvm-full-wrap-summary.png" alt="Questa UVM full-wrap simulation completing with zero errors and warnings" width="90%" />
+  <br />
+  <em>Full-wrap UVM simulation completed in 16 seconds with no errors or warnings.</em>
+</p>
+
 #### Results
 
-Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, and stop behaviour (count checks valid for expected count **> 2**). UVM simulation completed cleanly (**0** errors / warnings / fatals), while formal prove and cover runs both completed with **PASS** results.
+Achieved **93.75%** functional coverage with robust constrained-random testing (**100+** transactions/tests). Focused counter checks verify wrap, count, stop, full overflow, and live LIMIT-update behaviour. UVM simulation completed cleanly (**0** errors / warnings / fatals), while formal prove and cover runs both completed with **PASS** results.
 
 <p align="center">
   <img src="./apb-uvm-timer/results/functional-coverage.png" alt="UVM functional coverage report — 93.75% overall" width="90%" />
