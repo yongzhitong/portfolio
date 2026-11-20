@@ -60,6 +60,16 @@ The top-level design latches mix parameter `a` over UART, then streams audio. A 
 
 Developed SystemVerilog testbenches with Icarus Verilog and a Python golden-reference model. The verification flow checks gain and delay state-machine behaviour and compares each FPGA output sample against the fixed-point model over UART.
 
+#### FPGA Implementation Results
+
+Timing-driven RTL changes, including pipelining the division datapath, increased the design from an initial **4 MHz** implementation to a post-route maximum frequency of **44.541 MHz**—an improvement of more than **11×**. The implementation uses **916 logic elements (11%)**, **319 registers (5%)**, and **16 of 26 block SRAMs (62%)** on the Tang Nano 9K.
+
+<p align="center">
+  <img src="./Voice_Shifter/results/timing-resource-report.png" alt="Gowin resource utilization and timing report for the FPGA voice pitch-shifter" width="90%" />
+  <br />
+  <em>Post-route resource utilization and timing summary: 44.541 MHz actual Fmax against a 50 MHz constraint.</em>
+</p>
+
 ---
 
 ### Watt’s Up — Smart Grid System
