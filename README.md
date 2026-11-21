@@ -62,7 +62,23 @@ Developed SystemVerilog testbenches with Icarus Verilog and a Python golden-refe
 
 #### FPGA Implementation Results
 
-Timing-driven RTL changes, including pipelining the division datapath, increased the design from an initial **4 MHz** implementation to a post-route maximum frequency of **44.541 MHz**—an improvement of more than **11×**. The implementation uses **916 logic elements (11%)**, **319 registers (5%)**, and **16 of 26 block SRAMs (62%)** on the Tang Nano 9K.
+The initial implementation achieved an Fmax of only **3.972 MHz** against a 27 MHz constraint. Its critical path contained 120 logic levels, approximately 251 ns of data delay, and −215 ns of setup slack.
+
+<p align="center">
+  <img src="./Voice_Shifter/results/original-division-timing.png" alt="Original timing result showing a 3.972 MHz Fmax and 251 ns critical path" width="75%" />
+  <br />
+  <em>Original implementation: the 37.037 ns target period was missed because the actual critical path was approximately 251 ns.</em>
+</p>
+
+The main bottleneck was a variable combinational division in the per-sample audio datapath:
+
+```systemverilog
+assign word = (denominator == 0) ? 16'sd0 : mix_sum / denominator;
+```
+
+Because `denominator = 2a - 1` remains constant while a recording is processed, the design now calculates its fixed-point reciprocal once after loading `a`. The [`pipeline_div`](./Voice_Shifter/voice_corruptor/pipeline_div.sv) module implements binary long division over multiple cycles: each clock brings down one dividend bit, compares the partial remainder with the divisor, conditionally subtracts it, and produces one quotient bit. Audio processing begins after the reciprocal is ready, replacing division on every sample with multiplication and a right shift.
+
+This timing-driven redesign increased the post-route maximum frequency to **44.541 MHz**—an improvement of more than **11×**. The final implementation uses **916 logic elements (11%)**, **319 registers (5%)**, and **16 of 26 block SRAMs (62%)** on the Tang Nano 9K.
 
 <p align="center">
   <img src="./Voice_Shifter/results/timing-resource-report.png" alt="Gowin resource utilization and timing report for the FPGA voice pitch-shifter" width="90%" />
