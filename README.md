@@ -229,6 +229,14 @@ Developed a mailbox-driven class-based environment (transaction, generator, driv
 
 Reimplemented the same scenarios with a UVM agent (sequencer, driver, monitor), analysis-port scoreboard, subscriber coverage, and sequences for address traffic and timer checks — mapping each SV-TB role onto standard UVM components.
 
+Sequences are started on the sequencer rather than passed directly to the driver. `start_item()` requests a sequencer grant, `finish_item()` submits the populated transaction and waits, and the driver receives it through `get_next_item()`. After driving the APB pins, `item_done()` completes the handshake and allows the sequence to continue.
+
+<p align="center">
+  <img src="./apb-uvm-timer/results/uvm-sequence-driver-handshake.png" alt="UVM sequence-to-driver transaction handshake" width="70%" />
+  <br />
+  <em>Sequence-to-driver flow through the UVM sequencer pull interface.</em>
+</p>
+
 #### Formal Verification
 
 Developed a formal harness using SystemVerilog assumptions, assertions, and cover statements with SymbiYosys/Yosys SMTBMC and Boolector. Properties check APB register accesses, read-data behaviour, counter increment/hold, limit wrap, and flag generation. Separate prove and cover tasks produced a successful depth-30 k-induction proof and reached all 11 cover statements at depth 270, including a full `0xFF → 0x00` wrap witness at step 261.
